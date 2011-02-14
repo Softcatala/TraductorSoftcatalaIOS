@@ -1,1449 +1,0 @@
-TSoftcatala
-v7
-r0
-t315322124.194940
-cCheck dependencies
-cProcessInfoPlistFile /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/Info.plist Softcatala-Info.plist
-cCompileXIB /Users/marcos/Dropbox/Proyectos/Softcatala/MainWindow.xib
-cCompileXIB /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TraductorViewController.xib
-cCpResource build/Release-iphonesimulator/Softcatala.app/SC_logo.png Classes/SC_logo.png
-cCpResource build/Release-iphonesimulator/Softcatala.app/glassGreenButton.png Classes/glassGreenButton.png
-cCpResource build/Release-iphonesimulator/Softcatala.app/fondorojo.jpg Classes/fondorojo.jpg
-cCpResource build/Release-iphonesimulator/Softcatala.app/image21.png Classes/image21.png
-cCpResource build/Release-iphonesimulator/Softcatala.app/SC_logo_app.png Classes/SC_logo_app.png
-cCpResource build/Release-iphonesimulator/Softcatala.app/Softcatala_Marca_Icon.png Classes/Softcatala_Marca_Icon.png
-cProcessPCH /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch.gch Softcatala_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/main.o /Users/marcos/Dropbox/Proyectos/Softcatala/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/SoftcatalaAppDelegate.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SoftcatalaAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIAuthenticationDialog.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIAuthenticationDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIDataCompressor.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIDataCompressor.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIDataDecompressor.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIDataDecompressor.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIDownloadCache.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIDownloadCache.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIFormDataRequest.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIFormDataRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIHTTPRequest.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIHTTPRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIInputStream.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIInputStream.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASINetworkQueue.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASINetworkQueue.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/Reachability.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/Reachability.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/TraductorViewController.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TraductorViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/NSObject+SBJSON.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/NSObject+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/NSString+SBJSON.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/NSString+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/SBJsonBase.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SBJsonBase.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/SBJsonParser.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SBJsonParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/SBJsonWriter.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SBJsonWriter.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/UINavigationBackgroundImageBar.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/UINavigationBackgroundImageBar.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/UIToolBarBackgroundImage.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/UIToolBarBackgroundImage.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/AdViewController.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/AdViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CDataScanner.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/CDataScanner.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CDataScanner_Extensions.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/CDataScanner_Extensions.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/NSCharacterSet_Extensions.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/NSCharacterSet_Extensions.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/NSDictionary_JSONExtensions.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/NSDictionary_JSONExtensions.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/NSScanner_Extensions.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/NSScanner_Extensions.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CJSONDataSerializer.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONDataSerializer.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CJSONDeserializer.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONDeserializer.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CJSONScanner.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONScanner.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CJSONSerializer.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONSerializer.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CSerializedJSONData.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CSerializedJSONData.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/Softcatala normal i386
-cGenerateDSYMFile /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app.dSYM /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/Softcatala
-cPhaseScriptExecution "Run Script" /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Script-8D2519F012CB25D000761DC3.sh
-cTouch /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
-c000000004CC128950000000000000110
-t1287727253
-s272
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-c000000004CC1224600000000001EA9C0
-t1287725638
-s2009536
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
-c000000004CC1224400000000001C3D40
-t1287725636
-s1850688
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetwork.h
-c000000004CC1221800000000000004CF
-t1287725592
-s1231
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h
-c000000004CC1219F0000000000000AB3
-t1287725471
-s2739
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004CC12246000000000029B310
-t1287725638
-s2732816
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004CC1226D000000000029D5D0
-t1287725677
-s2741712
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004CC1225F0000000000001466
-t1287725663
-s5222
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
-c000000004CC6569800000000001AAD60
-t1288066712
-s1748320
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/MessageUI.framework/MessageUI
-c000000004CC6562D000000000009BEC0
-t1288066605
-s638656
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/MobileCoreServices.framework/Headers/MobileCoreServices.h
-c000000004CC122CF00000000000000EB
-t1287725775
-s235
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
-c000000004CC122D0000000000005BF20
-t1287725776
-s376608
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
-c000000004CC1233C00000000000000C4
-t1287725884
-s196
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
-c000000004CC12431000000000015CDB0
-t1287726129
-s1428912
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/SystemConfiguration.framework/Headers/SystemConfiguration.h
-c000000004CC121E80000000000001A58
-t1287725544
-s6744
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
-c000000004CC121F60000000000068970
-t1287725558
-s428400
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004CC1281F0000000000000AA1
-t1287727135
-s2721
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004CC12883000000000074D7B0
-t1287727235
-s7657392
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/CommonCrypto/CommonHMAC.h
-c000000004A11E8210000000000000DE2
-t1242687521
-s3554
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/arpa/inet.h
-c000000004CB3E46D0000000000001533
-t1286857837
-s5427
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/ifaddrs.h
-c000000004CB3E4770000000000000782
-t1286857847
-s1922
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/netdb.h
-c000000004A4181220000000000003057
-t1245806882
-s12375
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/netinet/in.h
-c000000004CBFACA90000000000005462
-t1287629993
-s21602
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/netinet6/in6.h
-c000000004CBFACA80000000000004F61
-t1287629992
-s20321
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/stdio.h
-c000000004CB3E48600000000000040AC
-t1286857862
-s16556
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/sys/socket.h
-c000000004CBFACAC0000000000005A69
-t1287629996
-s23145
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/zlib.h
-c000000004CC109BF00000000000102A5
-t1287719359
-s66213
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/lib/libz.1.2.3.dylib
-c000000004CC109C300000000000123B0
-t1287719363
-s74672
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIAuthenticationDialog.h
-c000000004CDE3C260000000000000453
-t1289632806
-s1107
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIAuthenticationDialog.m
-c000000004CDE3C260000000000003CC4
-t1289632806
-s15556
-i"ASIAuthenticationDialog.h"
-i"ASIHTTPRequest.h"
-i<QuartzCore/QuartzCore.h>
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASICacheDelegate.h
-c000000004CDE3C2600000000000011CE
-t1289632806
-s4558
-i<Foundation/Foundation.h>
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIDataCompressor.h
-c000000004CDE3C260000000000000691
-t1289632806
-s1681
-i<Foundation/Foundation.h>
-i<zlib.h>
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIDataCompressor.m
-c000000004CDE3C26000000000000196B
-t1289632806
-s6507
-i"ASIDataCompressor.h"
-i"ASIHTTPRequest.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIDataDecompressor.h
-c000000004CDE3C2600000000000006A3
-t1289632806
-s1699
-i<Foundation/Foundation.h>
-i<zlib.h>
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIDataDecompressor.m
-c000000004CDE3C2600000000000018B6
-t1289632806
-s6326
-i"ASIDataDecompressor.h"
-i"ASIHTTPRequest.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIDownloadCache.h
-c000000004CDE3C260000000000000804
-t1289632806
-s2052
-i<Foundation/Foundation.h>
-i"ASICacheDelegate.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIDownloadCache.m
-c000000004CDE3C26000000000000403F
-t1289632806
-s16447
-i"ASIDownloadCache.h"
-i"ASIHTTPRequest.h"
-i<CommonCrypto/CommonHMAC.h>
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIFormDataRequest.h
-c000000004CDE3C260000000000000A6D
-t1289632806
-s2669
-i<Foundation/Foundation.h>
-i"ASIHTTPRequest.h"
-i"ASIHTTPRequestConfig.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIFormDataRequest.m
-c000000004CDE3C260000000000002B52
-t1289632806
-s11090
-i"ASIFormDataRequest.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIHTTPRequest.h
-c000000004CDE3C26000000000000A94C
-t1289632806
-s43340
-i<Foundation/Foundation.h>
-i<CFNetwork/CFNetwork.h>
-i<stdio.h>
-i"ASIHTTPRequestConfig.h"
-i"ASIHTTPRequestDelegate.h"
-i"ASIProgressDelegate.h"
-i"ASICacheDelegate.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIHTTPRequest.m
-c000000004CDE3C2600000000000280EF
-t1289632806
-s164079
-i"ASIHTTPRequest.h"
-i"Reachability.h"
-i"ASIAuthenticationDialog.h"
-i<MobileCoreServices/MobileCoreServices.h>
-i<SystemConfiguration/SystemConfiguration.h>
-i"ASIInputStream.h"
-i"ASIDataDecompressor.h"
-i"ASIDataCompressor.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIHTTPRequestConfig.h
-c000000004CDE3C2600000000000003B0
-t1289632806
-s944
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIHTTPRequestDelegate.h
-c000000004CDE3C26000000000000063E
-t1289632806
-s1598
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIInputStream.h
-c000000004CDE3C2600000000000003C9
-t1289632806
-s969
-i<Foundation/Foundation.h>
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIInputStream.m
-c000000004CDE3C260000000000000BF0
-t1289632806
-s3056
-i"ASIInputStream.h"
-i"ASIHTTPRequest.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASINetworkQueue.h
-c000000004CDE3C26000000000000120D
-t1289632806
-s4621
-i<Foundation/Foundation.h>
-i"ASIHTTPRequestDelegate.h"
-i"ASIProgressDelegate.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASINetworkQueue.m
-c000000004CDE3C260000000000002C8D
-t1289632806
-s11405
-i"ASINetworkQueue.h"
-i"ASIHTTPRequest.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIProgressDelegate.h
-c000000004CDE3C260000000000000678
-t1289632806
-s1656
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/AdMob/AdMobDelegateProtocol.h
-c000000004D1A5C680000000000002109
-t1293573224
-s8457
-i<UIKit/UIKit.h>
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/AdMob/AdMobView.h
-c000000004D1A5C680000000000000A76
-t1293573224
-s2678
-i<UIKit/UIKit.h>
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/AdMob/libAdMob.a
-c000000004D1A5C68000000000023E0BC
-t1293573224
-s2351292
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/AdViewController.h
-c000000004D1A5C680000000000000663
-t1293573224
-s1635
-i<UIKit/UIKit.h>
-i"AdMobDelegateProtocol.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/AdViewController.m
-c000000004D1A5C680000000000000C11
-t1293573224
-s3089
-i"AdMobView.h"
-i"AdViewController.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/JSON.h
-c000000004C9CC2D60000000000000AC5
-t1285341910
-s2757
-i"SBJsonParser.h"
-i"SBJsonWriter.h"
-i"NSObject+SBJSON.h"
-i"NSString+SBJSON.h"
-i<JSON/SBJsonParser.h>
-i<JSON/SBJsonWriter.h>
-i<JSON/NSObject+SBJSON.h>
-i<JSON/NSString+SBJSON.h>
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/NSObject+SBJSON.h
-c000000004C9CC2D6000000000000085F
-t1285341910
-s2143
-i<Foundation/Foundation.h>
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/NSObject+SBJSON.m
-c000000004C9CC2D6000000000000077D
-t1285341910
-s1917
-i"NSObject+SBJSON.h"
-i"SBJsonWriter.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/NSString+SBJSON.h
-c000000004C9CC2D600000000000007F0
-t1285341910
-s2032
-i<Foundation/Foundation.h>
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/NSString+SBJSON.m
-c000000004C9CC2D6000000000000075D
-t1285341910
-s1885
-i"NSString+SBJSON.h"
-i"SBJsonParser.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/Reachability.h
-c000000004CDE3C260000000000001D0E
-t1289632806
-s7438
-i<Foundation/Foundation.h>
-i<SystemConfiguration/SystemConfiguration.h>
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/Reachability.m
-c000000004CDE3C260000000000005E0C
-t1289632806
-s24076
-i<sys/socket.h>
-i<netinet/in.h>
-i<netinet6/in6.h>
-i<arpa/inet.h>
-i<ifaddrs.h>
-i<netdb.h>
-i<CoreFoundation/CoreFoundation.h>
-i"Reachability.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SBJsonBase.h
-c000000004C9CC2D60000000000000B82
-t1285341910
-s2946
-i<Foundation/Foundation.h>
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SBJsonBase.m
-c000000004C9CC2D60000000000000AC1
-t1285341910
-s2753
-i"SBJsonBase.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SBJsonParser.h
-c000000004C9CC2D60000000000000C8F
-t1285341910
-s3215
-i<Foundation/Foundation.h>
-i"SBJsonBase.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SBJsonParser.m
-c000000004C9CC2D60000000000003B7A
-t1285341910
-s15226
-i"SBJsonParser.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SBJsonWriter.h
-c000000004C9CC2D600000000000011D9
-t1285341910
-s4569
-i<Foundation/Foundation.h>
-i"SBJsonBase.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SBJsonWriter.m
-c000000004C9CC2D6000000000000206D
-t1285341910
-s8301
-i"SBJsonWriter.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SC_logo.png
-c000000004D00A9A60000000000002851
-t1291889062
-s10321
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SC_logo_app.png
-c000000004D18C07500000000000026B0
-t1293467765
-s9904
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SoftcatalaAppDelegate.h
-c000000004D073C6C00000000000001CF
-t1292319852
-s463
-i<UIKit/UIKit.h>
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SoftcatalaAppDelegate.m
-c000000004D00EC6B0000000000000A7D
-t1291906155
-s2685
-i"SoftcatalaAppDelegate.h"
-i"TraductorViewController.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/Softcatala_Marca_Icon.png
-c000000004D1B0F1A000000000000166E
-t1293618970
-s5742
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/CDataScanner.h
-c000000004D1A5C68000000000000095B
-t1293573224
-s2395
-i<Foundation/Foundation.h>
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/CDataScanner.m
-c000000004D1A5C680000000000001674
-t1293573224
-s5748
-i"CDataScanner.h"
-i"CDataScanner_Extensions.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/CDataScanner_Extensions.h
-c000000004D1A5C6800000000000005AD
-t1293573224
-s1453
-i"CDataScanner.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/CDataScanner_Extensions.m
-c000000004D1A5C6800000000000009EC
-t1293573224
-s2540
-i"CDataScanner_Extensions.h"
-i"NSCharacterSet_Extensions.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/NSCharacterSet_Extensions.h
-c000000004D1A5C68000000000000057A
-t1293573224
-s1402
-i<Foundation/Foundation.h>
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/NSCharacterSet_Extensions.m
-c000000004D1A5C680000000000000731
-t1293573224
-s1841
-i"NSCharacterSet_Extensions.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/NSDictionary_JSONExtensions.h
-c000000004D1A5C680000000000000598
-t1293573224
-s1432
-i<Foundation/Foundation.h>
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/NSDictionary_JSONExtensions.m
-c000000004D1A5C680000000000000613
-t1293573224
-s1555
-i"NSDictionary_JSONExtensions.h"
-i"CJSONDeserializer.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/NSScanner_Extensions.h
-c000000004D1A5C680000000000000656
-t1293573224
-s1622
-i<Foundation/Foundation.h>
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/NSScanner_Extensions.m
-c000000004D1A5C680000000000000D65
-t1293573224
-s3429
-i"NSScanner_Extensions.h"
-i"NSCharacterSet_Extensions.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONDataSerializer.h
-c000000004D1A5C680000000000000716
-t1293573224
-s1814
-i<Foundation/Foundation.h>
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONDataSerializer.m
-c000000004D1A5C680000000000001AB2
-t1293573224
-s6834
-i"CJSONDataSerializer.h"
-i"CSerializedJSONData.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONDeserializer.h
-c000000004D1A5C680000000000000681
-t1293573224
-s1665
-i<Foundation/Foundation.h>
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONDeserializer.m
-c000000004D1A5C680000000000000B3A
-t1293573224
-s2874
-i"CJSONDeserializer.h"
-i"CJSONScanner.h"
-i"CDataScanner.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONScanner.h
-c000000004D1A5C68000000000000081C
-t1293573224
-s2076
-i"CDataScanner.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONScanner.m
-c000000004D1A5C6800000000000039AA
-t1293573224
-s14762
-i"CJSONScanner.h"
-i"NSCharacterSet_Extensions.h"
-i"CDataScanner_Extensions.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONSerializer.h
-c000000004D1A5C680000000000000787
-t1293573224
-s1927
-i<Foundation/Foundation.h>
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONSerializer.m
-c000000004D1A5C6800000000000008C6
-t1293573224
-s2246
-i"CJSONSerializer.h"
-i"CJSONDataSerializer.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CSerializedJSONData.h
-c000000004D1A5C6800000000000005A9
-t1293573224
-s1449
-i<Foundation/Foundation.h>
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CSerializedJSONData.m
-c000000004D1A5C6800000000000005FB
-t1293573224
-s1531
-i"CSerializedJSONData.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TraductorViewController.h
-c000000004D1A679B0000000000000868
-t1293576091
-s2152
-i<UIKit/UIKit.h>
-i"AdViewController.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TraductorViewController.m
-c000000004D1B110D0000000000001F74
-t1293619469
-s8052
-i"TraductorViewController.h"
-i"ASIFormDataRequest.h"
-i"JSON.h"
-i<QuartzCore/QuartzCore.h>
-i"Reachability.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TraductorViewController.xib
-c000000004D1A683D000000000000E033
-t1293576253
-s57395
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/UINavigationBackgroundImageBar.h
-c000000004D14C5000000000000000102
-t1293206784
-s258
-i<UIKit/UIKit.h>
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/UINavigationBackgroundImageBar.m
-c000000004D14C5680000000000000341
-t1293206888
-s833
-i"UINavigationBackgroundImageBar.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/UIToolBarBackgroundImage.h
-c000000004D18B01000000000000000F0
-t1293463568
-s240
-i<UIKit/UIKit.h>
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/UIToolBarBackgroundImage.m
-c000000004D18B00D0000000000000270
-t1293463565
-s624
-i"UIToolBarBackgroundImage.h"
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/fondorojo.jpg
-c000000004D14B84E0000000000000459
-t1293203534
-s1113
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/glassGreenButton.png
-c000000004D12786900000000000008D5
-t1293056105
-s2261
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/icon_checkmark.png
-c000000004D09E372000000000000013B
-t1292493682
-s315
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/image21.png
-c000000004AB04638000000000000CC4F
-t1253066296
-s52303
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/MainWindow.xib
-c000000004D014D640000000000005052
-t1291930980
-s20562
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/Softcatala_Prefix.pch
-c000000004D00BB5400000000000000BD
-t1291893588
-s189
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app
-t1293629324
-s476
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app.dSYM
-t1293629324
-s102
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/Info.plist
-t1293629309
-s656
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/MainWindow.nib
-t1293629309
-s1137
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/PkgInfo
-t1293629309
-s8
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/SC_logo.png
-t1292583173
-s10321
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/SC_logo_app.png
-t1293626299
-s9904
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/Softcatala
-t1293629323
-s815308
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/Softcatala_Marca_Icon.png
-t1293626298
-s5742
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/TraductorViewController.nib
-t1293629310
-s4561
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/fondorojo.jpg
-t1293626298
-s1113
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/glassGreenButton.png
-t1293626298
-s2261
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/icon_checkmark.png
-t1292582239
-s315
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/image21.png
-t1293626299
-s52303
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIAuthenticationDialog.o
-t1293629312
-s101652
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIDataCompressor.o
-t1293629311
-s21260
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIDataDecompressor.o
-t1293629311
-s21448
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIDownloadCache.o
-t1293629312
-s55044
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIFormDataRequest.o
-t1293629312
-s45144
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIHTTPRequest.o
-t1293629323
-s429408
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIInputStream.o
-t1293629312
-s26948
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASINetworkQueue.o
-t1293629313
-s57820
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/AdViewController.o
-t1293629314
-s46928
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CDataScanner.o
-t1293629314
-s24192
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CDataScanner_Extensions.o
-t1293629314
-s9908
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CJSONDataSerializer.o
-t1293629315
-s21004
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CJSONDeserializer.o
-t1293629315
-s11476
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CJSONScanner.o
-t1293629315
-s29404
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CJSONSerializer.o
-t1293629315
-s11964
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CSerializedJSONData.o
-t1293629316
-s7888
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/NSCharacterSet_Extensions.o
-t1293629315
-s6876
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/NSDictionary_JSONExtensions.o
-t1293629315
-s7216
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/NSObject+SBJSON.o
-t1293629313
-s7428
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/NSScanner_Extensions.o
-t1293629315
-s13464
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/NSString+SBJSON.o
-t1293629313
-s7320
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/Reachability.o
-t1293629313
-s27716
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/SBJsonBase.o
-t1293629313
-s12772
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/SBJsonParser.o
-t1293629314
-s33192
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/SBJsonWriter.o
-t1293629314
-s24028
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/Softcatala.LinkFileList
-c000000004D1B2BBA0000000000001143
-t1293626298
-s4419
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/SoftcatalaAppDelegate.o
-t1293629311
-s50688
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/TraductorViewController.o
-t1293629313
-s97448
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/UINavigationBackgroundImageBar.o
-t1293629314
-s39052
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/UIToolBarBackgroundImage.o
-t1293629314
-s39516
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/main.o
-t1293629311
-s6296
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Script-8D2519F012CB25D000761DC3.sh
-c000000004D1B2BBA00000000000001C8
-t1293626298
-s456
-
-N/Users/marcos/Dropbox/Proyectos/Softcatala/main.m
-c000000004D0B4121000000000000016C
-t1292583201
-s364
-i<UIKit/UIKit.h>
-
-N/var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-aazqltoztcvtwubfcauxdkttwzya/Softcatala_Prefix.pch.gch
-t1292582241
-s15113424
-
-N/var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch.gch
-t1293629311
-s15113424
-
-NSoftcatala-Info.plist
-c000000004D1B0F6300000000000003A6
-t1293619043
-s934
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies315322109#315322109#0(0"0(0#1#0"9007697477435492#0"0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIAuthenticationDialog.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIAuthenticationDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322111.504628
-e315322112.080930
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIAuthenticationDialog.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIAuthenticationDialog.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@84"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIAuthenticationDialog.m315322111#315322112#0(0"0(0#0#76"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIAuthenticationDialog.m8608043616#2123"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIAuthenticationDialog.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIAuthenticationDialog.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIDataCompressor.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIDataCompressor.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322111.570844
-e315322111.762687
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIDataCompressor.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIDataCompressor.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@78"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIDataCompressor.m315322111#315322111#0(0"0(0#0#70"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIDataCompressor.m8607434528#2111"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIDataCompressor.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIDataCompressor.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIDataDecompressor.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIDataDecompressor.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322111.762776
-e315322111.943512
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIDataDecompressor.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIDataDecompressor.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@80"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIDataDecompressor.m315322111#315322111#0(0"0(0#0#72"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIDataDecompressor.m8607156928#2115"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIDataDecompressor.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIDataDecompressor.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIDownloadCache.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIDownloadCache.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322111.943594
-e315322112.455358
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIDownloadCache.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIDownloadCache.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@77"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIDownloadCache.m315322111#315322112#0(0"0(0#0#69"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIDownloadCache.m8606615968#2109"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIDownloadCache.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIDownloadCache.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIFormDataRequest.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIFormDataRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322112.081021
-e315322112.403595
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIFormDataRequest.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIFormDataRequest.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@79"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIFormDataRequest.m315322112#315322112#0(0"0(0#0#71"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIFormDataRequest.m8606356960#2113"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIFormDataRequest.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIFormDataRequest.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIHTTPRequest.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIHTTPRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322112.403682
-e315322123.414210
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIHTTPRequest.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIHTTPRequest.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@75"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIHTTPRequest.m315322112#315322123#0(0"0(0#0#67"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIHTTPRequest.m8605976576#2105"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIHTTPRequest.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIHTTPRequest.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIInputStream.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIInputStream.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322112.455446
-e315322112.617851
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIInputStream.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIInputStream.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@75"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIInputStream.m315322112#315322112#0(0"0(0#0#67"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIInputStream.m8604388768#2105"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASIInputStream.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASIInputStream.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASINetworkQueue.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASINetworkQueue.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322112.617944
-e315322113.058968
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASINetworkQueue.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASINetworkQueue.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@76"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASINetworkQueue.m315322112#315322113#0(0"0(0#0#68"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASINetworkQueue.m8603264448#2107"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/ASINetworkQueue.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/ASINetworkQueue.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/AdViewController.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/AdViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322114.614283
-e315322114.739129
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/AdViewController.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/AdViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@77"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/AdViewController.m315322114#315322114#0(0"0(0#0#69"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/AdViewController.m8607936864#2109"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/AdViewController.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/AdViewController.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CDataScanner.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/CDataScanner.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322114.739216
-e315322114.907973
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CDataScanner.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/CDataScanner.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@83"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/CDataScanner.m315322114#315322114#0(0"0(0#0#75"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/CDataScanner.m8607713696#2111"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/CDataScanner.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CDataScanner.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CDataScanner_Extensions.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/CDataScanner_Extensions.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322114.908065
-e315322115.000477
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CDataScanner_Extensions.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/CDataScanner_Extensions.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@105"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/CDataScanner_Extensions.m315322114#315322115#0(0"0(0#0#97"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/CDataScanner_Extensions.m8607247136#2144"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/CDataScanner_Extensions.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CDataScanner_Extensions.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CJSONDataSerializer.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONDataSerializer.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322115.254018
-e315322115.412043
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CJSONDataSerializer.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONDataSerializer.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@95"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONDataSerializer.m315322115#315322115#0(0"0(0#0#87"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONDataSerializer.m8607816352#2130"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONDataSerializer.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CJSONDataSerializer.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CJSONDeserializer.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONDeserializer.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322115.412135
-e315322115.506895
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CJSONDeserializer.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONDeserializer.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@93"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONDeserializer.m315322115#315322115#0(0"0(0#0#85"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONDeserializer.m8607176928#2126"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONDeserializer.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CJSONDeserializer.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CJSONScanner.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONScanner.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322115.506976
-e315322115.759184
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CJSONScanner.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONScanner.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@88"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONScanner.m315322115#315322116#0(0"0(0#0#80"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONScanner.m8607023328#2116"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONScanner.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CJSONScanner.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CJSONSerializer.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONSerializer.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322115.759277
-e315322115.997307
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CJSONSerializer.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONSerializer.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@91"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONSerializer.m315322115#315322116#0(0"0(0#0#83"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONSerializer.m8606681344#2122"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CJSONSerializer.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CJSONSerializer.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CSerializedJSONData.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CSerializedJSONData.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322115.997389
-e315322116.083131
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CSerializedJSONData.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CSerializedJSONData.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@95"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CSerializedJSONData.m315322115#315322116#0(0"0(0#0#87"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CSerializedJSONData.m8608008512#2130"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/JSON/CSerializedJSONData.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/CSerializedJSONData.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/NSCharacterSet_Extensions.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/NSCharacterSet_Extensions.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322115.009722
-e315322115.080906
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/NSCharacterSet_Extensions.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/NSCharacterSet_Extensions.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@107"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/NSCharacterSet_Extensions.m315322115#315322115#0(0"0(0#0#99"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/NSCharacterSet_Extensions.m8610492384#2148"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/NSCharacterSet_Extensions.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/NSCharacterSet_Extensions.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/NSDictionary_JSONExtensions.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/NSDictionary_JSONExtensions.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322115.080993
-e315322115.146951
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/NSDictionary_JSONExtensions.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/NSDictionary_JSONExtensions.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@109"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/NSDictionary_JSONExtensions.m315322115#315322115#0(0"0(0#0#101"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/NSDictionary_JSONExtensions.m8608455520#2152"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/NSDictionary_JSONExtensions.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/NSDictionary_JSONExtensions.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/NSObject+SBJSON.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/NSObject+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322113.659865
-e315322113.739177
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/NSObject+SBJSON.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/NSObject+SBJSON.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@76"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/NSObject+SBJSON.m315322113#315322113#0(0"0(0#0#68"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/NSObject+SBJSON.m8607217408#2107"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/NSObject+SBJSON.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/NSObject+SBJSON.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/NSScanner_Extensions.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/NSScanner_Extensions.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322115.147045
-e315322115.253927
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/NSScanner_Extensions.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/NSScanner_Extensions.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@102"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/NSScanner_Extensions.m315322115#315322115#0(0"0(0#0#94"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/NSScanner_Extensions.m8608206752#2138"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TouchJSON/Extensions/NSScanner_Extensions.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/NSScanner_Extensions.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/NSString+SBJSON.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/NSString+SBJSON.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322113.739268
-e315322113.811882
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/NSString+SBJSON.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/NSString+SBJSON.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@76"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/NSString+SBJSON.m315322113#315322113#0(0"0(0#0#68"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/NSString+SBJSON.m8606139296#2107"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/NSString+SBJSON.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/NSString+SBJSON.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/Reachability.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/Reachability.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322113.059150
-e315322113.248785
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/Reachability.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/Reachability.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@73"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/Reachability.m315322113#315322113#0(0"0(0#0#65"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/Reachability.m8608550272#2101"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/Reachability.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/Reachability.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/SBJsonBase.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SBJsonBase.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322113.811968
-e315322113.942380
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/SBJsonBase.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SBJsonBase.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@71"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SBJsonBase.m315322113#315322113#0(0"0(0#0#63"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SBJsonBase.m8604457984#2097"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SBJsonBase.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/SBJsonBase.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/SBJsonParser.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SBJsonParser.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322113.942468
-e315322114.217952
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/SBJsonParser.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SBJsonParser.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@73"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SBJsonParser.m315322113#315322114#0(0"0(0#0#65"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SBJsonParser.m8603442240#2101"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SBJsonParser.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/SBJsonParser.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/SBJsonWriter.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SBJsonWriter.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322114.218038
-e315322114.427945
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/SBJsonWriter.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SBJsonWriter.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@73"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SBJsonWriter.m315322114#315322114#0(0"0(0#0#65"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SBJsonWriter.m8610661760#2101"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SBJsonWriter.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/SBJsonWriter.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/SoftcatalaAppDelegate.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SoftcatalaAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322111.327108
-e315322111.570758
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/SoftcatalaAppDelegate.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SoftcatalaAppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@82"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SoftcatalaAppDelegate.m315322111#315322111#0(0"0(0#0#74"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SoftcatalaAppDelegate.m8608477632#2119"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SoftcatalaAppDelegate.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/SoftcatalaAppDelegate.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/TraductorViewController.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TraductorViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322113.248874
-e315322113.659781
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/TraductorViewController.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TraductorViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@84"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TraductorViewController.m315322113#315322113#0(0"0(0#0#76"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TraductorViewController.m8606710208#2123"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TraductorViewController.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/TraductorViewController.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/UINavigationBackgroundImageBar.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/UINavigationBackgroundImageBar.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322114.428036
-e315322114.523896
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/UINavigationBackgroundImageBar.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/UINavigationBackgroundImageBar.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@91"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/UINavigationBackgroundImageBar.m315322114#315322114#0(0"0(0#0#83"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/UINavigationBackgroundImageBar.m8608685792#2137"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/UINavigationBackgroundImageBar.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/UINavigationBackgroundImageBar.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/UIToolBarBackgroundImage.o /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/UIToolBarBackgroundImage.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322114.523983
-e315322114.614098
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/UIToolBarBackgroundImage.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/UIToolBarBackgroundImage.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@85"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/UIToolBarBackgroundImage.m315322114#315322114#0(0"0(0#0#77"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/UIToolBarBackgroundImage.m8608274944#2125"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/UIToolBarBackgroundImage.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/UIToolBarBackgroundImage.o0#
-
-CCompileC build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/main.o /Users/marcos/Dropbox/Proyectos/Softcatala/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322111.272926
-e315322111.504541
-r1
-xCompileC
-xbuild/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/main.o
-x/Users/marcos/Dropbox/Proyectos/Softcatala/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@57"Compile /Users/marcos/Dropbox/Proyectos/Softcatala/main.m315322111#315322111#0(0"0(0#0#49"/Users/marcos/Dropbox/Proyectos/Softcatala/main.m8603628704#2077"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch -c /Users/marcos/Dropbox/Proyectos/Softcatala/main.m -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/main.o0#
-
-CCompileXIB /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TraductorViewController.xib
-s315322109.334771
-e315322110.250693
-r1
-xCompileXIB
-x/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TraductorViewController.xib
-lSLF07#2@46"CompileXIB Classes/TraductorViewController.xib315322109#315322110#0(0"0(0#0#78"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TraductorViewController.xib8604566240#621"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/TraductorViewController.nib /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/TraductorViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
-
-CCompileXIB /Users/marcos/Dropbox/Proyectos/Softcatala/MainWindow.xib
-s315322109.334124
-e315322109.862344
-r1
-xCompileXIB
-x/Users/marcos/Dropbox/Proyectos/Softcatala/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib315322109#315322109#0(0"0(0#0#57"/Users/marcos/Dropbox/Proyectos/Softcatala/MainWindow.xib8606005728#587"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/MainWindow.nib /Users/marcos/Dropbox/Proyectos/Softcatala/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
-
-CCpResource build/Release-iphonesimulator/Softcatala.app/SC_logo.png Classes/SC_logo.png
-s314275973.221201
-e314275973.226531
-r1
-xCpResource
-xbuild/Release-iphonesimulator/Softcatala.app/SC_logo.png
-xClasses/SC_logo.png
-lSLF07#2@24"Copy Classes/SC_logo.png314275973#314275973#0(0"0(0#0#62"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SC_logo.png8616686816#515"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SC_logo.png /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app0#
-
-CCpResource build/Release-iphonesimulator/Softcatala.app/SC_logo_app.png Classes/SC_logo_app.png
-s315319098.918380
-e315319099.001714
-r1
-xCpResource
-xbuild/Release-iphonesimulator/Softcatala.app/SC_logo_app.png
-xClasses/SC_logo_app.png
-lSLF07#2@28"Copy Classes/SC_logo_app.png315319098#315319099#0(0"0(0#0#66"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SC_logo_app.png8607110816#519"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/SC_logo_app.png /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app0#
-
-CCpResource build/Release-iphonesimulator/Softcatala.app/Softcatala_Marca_Icon.png Classes/Softcatala_Marca_Icon.png
-s315319098.919996
-e315319098.974118
-r1
-xCpResource
-xbuild/Release-iphonesimulator/Softcatala.app/Softcatala_Marca_Icon.png
-xClasses/Softcatala_Marca_Icon.png
-lSLF07#2@38"Copy Classes/Softcatala_Marca_Icon.png315319098#315319098#0(0"0(0#0#76"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/Softcatala_Marca_Icon.png8606790976#529"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/Softcatala_Marca_Icon.png /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app0#
-
-CCpResource build/Release-iphonesimulator/Softcatala.app/fondorojo.jpg Classes/fondorojo.jpg
-s315319098.915549
-e315319098.970356
-r1
-xCpResource
-xbuild/Release-iphonesimulator/Softcatala.app/fondorojo.jpg
-xClasses/fondorojo.jpg
-lSLF07#2@26"Copy Classes/fondorojo.jpg315319098#315319098#0(0"0(0#0#64"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/fondorojo.jpg8607659296#517"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/fondorojo.jpg /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app0#
-
-CCpResource build/Release-iphonesimulator/Softcatala.app/glassGreenButton.png Classes/glassGreenButton.png
-s315319098.914458
-e315319098.988350
-r1
-xCpResource
-xbuild/Release-iphonesimulator/Softcatala.app/glassGreenButton.png
-xClasses/glassGreenButton.png
-lSLF07#2@33"Copy Classes/glassGreenButton.png315319098#315319098#0(0"0(0#0#71"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/glassGreenButton.png8607821152#524"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/glassGreenButton.png /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app0#
-
-CCpResource build/Release-iphonesimulator/Softcatala.app/icon_checkmark.png Classes/icon_checkmark.png
-s314275039.528135
-e314275039.755857
-r1
-xCpResource
-xbuild/Release-iphonesimulator/Softcatala.app/icon_checkmark.png
-xClasses/icon_checkmark.png
-lSLF07#2@31"Copy Classes/icon_checkmark.png314275039#314275039#0(0"0(0#0#69"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/icon_checkmark.png8653437024#522"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/icon_checkmark.png /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app0#
-
-CCpResource build/Release-iphonesimulator/Softcatala.app/image21.png Classes/image21.png
-s315319098.916964
-e315319099.031259
-r1
-xCpResource
-xbuild/Release-iphonesimulator/Softcatala.app/image21.png
-xClasses/image21.png
-lSLF07#2@24"Copy Classes/image21.png315319098#315319099#0(0"0(0#0#62"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/image21.png8607540192#515"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/marcos/Dropbox/Proyectos/Softcatala/Classes/image21.png /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app0#
-
-CGenerateDSYMFile /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app.dSYM /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/Softcatala
-s315322123.848007
-e315322124.156691
-r1
-xGenerateDSYMFile
-x/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app.dSYM
-x/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/Softcatala
-lSLF07#2@122"GenerateDSYMFile build/Release-iphonesimulator/Softcatala.app.dSYM build/Release-iphonesimulator/Softcatala.app/Softcatala315322123#315322124#0(0"0(0#0#98"/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/Softcatala8607981920#408"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/Softcatala -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app.dSYM0#
-
-CLd /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/Softcatala normal i386
-s315322123.414371
-e315322123.847920
-r1
-xLd
-x/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/Softcatala
-xnormal
-xi386
-lSLF07#2@103"Link /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/Softcatala315322123#315322123#0(0"0(0#0#0"8610476640#1197"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -L/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/AdMob -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -filelist /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/Softcatala.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework CFNetwork -framework MobileCoreServices -framework SystemConfiguration -lz.1.2.3 -framework QuartzCore -lAdMob -framework AudioToolbox -framework MediaPlayer -weak_framework MessageUI -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/Softcatala0#
-
-CPhaseScriptExecution "Run Script" /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Script-8D2519F012CB25D000761DC3.sh
-s315322124.156779
-e315322124.172020
-r1
-xPhaseScriptExecution
-xRun Script
-x/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Script-8D2519F012CB25D000761DC3.sh
-lSLF07#2@36"Run custom shell script 'Run Script'315322124#315322124#0(0"0(0#0#0"8606480096#17770"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER marcos    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_UNIVERSAL_IPHONE_OS i386    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/marcos/Dropbox/Proyectos/Softcatala/build    setenv BUILD_ROOT /Users/marcos/Dropbox/Proyectos/Softcatala/build    setenv BUILD_STYLE Release    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator    setenv CACHE_ROOT /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app    setenv CODE_SIGN_CONTEXT_CLASS XCCodeSignContext    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv COMPRESS_PNG_FILES YES    setenv CONFIGURATION Release    setenv CONFIGURATION_BUILD_DIR /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator    setenv CONFIGURATION_TEMP_DIR /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator    setenv CONTENTS_FOLDER_PATH Softcatala.app    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP YES    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH Softcatala.app/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/Softcatala.dst    setenv DWARF_DSYM_FILE_NAME Softcatala.app.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn .git CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn .git *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH Softcatala.app/Executables    setenv EXECUTABLE_FOLDER_PATH Softcatala.app    setenv EXECUTABLE_NAME Softcatala    setenv EXECUTABLE_PATH Softcatala.app/Softcatala    setenv FILE_LIST /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH Softcatala.app/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME Softcatala.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_DYNAMIC_NO_PIC YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OBJC_LEGACY_DISPATCH YES    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER Softcatala_Prefix.pch    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION 4.2    setenv GCC_VERSION_IDENTIFIER __2    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include\" "    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE Softcatala-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH Softcatala.app/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH Softcatala.app/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/Softcatala.dst/Users/marcos/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER marcos    setenv INSTALL_PATH /Users/marcos/Applications    setenv INSTALL_ROOT /tmp/Softcatala.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 4.0    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH Softcatala.app/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-LinkMap-normal-i386.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator\"  \"/Users/marcos/Dropbox/Proyectos/Softcatala/Classes/AdMob\""    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal/i386/Softcatala.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH Softcatala.app/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_VERSION_ACTUAL 1065    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0605    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJC_ABI_VERSION 2    setenv OBJECT_FILE_DIR /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Objects-normal    setenv OBJROOT /Users/marcos/Dropbox/Proyectos/Softcatala/build    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_CFLAGS -DNS_BLOCK_ASSERTIONS=1    setenv OTHER_CPLUSPLUSFLAGS -DNS_BLOCK_ASSERTIONS=1    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH Softcatala.app/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/PkgInfo    setenv PKGINFO_PATH Softcatala.app/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/usr    setenv PLATFORM_DIR /Developer/Platforms/iPhoneSimulator.platform    setenv PLATFORM_NAME iphonesimulator    setenv PLATFORM_PRODUCT_BUILD_VERSION 8C134    setenv PLATFORM_VERSION_AVAILABILITY_H_FORMAT 40200    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH Softcatala.app/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH Softcatala.app/PrivateHeaders    setenv PRODUCT_NAME Softcatala    setenv PRODUCT_SETTINGS_PATH /Users/marcos/Dropbox/Proyectos/Softcatala/Softcatala-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT Softcatala    setenv PROJECT_DERIVED_FILE_DIR /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/DerivedSources    setenv PROJECT_DIR /Users/marcos/Dropbox/Proyectos/Softcatala    setenv PROJECT_FILE_PATH /Users/marcos/Dropbox/Proyectos/Softcatala/Softcatala.xcodeproj    setenv PROJECT_NAME Softcatala    setenv PROJECT_TEMP_DIR /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build    setenv PUBLIC_HEADERS_FOLDER_PATH Softcatala.app/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH Softcatala.app/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk    setenv SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk    setenv SDK_NAME iphonesimulator4.2    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH Softcatala.app/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH Softcatala.app/SharedSupport    setenv SKIP_INSTALL YES    setenv SOURCE_ROOT /Users/marcos/Dropbox/Proyectos/Softcatala    setenv SRCROOT /Users/marcos/Dropbox/Proyectos/Softcatala    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES "1 2"    setenv SYMBOL_REPOSITORY_DIR /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/SymbolRepositories    setenv SYMROOT /Users/marcos/Dropbox/Proyectos/Softcatala/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 1    setenv TARGETNAME Softcatala    setenv TARGET_BUILD_DIR /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator    setenv TARGET_NAME Softcatala    setenv TARGET_TEMP_DIR /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build    setenv TEMP_DIR /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build    setenv TEMP_FILES_DIR /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build    setenv TEMP_FILE_DIR /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build    setenv TEMP_ROOT /Users/marcos/Dropbox/Proyectos/Softcatala/build    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH Softcatala.app    setenv UNSTRIPPED_PRODUCT NO    setenv USER marcos    setenv USER_APPS_DIR /Users/marcos/Applications    setenv USER_LIBRARY_DIR /Users/marcos/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT YES    setenv VALID_ARCHS i386    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH Softcatala.app/version.plist    setenv VERSION_INFO_BUILDER marcos    setenv VERSION_INFO_FILE Softcatala_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:Softcatala  PROJECT:Softcatala-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME Softcatala.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 10M2423    setenv XCODE_VERSION_ACTUAL 0325    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    setenv _REAL_SDKROOT iphoneos    /bin/sh -c /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Script-8D2519F012CB25D000761DC3.sh0#
-
-CProcessInfoPlistFile /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/Info.plist Softcatala-Info.plist
-s315322109.266699
-e315322109.334058
-r1
-xProcessInfoPlistFile
-x/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/Info.plist
-xSoftcatala-Info.plist
-lSLF07#2@29"Process Softcatala-Info.plist315322109#315322109#0(0"0(0#0#64"/Users/marcos/Dropbox/Proyectos/Softcatala/Softcatala-Info.plist32370038940172396#504"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Softcatala-Info.plist -genpkginfo /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app/Info.plist0#
-
-CProcessPCH /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-aazqltoztcvtwubfcauxdkttwzya/Softcatala_Prefix.pch.gch Softcatala_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s314275039.755977
-e314275041.133475
-r1
-xProcessPCH
-x/var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-aazqltoztcvtwubfcauxdkttwzya/Softcatala_Prefix.pch.gch
-xSoftcatala_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@32"Precompile Softcatala_Prefix.pch314275039#314275041#0(0"0(0#0#64"/Users/marcos/Dropbox/Proyectos/Softcatala/Softcatala_Prefix.pch8652088992#1960"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40001 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -c /Users/marcos/Dropbox/Proyectos/Softcatala/Softcatala_Prefix.pch -o /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-aazqltoztcvtwubfcauxdkttwzya/Softcatala_Prefix.pch.gch0#
-
-CProcessPCH /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch.gch Softcatala_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s315322110.250825
-e315322111.272716
-r1
-xProcessPCH
-x/var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch.gch
-xSoftcatala_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@32"Precompile Softcatala_Prefix.pch315322110#315322111#0(0"0(0#0#64"/Users/marcos/Dropbox/Proyectos/Softcatala/Softcatala_Prefix.pch8598546912#1960"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-generated-files.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-own-target-headers.hmap -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-all-target-headers.hmap -iquote /Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/Softcatala-project-headers.hmap -F/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/include -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources/i386 -I/Users/marcos/Dropbox/Proyectos/Softcatala/build/Softcatala.build/Release-iphonesimulator/Softcatala.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -c /Users/marcos/Dropbox/Proyectos/Softcatala/Softcatala_Prefix.pch -o /var/folders/Co/CowRmX40Gp487YL6SQ3QW++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Softcatala_Prefix-cobsvxspzthucqfysvtbitrjhapv/Softcatala_Prefix.pch.gch0#
-
-CTouch /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app
-s315322124.172087
-e315322124.194796
-r1
-xTouch
-x/Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app
-lSLF07#2@93"Touch /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app315322124#315322124#0(0"0(0#0#0"8610784224#291"    cd /Users/marcos/Dropbox/Proyectos/Softcatala    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/marcos/Dropbox/Proyectos/Softcatala/build/Release-iphonesimulator/Softcatala.app0#
-

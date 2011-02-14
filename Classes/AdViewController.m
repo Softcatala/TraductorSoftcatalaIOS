@@ -79,6 +79,9 @@
   NSLog(@"AdMob: Did receive ad in AdViewController");
   [self.view addSubview:adMobAd];
 }
+- (NSArray *)testDevices {
+	return [NSArray arrayWithObjects: ADMOB_SIMULATOR_ID, nil];
+}
 
 // Sent when an ad request failed to load an ad
 - (void)didFailToReceiveAd:(AdMobView *)adView {

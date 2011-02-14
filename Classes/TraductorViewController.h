@@ -28,6 +28,8 @@
 	IBOutlet UIBarButtonItem *btnTranslate;
 	
 	IBOutlet AdViewController *adViewController;
+	
+	UIAlertView *spinnerAlert;	
 } 
 
 @property (retain, nonatomic) NSString *txtTextViewUndo;
@@ -44,6 +46,7 @@
 @property (retain, nonatomic) IBOutlet UINavigationBar *mainToolbar;
 @property (retain, nonatomic) IBOutlet UIBarButtonItem *btnTranslate;
 @property (retain, nonatomic) IBOutlet AdViewController *adViewController;
+@property (retain, nonatomic) UIAlertView *spinnerAlert;
 
 -(void) translateText:(NSString *)text;
 

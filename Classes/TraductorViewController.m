@@ -28,6 +28,7 @@
 @synthesize pickerToolbar;
 @synthesize btnTranslate;
 @synthesize adViewController;
+@synthesize spinnerAlert;
 
 -(IBAction) btnTranslatePressed:(id)sender
 {
@@ -44,13 +45,25 @@
 			[someError release];
 			return;
 		}
-		[self translateText:self.txtTextView.text];
-		if ([self.responseStatus isEqualToString:@"200"]) 
-		{
-			self.txtTranslatedText.text = self.translatedText;		
-		}
+		spinnerAlert=[[[UIAlertView alloc] initWithTitle:@"" message:@"Traduint" delegate:self cancelButtonTitle:nil otherButtonTitles:nil] autorelease];
+		[spinnerAlert show];
+		UIActivityIndicatorView *spinner=[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+		spinner.center=CGPointMake(spinnerAlert.bounds.size.width/2,spinnerAlert.bounds.size.height-50);
+		[spinner startAnimating];
+		[spinnerAlert addSubview:spinner];
+		[spinner release];
+		[self performSelector:@selector(translate) withObject:nil afterDelay:0.01];
 	}
 }
+-(void)translate {
+
+	[self translateText:self.txtTextView.text];
+	if ([self.responseStatus isEqualToString:@"200"]) 
+	{
+		self.txtTranslatedText.text = self.translatedText;		
+	}
+	[spinnerAlert dismissWithClickedButtonIndex:0 animated:YES];
+} 
 -(NSString*) getLanguageCodeByInt:(int)col
 {
 	NSString *code = [[NSString alloc] init];
@@ -99,7 +112,7 @@
 	[request setPostValue:self.language forKey:@"langpair"];
 	[request setPostValue:text forKey:@"q"];
 	[request setPostValue:@"yes" forKey:@"markUnknown"];
-	[request setPostValue:@"NmQ3NmMyNThmM2JjNWQxMjkxN2N" forKey:@"key"];
+	[request setPostValue:@"NWI0MjQwMzQzMDYxMzA2NDYzNjQ" forKey:@"key"];
 	[request startSynchronous];
 	NSError *error = [request error];
 	if (!error) {
@@ -199,7 +212,6 @@
 	self.btnTranslate.enabled = YES;
 	[self.btnLanguage setTitle: [self.languagesArray objectAtIndex:[pickerView selectedRowInComponent:0]] forState:UIControlStateNormal];
 	self.adViewController.view.hidden = NO;
-
 }
 -(IBAction)btnPickerCancelPressed:(id)sender
 {
