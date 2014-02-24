@@ -8,8 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+@class LanguageDirection;
+
 @interface HistoricalItem : NSObject
 
-- (id)initWithSourceText:(NSString *)source translationText:(NSString *)translation languageDirection:(NSString *)languageDirection isFavorite:(BOOL)favourite;
+@property(nonatomic, copy) NSString *source;
+@property(nonatomic, copy) NSString *translation;
+@property(nonatomic, strong) LanguageDirection *languageDirection;
+@property(nonatomic) BOOL favourite;
+
+- (id)initWithSourceText:(NSString *)source translationText:(NSString *)translation languageDirection:(LanguageDirection *)languageDirection isFavorite:(BOOL)favourite;
 
 @end

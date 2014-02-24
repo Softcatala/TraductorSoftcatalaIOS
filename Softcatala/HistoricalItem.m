@@ -7,6 +7,7 @@
 //
 
 #import "HistoricalItem.h"
+#import "LanguageDirection.h"
 
 @implementation HistoricalItem
 
@@ -16,11 +17,14 @@
     return nil;
 }
 
-- (id)initWithSourceText:(NSString *)source translationText:(NSString *)translation languageDirection:(NSString *)languageDirection isFavorite:(BOOL)favourite
+- (id)initWithSourceText:(NSString *)source translationText:(NSString *)translation languageDirection:(LanguageDirection *)languageDirection isFavorite:(BOOL)favourite
 {
     self = [super init];
     if (self) {
-                
+        _source = source;
+        _translation = translation;
+        _languageDirection = languageDirection;
+        _favourite = favourite;
     }
     return self;
 }

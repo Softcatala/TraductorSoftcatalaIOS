@@ -39,7 +39,7 @@
 		8D8773EA18BB4C50001AE36C /* tab_bar_preferits_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D8773CA18BB4C50001AE36C /* tab_bar_preferits_on@2x.png */; };
 		8D8773EB18BB4C50001AE36C /* tab_bar_traduir_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D8773CB18BB4C50001AE36C /* tab_bar_traduir_off@2x.png */; };
 		8D8773EC18BB4C50001AE36C /* tab_bar_traduir_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D8773CC18BB4C50001AE36C /* tab_bar_traduir_on@2x.png */; };
-		8D8773EE18BB500F001AE36C /* HistorialItemTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8773ED18BB500F001AE36C /* HistorialItemTest.m */; };
+		8D8773EE18BB500F001AE36C /* HistoricalItemTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8773ED18BB500F001AE36C /* HistoricalItemTest.m */; };
 		8D8773F218BB511A001AE36C /* HistoricalItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8773F118BB511A001AE36C /* HistoricalItem.m */; };
 		8D8773F818BB59B1001AE36C /* OCMockitoIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8773F718BB59B1001AE36C /* OCMockitoIOS.framework */; };
 		8D8773F918BB5A13001AE36C /* OCMockitoIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8773F718BB59B1001AE36C /* OCMockitoIOS.framework */; };
@@ -52,6 +52,7 @@
 		8DF4CD0018BB4B9800C10CF6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF4CCFF18BB4B9800C10CF6 /* XCTest.framework */; };
 		8DF4CD0118BB4B9800C10CF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF4CCE618BB4B9800C10CF6 /* Foundation.framework */; };
 		8DF4CD0218BB4B9800C10CF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF4CCEA18BB4B9800C10CF6 /* UIKit.framework */; };
+		BF8C7C858028906AF5BC1DC6 /* LanguageDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C7AFD5F6BDB12AB0BF848 /* LanguageDirection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,7 +98,7 @@
 		8D8773CA18BB4C50001AE36C /* tab_bar_preferits_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_bar_preferits_on@2x.png"; sourceTree = "<group>"; };
 		8D8773CB18BB4C50001AE36C /* tab_bar_traduir_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_bar_traduir_off@2x.png"; sourceTree = "<group>"; };
 		8D8773CC18BB4C50001AE36C /* tab_bar_traduir_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_bar_traduir_on@2x.png"; sourceTree = "<group>"; };
-		8D8773ED18BB500F001AE36C /* HistorialItemTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistorialItemTest.m; sourceTree = "<group>"; };
+		8D8773ED18BB500F001AE36C /* HistoricalItemTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoricalItemTest.m; sourceTree = "<group>"; };
 		8D8773F018BB511A001AE36C /* HistoricalItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoricalItem.h; sourceTree = "<group>"; };
 		8D8773F118BB511A001AE36C /* HistoricalItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoricalItem.m; sourceTree = "<group>"; };
 		8D8773F718BB59B1001AE36C /* OCMockitoIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCMockitoIOS.framework; sourceTree = "<group>"; };
@@ -114,6 +115,8 @@
 		8DF4CCFE18BB4B9800C10CF6 /* SoftcatalaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoftcatalaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DF4CCFF18BB4B9800C10CF6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8DF4CD0718BB4B9800C10CF6 /* SoftcatalaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoftcatalaTests-Info.plist"; sourceTree = "<group>"; };
+		BF8C7AF750D8BE3388EA7A47 /* LanguageDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageDirection.h; sourceTree = "<group>"; };
+		BF8C7AFD5F6BDB12AB0BF848 /* LanguageDirection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageDirection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +205,8 @@
 			children = (
 				8D8773F018BB511A001AE36C /* HistoricalItem.h */,
 				8D8773F118BB511A001AE36C /* HistoricalItem.m */,
+				BF8C7AFD5F6BDB12AB0BF848 /* LanguageDirection.m */,
+				BF8C7AF750D8BE3388EA7A47 /* LanguageDirection.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -264,7 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				8DF4CD0618BB4B9800C10CF6 /* Supporting Files */,
-				8D8773ED18BB500F001AE36C /* HistorialItemTest.m */,
+				8D8773ED18BB500F001AE36C /* HistoricalItemTest.m */,
 			);
 			path = SoftcatalaTests;
 			sourceTree = "<group>";
@@ -405,6 +410,7 @@
 				8D8773F218BB511A001AE36C /* HistoricalItem.m in Sources */,
 				8DF4CCF718BB4B9800C10CF6 /* AppDelegate.m in Sources */,
 				8DF4CCF318BB4B9800C10CF6 /* main.m in Sources */,
+				BF8C7C858028906AF5BC1DC6 /* LanguageDirection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,7 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D8773EE18BB500F001AE36C /* HistorialItemTest.m in Sources */,
+				8D8773EE18BB500F001AE36C /* HistoricalItemTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

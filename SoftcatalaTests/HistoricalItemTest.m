@@ -1,5 +1,5 @@
 //
-//  HistorialItemTest.m
+//  HistoricalItemTest.m
 //  Softcatala
 //
 //  Created by Marcos Grau on 24/02/14.
@@ -11,12 +11,13 @@
 
 #import <XCTest/XCTest.h>
 #import "HistoricalItem.h"
+#import "LanguageDirection.h"
 
-@interface HistorialItemTest : XCTestCase
+@interface HistoricalItemTest : XCTestCase
 
 @end
 
-@implementation HistorialItemTest
+@implementation HistoricalItemTest
 
 - (void)setUp
 {
@@ -38,11 +39,17 @@
 
 - (void)testCanCreateHistoricalItemWithCustomConstructor
 {
-    
-    HistoricalItem *historicalItem = [[HistoricalItem alloc] initWithSourceText:@"bon dia" translationText:@"buenos días" languageDirection:@"ca|es" isFavorite:YES];
+    LanguageDirection *languageDirection = mock([LanguageDirection class]);
+    HistoricalItem *historicalItem = [[HistoricalItem alloc] initWithSourceText:@"bon dia" translationText:@"buenos días" languageDirection:languageDirection isFavorite:YES];
     XCTAssertNotNil(historicalItem);
 }
 
+- (void)testCannotCreateHistoricalItemWithCustomConstructorWithNilArguments
+{
+    LanguageDirection *languageDirection = mock([LanguageDirection class]);
+    HistoricalItem *historicalItem = [[HistoricalItem alloc] initWithSourceText:nil translationText:@"buenos días" languageDirection:languageDirection isFavorite:YES];
+    XCTAssertNil(historicalItem);
+}
 
 
 @end
