@@ -1,5 +1,5 @@
 //
-//  HistorialItemTest.m
+//  HistoricalItemTest.m
 //  Softcatala
 //
 //  Created by Marcos Grau on 24/02/14.
@@ -12,11 +12,11 @@
 #import <XCTest/XCTest.h>
 #import "HistoricalItem.h"
 
-@interface HistorialItemTest : XCTestCase
+@interface HistoricalItemTest : XCTestCase
 
 @end
 
-@implementation HistorialItemTest
+@implementation HistoricalItemTest
 
 - (void)setUp
 {
