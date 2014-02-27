@@ -41,8 +41,6 @@
 		8D8773EC18BB4C50001AE36C /* tab_bar_traduir_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D8773CC18BB4C50001AE36C /* tab_bar_traduir_on@2x.png */; };
 		8D8773EE18BB500F001AE36C /* HistoricalItemTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8773ED18BB500F001AE36C /* HistoricalItemTest.m */; };
 		8D8773F218BB511A001AE36C /* HistoricalItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8773F118BB511A001AE36C /* HistoricalItem.m */; };
-		8D8773F818BB59B1001AE36C /* OCMockitoIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8773F718BB59B1001AE36C /* OCMockitoIOS.framework */; };
-		8D8773F918BB5A13001AE36C /* OCMockitoIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8773F718BB59B1001AE36C /* OCMockitoIOS.framework */; };
 		8DF4CCE718BB4B9800C10CF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF4CCE618BB4B9800C10CF6 /* Foundation.framework */; };
 		8DF4CCE918BB4B9800C10CF6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF4CCE818BB4B9800C10CF6 /* CoreGraphics.framework */; };
 		8DF4CCEB18BB4B9800C10CF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF4CCEA18BB4B9800C10CF6 /* UIKit.framework */; };
@@ -53,6 +51,7 @@
 		8DF4CD0118BB4B9800C10CF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF4CCE618BB4B9800C10CF6 /* Foundation.framework */; };
 		8DF4CD0218BB4B9800C10CF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF4CCEA18BB4B9800C10CF6 /* UIKit.framework */; };
 		BF8C7C858028906AF5BC1DC6 /* LanguageDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C7AFD5F6BDB12AB0BF848 /* LanguageDirection.m */; };
+		E2F4A6851EA14CDE86572DC9 /* libPods-SoftcatalaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F2B3CA872B34807A1BFF878 /* libPods-SoftcatalaTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F2B3CA872B34807A1BFF878 /* libPods-SoftcatalaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SoftcatalaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8773AC18BB4C50001AE36C /* boto_canvi_idioma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boto_canvi_idioma.png; sourceTree = "<group>"; };
 		8D8773AD18BB4C50001AE36C /* boto_selec_idioma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boto_selec_idioma.png; sourceTree = "<group>"; };
 		8D8773AE18BB4C50001AE36C /* boto_valencia_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boto_valencia_off.png; sourceTree = "<group>"; };
@@ -101,7 +101,6 @@
 		8D8773ED18BB500F001AE36C /* HistoricalItemTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoricalItemTest.m; sourceTree = "<group>"; };
 		8D8773F018BB511A001AE36C /* HistoricalItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoricalItem.h; sourceTree = "<group>"; };
 		8D8773F118BB511A001AE36C /* HistoricalItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoricalItem.m; sourceTree = "<group>"; };
-		8D8773F718BB59B1001AE36C /* OCMockitoIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCMockitoIOS.framework; sourceTree = "<group>"; };
 		8DF4CCE318BB4B9800C10CF6 /* Softcatala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Softcatala.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DF4CCE618BB4B9800C10CF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8DF4CCE818BB4B9800C10CF6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -115,6 +114,7 @@
 		8DF4CCFE18BB4B9800C10CF6 /* SoftcatalaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoftcatalaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DF4CCFF18BB4B9800C10CF6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8DF4CD0718BB4B9800C10CF6 /* SoftcatalaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoftcatalaTests-Info.plist"; sourceTree = "<group>"; };
+		9380CC9454DB48EAA73CB003 /* Pods-SoftcatalaTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoftcatalaTests.xcconfig"; path = "Pods/Pods-SoftcatalaTests.xcconfig"; sourceTree = "<group>"; };
 		BF8C7AF750D8BE3388EA7A47 /* LanguageDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageDirection.h; sourceTree = "<group>"; };
 		BF8C7AFD5F6BDB12AB0BF848 /* LanguageDirection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageDirection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,7 +125,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DF4CCE918BB4B9800C10CF6 /* CoreGraphics.framework in Frameworks */,
-				8D8773F818BB59B1001AE36C /* OCMockitoIOS.framework in Frameworks */,
 				8DF4CCEB18BB4B9800C10CF6 /* UIKit.framework in Frameworks */,
 				8DF4CCE718BB4B9800C10CF6 /* Foundation.framework in Frameworks */,
 			);
@@ -137,8 +136,8 @@
 			files = (
 				8DF4CD0018BB4B9800C10CF6 /* XCTest.framework in Frameworks */,
 				8DF4CD0218BB4B9800C10CF6 /* UIKit.framework in Frameworks */,
-				8D8773F918BB5A13001AE36C /* OCMockitoIOS.framework in Frameworks */,
 				8DF4CD0118BB4B9800C10CF6 /* Foundation.framework in Frameworks */,
+				E2F4A6851EA14CDE86572DC9 /* libPods-SoftcatalaTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +217,7 @@
 				8DF4CD0518BB4B9800C10CF6 /* SoftcatalaTests */,
 				8DF4CCE518BB4B9800C10CF6 /* Frameworks */,
 				8DF4CCE418BB4B9800C10CF6 /* Products */,
+				9380CC9454DB48EAA73CB003 /* Pods-SoftcatalaTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -233,11 +233,11 @@
 		8DF4CCE518BB4B9800C10CF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8D8773F718BB59B1001AE36C /* OCMockitoIOS.framework */,
 				8DF4CCE618BB4B9800C10CF6 /* Foundation.framework */,
 				8DF4CCE818BB4B9800C10CF6 /* CoreGraphics.framework */,
 				8DF4CCEA18BB4B9800C10CF6 /* UIKit.framework */,
 				8DF4CCFF18BB4B9800C10CF6 /* XCTest.framework */,
+				3F2B3CA872B34807A1BFF878 /* libPods-SoftcatalaTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -306,9 +306,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DF4CD1218BB4B9800C10CF6 /* Build configuration list for PBXNativeTarget "SoftcatalaTests" */;
 			buildPhases = (
+				ABBC4A1D49BF49A496BD0C29 /* Check Pods Manifest.lock */,
 				8DF4CCFA18BB4B9800C10CF6 /* Sources */,
 				8DF4CCFB18BB4B9800C10CF6 /* Frameworks */,
 				8DF4CCFC18BB4B9800C10CF6 /* Resources */,
+				55C478959F344378B39C9368 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -344,6 +346,8 @@
 			mainGroup = 8DF4CCDA18BB4B9800C10CF6;
 			productRefGroup = 8DF4CCE418BB4B9800C10CF6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+			);
 			projectRoot = "";
 			targets = (
 				8DF4CCE218BB4B9800C10CF6 /* Softcatala */,
@@ -401,6 +405,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55C478959F344378B39C9368 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-SoftcatalaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABBC4A1D49BF49A496BD0C29 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8DF4CCDF18BB4B9800C10CF6 /* Sources */ = {
@@ -543,6 +580,7 @@
 		};
 		8DF4CD1318BB4B9800C10CF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9380CC9454DB48EAA73CB003 /* Pods-SoftcatalaTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Softcatala.app/Softcatala";
@@ -550,7 +588,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(SOURCE_ROOT)",
+					"$(SOURCE_ROOT)/**",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Softcatala/Softcatala-Prefix.pch";
@@ -559,6 +597,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "SoftcatalaTests/SoftcatalaTests-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -567,6 +606,7 @@
 		};
 		8DF4CD1418BB4B9800C10CF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9380CC9454DB48EAA73CB003 /* Pods-SoftcatalaTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Softcatala.app/Softcatala";
@@ -574,11 +614,12 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(SOURCE_ROOT)",
+					"$(SOURCE_ROOT)/**",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Softcatala/Softcatala-Prefix.pch";
 				INFOPLIST_FILE = "SoftcatalaTests/SoftcatalaTests-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

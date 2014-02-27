@@ -21,10 +21,17 @@
 {
     self = [super init];
     if (self) {
+        if (source && translation && languageDirection)
+        {
         _source = source;
         _translation = translation;
         _languageDirection = languageDirection;
         _favourite = favourite;
+        }
+        else
+        {
+            return nil;
+        }
     }
     return self;
 }
