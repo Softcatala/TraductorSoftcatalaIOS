@@ -51,7 +51,9 @@
 		8DF4CD0218BB4B9800C10CF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF4CCEA18BB4B9800C10CF6 /* UIKit.framework */; };
 		BF8C72425A0F583B7456F33B /* Language.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C730033C8A6AEEF192415 /* Language.m */; };
 		BF8C75FAC0B500D289D69413 /* TranslationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C791C215A1381A3AD15A3 /* TranslationTest.m */; };
+		BF8C7989933963534C63A1EC /* TranslationArchiverTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C7C403B3EC51B037A907A /* TranslationArchiverTest.m */; };
 		BF8C7C858028906AF5BC1DC6 /* LanguageDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C7AFD5F6BDB12AB0BF848 /* LanguageDirection.m */; };
+		BF8C7C952F5AC3899B2FBD76 /* TranslationArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C74B135C8CFAB44352AB7 /* TranslationArchiver.m */; };
 		BF8C7F7CFC0FD50A01BC26B8 /* LanguageDirectionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C7342E9A2DDC6039A84B1 /* LanguageDirectionTest.m */; };
 		E2F4A6851EA14CDE86572DC9 /* libPods-SoftcatalaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F2B3CA872B34807A1BFF878 /* libPods-SoftcatalaTests.a */; };
 /* End PBXBuildFile section */
@@ -116,11 +118,14 @@
 		8DF4CCFF18BB4B9800C10CF6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8DF4CD0718BB4B9800C10CF6 /* SoftcatalaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoftcatalaTests-Info.plist"; sourceTree = "<group>"; };
 		9380CC9454DB48EAA73CB003 /* Pods-SoftcatalaTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoftcatalaTests.xcconfig"; path = "Pods/Pods-SoftcatalaTests.xcconfig"; sourceTree = "<group>"; };
+		BF8C7189D3D1798580A8191F /* TranslationArchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslationArchiver.h; sourceTree = "<group>"; };
 		BF8C730033C8A6AEEF192415 /* Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Language.m; sourceTree = "<group>"; };
 		BF8C7342E9A2DDC6039A84B1 /* LanguageDirectionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageDirectionTest.m; sourceTree = "<group>"; };
+		BF8C74B135C8CFAB44352AB7 /* TranslationArchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslationArchiver.m; sourceTree = "<group>"; };
 		BF8C791C215A1381A3AD15A3 /* TranslationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslationTest.m; sourceTree = "<group>"; };
 		BF8C7AF750D8BE3388EA7A47 /* LanguageDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageDirection.h; sourceTree = "<group>"; };
 		BF8C7AFD5F6BDB12AB0BF848 /* LanguageDirection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageDirection.m; sourceTree = "<group>"; };
+		BF8C7C403B3EC51B037A907A /* TranslationArchiverTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslationArchiverTest.m; sourceTree = "<group>"; };
 		BF8C7DEF1E0BDB69F89C4DDC /* Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Language.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -258,6 +263,7 @@
 				8DF4CCF618BB4B9800C10CF6 /* AppDelegate.m */,
 				8DF4CCF818BB4B9800C10CF6 /* Images.xcassets */,
 				8DF4CCED18BB4B9800C10CF6 /* Supporting Files */,
+				BF8C7D37FDBA3F33EFD80CB0 /* Service */,
 			);
 			path = Softcatala;
 			sourceTree = "<group>";
@@ -277,6 +283,7 @@
 			children = (
 				8DF4CD0618BB4B9800C10CF6 /* Supporting Files */,
 				BF8C7FA73031175B79CB4682 /* Model */,
+				BF8C70F74F4DAEED4F6693A9 /* Service */,
 			);
 			path = SoftcatalaTests;
 			sourceTree = "<group>";
@@ -287,6 +294,23 @@
 				8DF4CD0718BB4B9800C10CF6 /* SoftcatalaTests-Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF8C70F74F4DAEED4F6693A9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BF8C7C403B3EC51B037A907A /* TranslationArchiverTest.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BF8C7D37FDBA3F33EFD80CB0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BF8C74B135C8CFAB44352AB7 /* TranslationArchiver.m */,
+				BF8C7189D3D1798580A8191F /* TranslationArchiver.h */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		BF8C7FA73031175B79CB4682 /* Model */ = {
@@ -465,6 +489,7 @@
 				8DF4CCF318BB4B9800C10CF6 /* main.m in Sources */,
 				BF8C7C858028906AF5BC1DC6 /* LanguageDirection.m in Sources */,
 				BF8C72425A0F583B7456F33B /* Language.m in Sources */,
+				BF8C7C952F5AC3899B2FBD76 /* TranslationArchiver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +499,7 @@
 			files = (
 				BF8C75FAC0B500D289D69413 /* TranslationTest.m in Sources */,
 				BF8C7F7CFC0FD50A01BC26B8 /* LanguageDirectionTest.m in Sources */,
+				BF8C7989933963534C63A1EC /* TranslationArchiverTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
