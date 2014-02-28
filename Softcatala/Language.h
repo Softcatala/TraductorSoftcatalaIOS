@@ -9,7 +9,8 @@
 @interface Language : NSObject
 
 @property(nonatomic, copy) NSString *code;
+@property(nonatomic, copy) NSString *name;
 
-- (instancetype)initWithCode:(NSString *)code;
+- (instancetype)initWithCode:(NSString *)code andName:(NSString *)name;
 
 @end

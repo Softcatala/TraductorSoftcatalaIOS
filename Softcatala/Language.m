@@ -9,17 +9,14 @@
 @implementation Language {
 
 }
-- (instancetype)initWithCode:(NSString *)code {
+- (instancetype)initWithCode:(NSString *)code andName:(NSString *)name {
     self = [super init];
     if (self) {
-        self.code = code;
+        _code = code;
+        _name = name;
     }
 
     return self;
-}
-
-+ (instancetype)languageWithCode:(NSString *)code {
-    return [[self alloc] initWithCode:code];
 }
 
 @end

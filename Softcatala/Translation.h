@@ -19,4 +19,5 @@
 
 - (id)initWithSourceText:(NSString *)source translationText:(NSString *)translation languageDirection:(LanguageDirection *)languageDirection isFavorite:(BOOL)favourite;
 
+- (void)reverse;
 @end

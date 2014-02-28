@@ -51,5 +51,14 @@
     XCTAssertNil(translation);
 }
 
+- (void)testWhenReverseATranslationSourceAndDestinationMusteReverse
+{
+    LanguageDirection *languageDirection = mock([LanguageDirection class]);
+    Translation *translation = [[Translation alloc] initWithSourceText:@"bon dia" translationText:@"buenos días" languageDirection:languageDirection isFavorite:YES];
 
+    [translation reverse];
+
+    XCTAssertEqual(translation.source , @"buenos días");
+    XCTAssertEqual(translation.translation , @"bon dia");
+}
 @end

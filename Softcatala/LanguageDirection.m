@@ -34,8 +34,8 @@
 }
 
 - (void)reverse {
-    Language *sourceCopy = [[Language alloc] initWithCode:_sourceLanguage.code];
-    _sourceLanguage = [[Language alloc] initWithCode:_destinationLanguage.code];
+    Language *sourceCopy = [[Language alloc] initWithCode:_sourceLanguage.code andName:_sourceLanguage.name];
+    _sourceLanguage = [[Language alloc] initWithCode:_destinationLanguage.code andName:_destinationLanguage.name];
     _destinationLanguage = sourceCopy;
 }
 

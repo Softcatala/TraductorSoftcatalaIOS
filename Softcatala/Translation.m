@@ -35,4 +35,11 @@
     }
     return self;
 }
+
+- (void)reverse {
+    [_languageDirection reverse];
+    NSString *sourceCopy = [_source copy];
+    _source = _translation;
+    _translation = sourceCopy;
+}
 @end
