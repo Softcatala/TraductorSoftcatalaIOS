@@ -12,9 +12,10 @@
 
 @property(nonatomic, readonly) NSInteger numberOfTranslations;
 
-- (void)addTranslation:(Translation *)translation;
-
 - (NSArray *)translations;
 
+- (void)addTranslation:(Translation *)translation;
 - (void)removeTranslation:(Translation *)translation;
+- (void)updateTranslation:(Translation *)translation;
+
 @end

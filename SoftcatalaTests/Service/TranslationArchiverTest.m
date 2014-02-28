@@ -71,6 +71,26 @@
 
 }
 
+- (void)testCannotSaveTwoEqualObjects
+{
+    [self removeArchive];
+    
+    TranslationArchiver *archiver = [[TranslationArchiver alloc] init];
+    [archiver addTranslation:translation];
+
+    NSInteger translationsCount = archiver.numberOfTranslations;
+    XCTAssertEqual(translationsCount, 1);
+    
+    LanguageDirection *langDirection = [[LanguageDirection alloc] initWithSourceLanguage:cat andDestinationLanguage:es];
+    Translation *newTranslation = [[Translation alloc] initWithSourceText:@"bon dia" translationText:@"buenos días" languageDirection:langDirection isFavorite:YES];
+
+    [archiver addTranslation:newTranslation];
+    
+    translationsCount = archiver.numberOfTranslations;
+    XCTAssertEqual(translationsCount, 1);
+    
+}
+
 - (void)testCanRemoveATranslationFromArchiver
 {
     [self removeArchive];
@@ -88,7 +108,23 @@
 
 - (void)testCanUpdateTranslationFromArchiver
 {
-
+    [self removeArchive];
+    TranslationArchiver *archiver = [[TranslationArchiver alloc] init];
+    
+    [archiver addTranslation:translation];
+    XCTAssertEqual(archiver.numberOfTranslations, 1);
+    
+    Translation *savedTranslation = [archiver.translations firstObject];
+    XCTAssertTrue(savedTranslation.favourite);
+    
+    savedTranslation.favourite = NO;
+    [archiver updateTranslation:translation];
+    
+    archiver = nil;
+    archiver = [[TranslationArchiver alloc] init];
+    Translation *updatedTranslation = [archiver.translations firstObject];
+    XCTAssertFalse(updatedTranslation.favourite);
+    
 }
 
 - (void)removeArchive

@@ -5,6 +5,8 @@
 
 #import "TranslationArchiver.h"
 #import "Translation.h"
+#import "LanguageDirection.h"
+#import "Language.h"
 
 @interface TranslationArchiver()
 
@@ -31,10 +33,11 @@
     return self;
 }
 - (void)addTranslation:(Translation *)translation {
-
-    [_translations addObject:translation];
-    [self save];
-
+    if ([self objectExists:translation] == NO)
+    {
+        [_translations addObject:translation];
+        [self save];
+    }
 }
 
 - (NSInteger)numberOfTranslations {
@@ -50,7 +53,49 @@
     return _translations;
 }
 
+- (void)updateTranslation:(Translation *)translation
+{
+    Translation *foundTranslation = [self findEqualTranslation:translation];
+    if (foundTranslation != nil)
+    {
+        NSInteger indexFoundObject = [_translations indexOfObject:foundTranslation];
+        [_translations replaceObjectAtIndex:indexFoundObject withObject:translation];
+        [self save];
+    }
+}
+
 #pragma mark Private methods
+
+- (BOOL)objectExists:(Translation *)translation
+{
+    BOOL objectFound = YES;
+    if ([self findEqualTranslation:translation] == nil) {
+        objectFound = NO;
+    }
+    return objectFound;
+}
+
+- (Translation *)findEqualTranslation:(Translation *)translation
+{
+    NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
+        Translation *currentTranslation = (Translation *)evaluatedObject;
+        BOOL equalSource = [currentTranslation.source isEqualToString:translation.source];
+        BOOL equalTranslation = [currentTranslation.translation isEqualToString:translation.translation];
+        BOOL equalLanguageDirectionSourceCode = [currentTranslation.languageDirection.sourceLanguage.code isEqualToString:translation.languageDirection.sourceLanguage.code];
+        BOOL equalLanguageDirectionDestinationCode = [currentTranslation.languageDirection.destinationLanguage.code isEqualToString:translation.languageDirection.destinationLanguage.code];
+        if (equalSource && equalTranslation && equalLanguageDirectionSourceCode && equalLanguageDirectionDestinationCode)
+        {
+            return YES;
+        }
+        return NO;
+    }];
+    Translation *foundTranslation = nil;
+    NSArray *filteredArray = [_translations filteredArrayUsingPredicate:predicate];
+    if (filteredArray && [filteredArray count] > 0) {
+        foundTranslation = [filteredArray firstObject];
+    }
+    return foundTranslation;
+}
 
 - (void)load
 {
