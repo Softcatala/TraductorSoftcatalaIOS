@@ -54,11 +54,12 @@
 
 - (void)load
 {
+    _translations = [NSKeyedUnarchiver unarchiveObjectWithFile:_filePath];
+
     if (!_translations) {
         _translations = [[NSMutableArray alloc] init];
     }
 
-    _translations = [NSKeyedUnarchiver unarchiveObjectWithFile:_filePath];
 }
 
 - (void)save

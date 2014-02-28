@@ -19,11 +19,21 @@
 @end
 
 @implementation TranslationArchiverTest
+{
+    Language *cat;
+    Language *es;
+    LanguageDirection *languageDirection;
+    Translation *translation;
 
+}
 - (void)setUp
 {
     [super setUp];
     // Put setup code here; it will be run once, before the first test case.
+    cat = [[Language alloc] initWithCode:@"cat" andName:@"català"];
+    es = [[Language alloc] initWithCode:@"es" andName:@"castellà"];
+    languageDirection = [[LanguageDirection alloc] initWithSourceLanguage:cat andDestinationLanguage:es];
+    translation = [[Translation alloc] initWithSourceText:@"bon dia" translationText:@"buenos días" languageDirection:languageDirection isFavorite:YES];
 }
 
 - (void)tearDown
@@ -43,16 +53,9 @@
 
 - (void)testCanSaveATranslationInArchiver
 {
-    Language *cat = [[Language alloc] initWithCode:@"cat" andName:@"català"];
-    Language *es = [[Language alloc] initWithCode:@"es" andName:@"castellà"];
-    LanguageDirection *languageDirection = [[LanguageDirection alloc] initWithSourceLanguage:cat andDestinationLanguage:es];
-    Translation *translation = [[Translation alloc] initWithSourceText:@"bon dia" translationText:@"buenos días" languageDirection:languageDirection isFavorite:YES];
-
-
-    [translation setLanguageDirection:mock([LanguageDirection class])];
+    [self removeArchive];
 
     TranslationArchiver *archiver = [[TranslationArchiver alloc] init];
-
     [archiver addTranslation:translation];
     
     NSInteger translationsCount = archiver.numberOfTranslations;
@@ -70,19 +73,30 @@
 
 - (void)testCanRemoveATranslationFromArchiver
 {
-    Translation *translation = mock([Translation class]);
+    [self removeArchive];
+
+    Translation *translationRemove = mock([Translation class]);
     TranslationArchiver *archiver = [[TranslationArchiver alloc] init];
 
-    [archiver addTranslation:translation];
+    [archiver addTranslation:translationRemove];
     XCTAssertEqual(archiver.numberOfTranslations, 1);
 
-    [archiver removeTranslation:translation];
+    [archiver removeTranslation:translationRemove];
     XCTAssertEqual(archiver.numberOfTranslations, 0);
 
 }
 
 - (void)testCanUpdateTranslationFromArchiver
 {
+
+}
+
+- (void)removeArchive
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *fileApp = [documentsDirectory stringByAppendingPathComponent:@"translations.db"];
+    [[NSFileManager defaultManager] removeItemAtPath:fileApp error:nil];
 
 }
 @end
