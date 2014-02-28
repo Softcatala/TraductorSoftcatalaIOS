@@ -1,15 +1,15 @@
 //
-//  HistoricalItem.m
+//  Translation.m
 //  Softcatala
 //
 //  Created by Marcos Grau on 24/02/14.
 //  Copyright (c) 2014 Marcos Grau. All rights reserved.
 //
 
-#import "HistoricalItem.h"
+#import "Translation.h"
 #import "LanguageDirection.h"
 
-@implementation HistoricalItem
+@implementation Translation
 
 
 - (id)init

@@ -1,5 +1,5 @@
 //
-//  HistoricalItemTest.m
+//  TranslationTest.m
 //  Softcatala
 //
 //  Created by Marcos Grau on 24/02/14.
@@ -10,14 +10,14 @@
 #import <OCMockitoIOS/OCMockitoIOS.h>
 
 #import <XCTest/XCTest.h>
-#import "HistoricalItem.h"
+#import "Translation.h"
 #import "LanguageDirection.h"
 
-@interface HistoricalItemTest : XCTestCase
+@interface TranslationTest : XCTestCase
 
 @end
 
-@implementation HistoricalItemTest
+@implementation TranslationTest
 
 - (void)setUp
 {
@@ -33,22 +33,22 @@
 
 - (void)testCannotCreateHistoricalItemWithDefaultConstructor
 {
-    HistoricalItem *historicalItem = [[HistoricalItem alloc] init];
-    XCTAssertNil(historicalItem);
+    Translation *translation = [[Translation alloc] init];
+    XCTAssertNil(translation);
 }
 
 - (void)testCanCreateHistoricalItemWithCustomConstructor
 {
     LanguageDirection *languageDirection = mock([LanguageDirection class]);
-    HistoricalItem *historicalItem = [[HistoricalItem alloc] initWithSourceText:@"bon dia" translationText:@"buenos días" languageDirection:languageDirection isFavorite:YES];
-    XCTAssertNotNil(historicalItem);
+    Translation *translation = [[Translation alloc] initWithSourceText:@"bon dia" translationText:@"buenos días" languageDirection:languageDirection isFavorite:YES];
+    XCTAssertNotNil(translation);
 }
 
 - (void)testCannotCreateHistoricalItemWithCustomConstructorWithNilArguments
 {
     LanguageDirection *languageDirection = mock([LanguageDirection class]);
-    HistoricalItem *historicalItem = [[HistoricalItem alloc] initWithSourceText:nil translationText:@"buenos días" languageDirection:languageDirection isFavorite:YES];
-    XCTAssertNil(historicalItem);
+    Translation *translation = [[Translation alloc] initWithSourceText:nil translationText:@"buenos días" languageDirection:languageDirection isFavorite:YES];
+    XCTAssertNil(translation);
 }
 
 

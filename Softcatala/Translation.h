@@ -1,5 +1,5 @@
 //
-//  HistoricalItem.h
+//  Translation.h
 //  Softcatala
 //
 //  Created by Marcos Grau on 24/02/14.
@@ -10,7 +10,7 @@
 
 @class LanguageDirection;
 
-@interface HistoricalItem : NSObject
+@interface Translation : NSObject
 
 @property(nonatomic, copy) NSString *source;
 @property(nonatomic, copy) NSString *translation;

@@ -5,6 +5,16 @@
 
 #import <Foundation/Foundation.h>
 
+@class Language;
 
-@interface LanguageDirection : NSObject
+@interface LanguageDirection : NSObject {
+
+}
+
+@property(nonatomic, strong) Language *destinationLanguage;
+@property(nonatomic, strong) Language *sourceLanguage;
+
+- (id)initWithSourceLanguage:(Language *)sourceLanguage andDestinationLanguage:(Language *)destinationLanguage;
+
+- (void)reverse;
 @end
