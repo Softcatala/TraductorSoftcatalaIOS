@@ -8,7 +8,8 @@
 
 @interface TranslationArchiver()
 
-    @property(nonatomic, strong) NSMutableArray *translations;
+@property (nonatomic, strong) NSMutableArray *translations;
+@property (nonatomic, copy) NSString *filePath;
 
 @end
 
@@ -21,7 +22,10 @@
 
     if (self)
     {
-        _translations = [[NSMutableArray alloc] init];
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *documentsDirectory = [paths objectAtIndex:0];
+        _filePath = [documentsDirectory stringByAppendingPathComponent:@"translations.db"];
+        [self load];
     }
 
     return self;
@@ -29,6 +33,7 @@
 - (void)addTranslation:(Translation *)translation {
 
     [_translations addObject:translation];
+    [self save];
 
 }
 
@@ -38,5 +43,26 @@
 
 - (void)removeTranslation:(Translation *)translation {
     [_translations removeObject:translation];
+    [self save];
+}
+
+- (NSArray *)translations {
+    return _translations;
+}
+
+#pragma mark Private methods
+
+- (void)load
+{
+    if (!_translations) {
+        _translations = [[NSMutableArray alloc] init];
+    }
+
+    _translations = [NSKeyedUnarchiver unarchiveObjectWithFile:_filePath];
+}
+
+- (void)save
+{
+    [NSKeyedArchiver archiveRootObject:_translations toFile:_filePath];
 }
 @end

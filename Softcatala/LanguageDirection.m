@@ -39,4 +39,20 @@
     _destinationLanguage = sourceCopy;
 }
 
+- (void)encodeWithCoder:(NSCoder *)encoder
+{
+    [encoder encodeObject:_sourceLanguage forKey:@"sourceLanguage"];
+    [encoder encodeObject:_destinationLanguage forKey:@"destinationLanguage"];
+}
+
+- (id)initWithCoder:(NSCoder * )coder
+{
+    if (self = [super init])
+    {
+        _sourceLanguage = [coder decodeObjectForKey:@"sourceLanguage"];
+        _destinationLanguage = [coder decodeObjectForKey:@"destinationLanguage"];
+    }
+    return self;
+}
+
 @end

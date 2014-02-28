@@ -11,6 +11,8 @@
 #import <XCTest/XCTest.h>
 #import "TranslationArchiver.h"
 #import "Translation.h"
+#import "LanguageDirection.h"
+#import "Language.h"
 
 @interface TranslationArchiverTest : XCTestCase
 
@@ -41,7 +43,14 @@
 
 - (void)testCanSaveATranslationInArchiver
 {
-    Translation *translation = mock([Translation class]);
+    Language *cat = [[Language alloc] initWithCode:@"cat" andName:@"català"];
+    Language *es = [[Language alloc] initWithCode:@"es" andName:@"castellà"];
+    LanguageDirection *languageDirection = [[LanguageDirection alloc] initWithSourceLanguage:cat andDestinationLanguage:es];
+    Translation *translation = [[Translation alloc] initWithSourceText:@"bon dia" translationText:@"buenos días" languageDirection:languageDirection isFavorite:YES];
+
+
+    [translation setLanguageDirection:mock([LanguageDirection class])];
+
     TranslationArchiver *archiver = [[TranslationArchiver alloc] init];
 
     [archiver addTranslation:translation];
@@ -49,7 +58,14 @@
     NSInteger translationsCount = archiver.numberOfTranslations;
 
     XCTAssertEqual(translationsCount, 1);
-    
+
+    archiver = nil;
+    archiver = [[TranslationArchiver alloc] init];
+
+    translationsCount = archiver.numberOfTranslations;
+
+    XCTAssertEqual(translationsCount, 1);
+
 }
 
 - (void)testCanRemoveATranslationFromArchiver
@@ -65,4 +81,8 @@
 
 }
 
+- (void)testCanUpdateTranslationFromArchiver
+{
+
+}
 @end
