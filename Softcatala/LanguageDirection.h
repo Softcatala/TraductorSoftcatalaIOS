@@ -13,6 +13,7 @@
 
 @property(nonatomic, strong) Language *destinationLanguage;
 @property(nonatomic, strong) Language *sourceLanguage;
+@property(nonatomic) BOOL visible;
 
 - (id)initWithSourceLanguage:(Language *)sourceLanguage andDestinationLanguage:(Language *)destinationLanguage;
 

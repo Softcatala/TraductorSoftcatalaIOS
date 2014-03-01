@@ -11,6 +11,7 @@
 {
 
     Language *_sourceLanguage;
+    BOOL _visible;
 }
 
 - (id)init
@@ -29,6 +30,7 @@
     {
         _sourceLanguage = sourceLanguage;
         _destinationLanguage = destinationLanguage;
+        _visible = YES;
     }
     return self;
 }
