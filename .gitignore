@@ -20,4 +20,4 @@ DerivedData
 *.xccheckout
 
 # CocoaPods
-Pods
+Pods/
