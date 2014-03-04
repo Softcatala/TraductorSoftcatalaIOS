@@ -7,4 +7,6 @@
 
 
 @interface TranslationRequest : NSObject
+
+- (void)postRequestWithText:(NSString *)string andTextDirection:(NSString *)direction success:(void (^)(NSString *))success failure:(void (^)(NSError *))failure;
 @end

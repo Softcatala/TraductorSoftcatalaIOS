@@ -1,12 +1,19 @@
 PODS:
+  - Nocilla (0.8.1)
   - OCHamcrest (3.0.1)
   - OCMockito (1.1.0):
     - OCHamcrest (~> 3.0)
 
 DEPENDENCIES:
+  - Nocilla (from `https://raw.github.com/luisobo/Nocilla/master/Nocilla.podspec`)
   - OCMockito (~> 1.0)
 
+EXTERNAL SOURCES:
+  Nocilla:
+    :podspec: https://raw.github.com/luisobo/Nocilla/master/Nocilla.podspec
+
 SPEC CHECKSUMS:
+  Nocilla: 0c8075046df476b1bc6482caa7f6a69db1a9b277
   OCHamcrest: 782c52ae8c673e5d6060a65005cfd26d20d519ba
   OCMockito: 317fa0cf75c9b0d73d2be335789c556537be7fd2
 
