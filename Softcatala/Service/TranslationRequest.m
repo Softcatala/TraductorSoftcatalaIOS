@@ -52,10 +52,15 @@
             NSDictionary *jsonResponse = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
             NSDictionary *responseData = jsonResponse[@"responseData"];
             if (responseData != nil) {
-                NSString *translatedText = responseData[@"translatedText"];
-                success(translatedText);
+                if (jsonResponse[@"responseStatus"] != nil && [jsonResponse[@"responseStatus"] intValue] != 200)
+                {
+                    failure([self httpError:jsonResponse]);
+                } else {
+                    NSString *translatedText = responseData[@"translatedText"];
+                    success(translatedText);
+                }
             } else {
-                failure(nil);
+                failure([self httpError:jsonResponse]);
             }
         }
     }];
@@ -64,4 +69,14 @@
 
 
 }
+
+- (NSError *)httpError:(NSDictionary *)response
+{
+    NSMutableDictionary *errorDetails = [[NSMutableDictionary alloc] init];
+    [errorDetails setValue:NSLocalizedString(@"ResponseGeneralError", nil) forKey:NSLocalizedDescriptionKey];
+    NSInteger errorCode = response != nil ? [response[@"responseStatus"] intValue] : 500;
+    NSError *error = [[NSError alloc] initWithDomain:@"Softcatala" code:errorCode userInfo:errorDetails];
+    return error;
+}
+
 @end
