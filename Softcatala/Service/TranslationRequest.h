@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface TranslationRequest : NSObject
+@interface TranslationRequest : NSObject <NSURLSessionDelegate>
 
 - (void)postRequestWithText:(NSString *)string andTextDirection:(NSString *)direction success:(void (^)(NSString *))success failure:(void (^)(NSError *))failure;
 @end

@@ -319,12 +319,12 @@
 		BF8C7D37FDBA3F33EFD80CB0 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				BF8C74B135C8CFAB44352AB7 /* TranslationArchiver.m */,
 				BF8C7189D3D1798580A8191F /* TranslationArchiver.h */,
+				BF8C74B135C8CFAB44352AB7 /* TranslationArchiver.m */,
 				BF8C78F4467304AC5A1A1AF5 /* TranslationDirectionLoader.h */,
 				BF8C74AB749F8179A5098894 /* TranslationDirectionLoader.m */,
-				BF8C71FB4B0E2FBC6719DA9A /* TranslationRequest.m */,
 				BF8C725637686FC2F1A243DC /* TranslationRequest.h */,
+				BF8C71FB4B0E2FBC6719DA9A /* TranslationRequest.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
