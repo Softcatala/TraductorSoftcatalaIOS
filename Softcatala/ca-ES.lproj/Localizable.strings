@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  Softcatala
+
+  Created by marcos on 04/03/14.
+  Copyright (c) 2014 Marcos Grau. All rights reserved.
+*/
+"es" = "Castellà";
+"ca" = "Català";
+"pt" = "Portuguès";
+"fr" = "Francès";
+"en" = "Anglès";
+"va" = "Formes valencianes";
+
+"ResponseGeneralError" = "S'ha produït un error";
+

@@ -40,6 +40,7 @@
 		8D8773EB18BB4C50001AE36C /* tab_bar_traduir_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D8773CB18BB4C50001AE36C /* tab_bar_traduir_off@2x.png */; };
 		8D8773EC18BB4C50001AE36C /* tab_bar_traduir_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D8773CC18BB4C50001AE36C /* tab_bar_traduir_on@2x.png */; };
 		8D8773F218BB511A001AE36C /* Translation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8773F118BB511A001AE36C /* Translation.m */; };
+		8DDD54A118C6823B00E748F3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DDD54A318C6823B00E748F3 /* Localizable.strings */; };
 		8DF4CCE718BB4B9800C10CF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF4CCE618BB4B9800C10CF6 /* Foundation.framework */; };
 		8DF4CCE918BB4B9800C10CF6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF4CCE818BB4B9800C10CF6 /* CoreGraphics.framework */; };
 		8DF4CCEB18BB4B9800C10CF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF4CCEA18BB4B9800C10CF6 /* UIKit.framework */; };
@@ -108,6 +109,8 @@
 		8D8773CC18BB4C50001AE36C /* tab_bar_traduir_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_bar_traduir_on@2x.png"; sourceTree = "<group>"; };
 		8D8773F018BB511A001AE36C /* Translation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Translation.h; sourceTree = "<group>"; };
 		8D8773F118BB511A001AE36C /* Translation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Translation.m; sourceTree = "<group>"; };
+		8DDD54A418C6826000E748F3 /* ca-ES */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ca-ES"; path = "ca-ES.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		8DDD54A518C682AB00E748F3 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8DF4CCE318BB4B9800C10CF6 /* Softcatala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Softcatala.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DF4CCE618BB4B9800C10CF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8DF4CCE818BB4B9800C10CF6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -284,6 +287,7 @@
 				8DF4CCEE18BB4B9800C10CF6 /* Softcatala-Info.plist */,
 				8DF4CCF218BB4B9800C10CF6 /* main.m */,
 				8DF4CCF418BB4B9800C10CF6 /* Softcatala-Prefix.pch */,
+				8DDD54A318C6823B00E748F3 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -398,6 +402,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"ca-ES",
+				es,
 			);
 			mainGroup = 8DF4CCDA18BB4B9800C10CF6;
 			productRefGroup = 8DF4CCE418BB4B9800C10CF6 /* Products */;
@@ -432,6 +438,7 @@
 				8D8773DC18BB4C50001AE36C /* tab_bar_traduir_on.png in Resources */,
 				8D8773E818BB4C50001AE36C /* tab_bar_historic_on@2x.png in Resources */,
 				8D8773D518BB4C50001AE36C /* preferits_clar_on.png in Resources */,
+				8DDD54A118C6823B00E748F3 /* Localizable.strings in Resources */,
 				8D8773E518BB4C50001AE36C /* preferits_clar_on@2x.png in Resources */,
 				8D8773EA18BB4C50001AE36C /* tab_bar_preferits_on@2x.png in Resources */,
 				8D8773EB18BB4C50001AE36C /* tab_bar_traduir_off@2x.png in Resources */,
@@ -530,6 +537,18 @@
 			targetProxy = 8DF4CD0318BB4B9800C10CF6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8DDD54A318C6823B00E748F3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DDD54A418C6826000E748F3 /* ca-ES */,
+				8DDD54A518C682AB00E748F3 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8DF4CD0D18BB4B9800C10CF6 /* Debug */ = {
