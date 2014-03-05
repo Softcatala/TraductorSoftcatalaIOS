@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D73042918C7D3AB001D76F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D73042818C7D3AB001D76F7 /* Main.storyboard */; };
 		8D8773CD18BB4C50001AE36C /* boto_canvi_idioma.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D8773AC18BB4C50001AE36C /* boto_canvi_idioma.png */; };
 		8D8773CE18BB4C50001AE36C /* boto_selec_idioma.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D8773AD18BB4C50001AE36C /* boto_selec_idioma.png */; };
 		8D8773CF18BB4C50001AE36C /* boto_valencia_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D8773AE18BB4C50001AE36C /* boto_valencia_off.png */; };
@@ -57,6 +58,7 @@
 		BF8C7678E0845B9E80459A75 /* TranslationDirectionLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C74AB749F8179A5098894 /* TranslationDirectionLoader.m */; };
 		BF8C78A9B947307DCC1FB67D /* TranslationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C71FB4B0E2FBC6719DA9A /* TranslationRequest.m */; };
 		BF8C7989933963534C63A1EC /* TranslationArchiverTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C7C403B3EC51B037A907A /* TranslationArchiverTest.m */; };
+		BF8C7C1642E979AD366D7EF7 /* TranslationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C7ED818D94B00CCD356A0 /* TranslationViewController.m */; };
 		BF8C7C858028906AF5BC1DC6 /* LanguageDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C7AFD5F6BDB12AB0BF848 /* LanguageDirection.m */; };
 		BF8C7C952F5AC3899B2FBD76 /* TranslationArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C74B135C8CFAB44352AB7 /* TranslationArchiver.m */; };
 		BF8C7F7CFC0FD50A01BC26B8 /* LanguageDirectionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C7342E9A2DDC6039A84B1 /* LanguageDirectionTest.m */; };
@@ -75,6 +77,7 @@
 
 /* Begin PBXFileReference section */
 		3F2B3CA872B34807A1BFF878 /* libPods-SoftcatalaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SoftcatalaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D73042818C7D3AB001D76F7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8D8773AC18BB4C50001AE36C /* boto_canvi_idioma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boto_canvi_idioma.png; sourceTree = "<group>"; };
 		8D8773AD18BB4C50001AE36C /* boto_selec_idioma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boto_selec_idioma.png; sourceTree = "<group>"; };
 		8D8773AE18BB4C50001AE36C /* boto_valencia_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boto_valencia_off.png; sourceTree = "<group>"; };
@@ -134,12 +137,14 @@
 		BF8C74B135C8CFAB44352AB7 /* TranslationArchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslationArchiver.m; sourceTree = "<group>"; };
 		BF8C78F4467304AC5A1A1AF5 /* TranslationDirectionLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslationDirectionLoader.h; sourceTree = "<group>"; };
 		BF8C791C215A1381A3AD15A3 /* TranslationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslationTest.m; sourceTree = "<group>"; };
+		BF8C7A1839F9EFAD0382A5D0 /* TranslationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslationViewController.h; sourceTree = "<group>"; };
 		BF8C7AF750D8BE3388EA7A47 /* LanguageDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageDirection.h; sourceTree = "<group>"; };
 		BF8C7AFD5F6BDB12AB0BF848 /* LanguageDirection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageDirection.m; sourceTree = "<group>"; };
 		BF8C7B20FF6729C9CF5E682F /* TranslationServerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslationServerTest.m; sourceTree = "<group>"; };
 		BF8C7C403B3EC51B037A907A /* TranslationArchiverTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslationArchiverTest.m; sourceTree = "<group>"; };
 		BF8C7D8712183B116E6760CA /* TranslationDirectionsLoaderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslationDirectionsLoaderTest.m; sourceTree = "<group>"; };
 		BF8C7DEF1E0BDB69F89C4DDC /* Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Language.h; sourceTree = "<group>"; };
+		BF8C7ED818D94B00CCD356A0 /* TranslationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +282,8 @@
 				8DF4CCF818BB4B9800C10CF6 /* Images.xcassets */,
 				8DF4CCED18BB4B9800C10CF6 /* Supporting Files */,
 				BF8C7D37FDBA3F33EFD80CB0 /* Service */,
+				8D73042818C7D3AB001D76F7 /* Main.storyboard */,
+				BF8C760E3F3F7D9214848E97 /* ViewControllers */,
 			);
 			path = Softcatala;
 			sourceTree = "<group>";
@@ -318,6 +325,15 @@
 				BF8C7B20FF6729C9CF5E682F /* TranslationServerTest.m */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		BF8C760E3F3F7D9214848E97 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF8C7A1839F9EFAD0382A5D0 /* TranslationViewController.h */,
+				BF8C7ED818D94B00CCD356A0 /* TranslationViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		BF8C7D37FDBA3F33EFD80CB0 /* Service */ = {
@@ -433,6 +449,7 @@
 				8D8773E118BB4C50001AE36C /* compartir@2x.png in Resources */,
 				8D8773DA18BB4C50001AE36C /* tab_bar_preferits_on.png in Resources */,
 				8D8773D218BB4C50001AE36C /* fletxa_llistats.png in Resources */,
+				8D73042918C7D3AB001D76F7 /* Main.storyboard in Resources */,
 				8D8773DB18BB4C50001AE36C /* tab_bar_traduir_off.png in Resources */,
 				8D8773E918BB4C50001AE36C /* tab_bar_preferits_off@2x.png in Resources */,
 				8D8773DC18BB4C50001AE36C /* tab_bar_traduir_on.png in Resources */,
@@ -513,6 +530,7 @@
 				BF8C7C952F5AC3899B2FBD76 /* TranslationArchiver.m in Sources */,
 				BF8C7678E0845B9E80459A75 /* TranslationDirectionLoader.m in Sources */,
 				BF8C78A9B947307DCC1FB67D /* TranslationRequest.m in Sources */,
+				BF8C7C1642E979AD366D7EF7 /* TranslationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,7 +653,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Softcatala/Softcatala-Prefix.pch";
 				INFOPLIST_FILE = "Softcatala/Softcatala-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -652,7 +672,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Softcatala/Softcatala-Prefix.pch";
 				INFOPLIST_FILE = "Softcatala/Softcatala-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
