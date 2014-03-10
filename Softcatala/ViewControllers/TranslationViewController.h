@@ -8,6 +8,10 @@
 
 
 
+@class GarbageTextView;
+
 @interface TranslationViewController : UIViewController
+
+@property (strong, nonatomic) IBOutlet GarbageTextView *sourceText;
 
 @end

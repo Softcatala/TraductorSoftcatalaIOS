@@ -35,7 +35,7 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" text="Introdueix text a traduir..." translatesAutoresizingMaskIntoConstraints="NO" id="4yI-u8-WaR">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" text="Introdueix text a traduir..." translatesAutoresizingMaskIntoConstraints="NO" id="4yI-u8-WaR" customClass="GarbageTextView">
                                         <rect key="frame" x="8" y="8" width="304" height="132"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" red="0.71764705882352942" green="0.71372549019607845" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
@@ -116,6 +116,9 @@
                     <tabBarItem key="tabBarItem" title="Item 1" id="sqX-5T-TQO"/>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="sourceText" destination="4yI-u8-WaR" id="9M9-GP-bMu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1hf-kd-dSO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

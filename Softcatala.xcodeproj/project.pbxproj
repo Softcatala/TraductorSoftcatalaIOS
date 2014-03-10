@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D034E7318CD169800E856D8 /* GarbageTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D034E7218CD169800E856D8 /* GarbageTextView.m */; };
 		8D73042918C7D3AB001D76F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D73042818C7D3AB001D76F7 /* Main.storyboard */; };
 		8D8773CD18BB4C50001AE36C /* boto_canvi_idioma.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D8773AC18BB4C50001AE36C /* boto_canvi_idioma.png */; };
 		8D8773CE18BB4C50001AE36C /* boto_selec_idioma.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D8773AD18BB4C50001AE36C /* boto_selec_idioma.png */; };
@@ -77,6 +78,8 @@
 
 /* Begin PBXFileReference section */
 		3F2B3CA872B34807A1BFF878 /* libPods-SoftcatalaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SoftcatalaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D034E7118CD169800E856D8 /* GarbageTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GarbageTextView.h; sourceTree = "<group>"; };
+		8D034E7218CD169800E856D8 /* GarbageTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GarbageTextView.m; sourceTree = "<group>"; };
 		8D73042818C7D3AB001D76F7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8D8773AC18BB4C50001AE36C /* boto_canvi_idioma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boto_canvi_idioma.png; sourceTree = "<group>"; };
 		8D8773AD18BB4C50001AE36C /* boto_selec_idioma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boto_selec_idioma.png; sourceTree = "<group>"; };
@@ -284,6 +287,7 @@
 				BF8C7D37FDBA3F33EFD80CB0 /* Service */,
 				8D73042818C7D3AB001D76F7 /* Main.storyboard */,
 				BF8C760E3F3F7D9214848E97 /* ViewControllers */,
+				BF8C7861BF4B893236C589A1 /* Controls */,
 			);
 			path = Softcatala;
 			sourceTree = "<group>";
@@ -334,6 +338,15 @@
 				BF8C7ED818D94B00CCD356A0 /* TranslationViewController.m */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BF8C7861BF4B893236C589A1 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				8D034E7118CD169800E856D8 /* GarbageTextView.h */,
+				8D034E7218CD169800E856D8 /* GarbageTextView.m */,
+			);
+			path = Controls;
 			sourceTree = "<group>";
 		};
 		BF8C7D37FDBA3F33EFD80CB0 /* Service */ = {
@@ -525,6 +538,7 @@
 				8D8773F218BB511A001AE36C /* Translation.m in Sources */,
 				8DF4CCF718BB4B9800C10CF6 /* AppDelegate.m in Sources */,
 				8DF4CCF318BB4B9800C10CF6 /* main.m in Sources */,
+				8D034E7318CD169800E856D8 /* GarbageTextView.m in Sources */,
 				BF8C7C858028906AF5BC1DC6 /* LanguageDirection.m in Sources */,
 				BF8C72425A0F583B7456F33B /* Language.m in Sources */,
 				BF8C7C952F5AC3899B2FBD76 /* TranslationArchiver.m in Sources */,

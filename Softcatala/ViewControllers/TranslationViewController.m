@@ -7,6 +7,7 @@
 //
 
 #import "TranslationViewController.h"
+#import "GarbageTextView.h"
 
 @interface TranslationViewController ()
 
