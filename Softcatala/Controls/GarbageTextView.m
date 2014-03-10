@@ -43,13 +43,12 @@
 
 - (void)awakeFromNib{
     [self customizeControl];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChanged:) name:UITextViewTextDidChangeNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChanged:) name:UITextViewTextDidBeginEditingNotification object:nil];
 }
 
 - (void)buttonGarbagePressed
 {
-    self.text = NSLocalizedString(@"EnterTextToTranslate", nil);
-    showPlaceHolder = YES;
+    self.text = @"";
 }
 
 - (void)textChanged:(NSNotification *)notification
