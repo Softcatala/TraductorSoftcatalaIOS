@@ -30,8 +30,8 @@
     showPlaceHolder = YES;
     self.text = NSLocalizedString(@"EnterTextToTranslate", nil);
     
-    
     if (self.frame.size.width > 30 && self.frame.size.height > 30) {
+        self.textContainerInset = UIEdgeInsetsMake(0, 0, 0, 25);
         UIButton *garbageButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [garbageButton setFrame:CGRectMake(self.frame.size.width - 22, self.frame.size.height - 27, 30, 30)];
         [garbageButton setImage:[UIImage imageNamed:@"paperera"] forState:UIControlStateNormal];
