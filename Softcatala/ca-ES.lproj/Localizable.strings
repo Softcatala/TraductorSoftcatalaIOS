@@ -14,3 +14,4 @@
 
 "ResponseGeneralError" = "S'ha produït un error";
 "EnterTextToTranslate" = "Introdueix text a traduir...";
+"ButtonTranslate" = "Traduir";

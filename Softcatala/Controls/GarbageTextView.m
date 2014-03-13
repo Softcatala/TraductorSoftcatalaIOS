@@ -37,7 +37,7 @@
         [garbageButton setImage:[UIImage imageNamed:@"paperera"] forState:UIControlStateNormal];
         [garbageButton addTarget:self action:@selector(buttonGarbagePressed) forControlEvents:UIControlEventTouchUpInside];
         [self.superview addSubview:garbageButton];
-        [self bringSubviewToFront:garbageButton];
+        [self bringSubviewToFront:garbageButton];        
     }
 }
 
