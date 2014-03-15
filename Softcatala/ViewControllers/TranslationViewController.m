@@ -8,6 +8,8 @@
 
 #import "TranslationViewController.h"
 #import "GarbageTextView.h"
+#import "TranslationRequest.h"
+#import <SVProgressHUD/SVProgressHUD.h>
 
 @interface TranslationViewController ()
 
@@ -60,6 +62,23 @@
 - (void)translate:(id)sender
 {
     [_sourceText resignFirstResponder];
+    [self performSelector:@selector(translateDelayed) withObject:nil afterDelay:1.0];
+}
+
+- (void)translateDelayed
+{
+    [SVProgressHUD show];
+    TranslationRequest *translationRequest = [[TranslationRequest alloc] init];
+    [translationRequest postRequestWithText:_sourceText.text andTextDirection:@"es|ca" success:^(NSString *translation) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            _destinationText.text = translation;
+            [SVProgressHUD dismiss];
+        });
+    } failure:^(NSError *error) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [SVProgressHUD showErrorWithStatus:error.localizedDescription];
+        });
+    }];
 }
 
 #pragma mark Configure Keyboard Accessory View

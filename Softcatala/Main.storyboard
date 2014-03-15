@@ -123,6 +123,7 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="destinationText" destination="Ixr-c3-ouK" id="hpb-ut-N4T"/>
                         <outlet property="sourceText" destination="4yI-u8-WaR" id="9M9-GP-bMu"/>
                     </connections>
                 </viewController>

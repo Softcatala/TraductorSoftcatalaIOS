@@ -13,5 +13,6 @@
 @interface TranslationViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet GarbageTextView *sourceText;
+@property (strong, nonatomic) IBOutlet UITextView *destinationText;
 
 @end

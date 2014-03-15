@@ -31,18 +31,23 @@
                                                                           @"q", textToTranslate,
                                                                           @"markUnknown", @"yes",
                                                                           @"key", apiKey,
-                                                                          nil];
-    NSError *errorMapping;
-    NSData *postData = [NSJSONSerialization dataWithJSONObject:mapData options:0 error:&errorMapping];
 
-    if (errorMapping != nil) {
-        failure(errorMapping);
-        return;
-    }
-
+                             nil];
+    NSMutableString *postString = [[NSMutableString alloc] init];
+    [postString appendString:@"langpair="];
+    [postString appendString:translationDirection];
+    [postString appendString:@"&q="];
+    [postString appendString:textToTranslate];
+    [postString appendString:@"&markUnknown=yes"];
+    [postString appendString:@"&key="];
+    [postString appendString:apiKey];
+    
+    NSData *postData = [postString dataUsingEncoding:NSUTF8StringEncoding];
+    
+    
     [request setHTTPBody:postData];
     [request setHTTPMethod:@"POST"];
-    [request setHTTPBody:postData];
+    //[request setHTTPBody:postData];
 
     NSURLSessionDataTask *postDataTask = [urlSession dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error)  {
         if (error != nil) {
