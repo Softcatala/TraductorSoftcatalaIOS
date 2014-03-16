@@ -26,13 +26,7 @@
     NSURLSession *urlSession = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:nil];
     NSURL *url = [NSURL URLWithString:urlString];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-
-    NSDictionary *mapData = [[NSDictionary alloc] initWithObjectsAndKeys: @"langpair", translationDirection,
-                                                                          @"q", textToTranslate,
-                                                                          @"markUnknown", @"yes",
-                                                                          @"key", apiKey,
-
-                             nil];
+    
     NSMutableString *postString = [[NSMutableString alloc] init];
     [postString appendString:@"langpair="];
     [postString appendString:translationDirection];
@@ -47,7 +41,6 @@
     
     [request setHTTPBody:postData];
     [request setHTTPMethod:@"POST"];
-    //[request setHTTPBody:postData];
 
     NSURLSessionDataTask *postDataTask = [urlSession dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error)  {
         if (error != nil) {

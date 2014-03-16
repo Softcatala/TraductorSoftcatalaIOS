@@ -25,15 +25,15 @@
     LanguageDirection *esca_valencia = [[LanguageDirection alloc] initWithSourceLanguage:es andDestinationLanguage:ca_valencia];
     [esca_valencia setVisible:NO];
     LanguageDirection *caes = [[LanguageDirection alloc] initWithSourceLanguage:ca andDestinationLanguage:es];
-    LanguageDirection *enca = [[LanguageDirection alloc] initWithSourceLanguage:es andDestinationLanguage:ca];
+    LanguageDirection *enca = [[LanguageDirection alloc] initWithSourceLanguage:en andDestinationLanguage:ca];
     LanguageDirection *caen = [[LanguageDirection alloc] initWithSourceLanguage:ca andDestinationLanguage:en];
-    LanguageDirection *frca = [[LanguageDirection alloc] initWithSourceLanguage:es andDestinationLanguage:ca];
+    LanguageDirection *frca = [[LanguageDirection alloc] initWithSourceLanguage:fr andDestinationLanguage:ca];
     LanguageDirection *cafr = [[LanguageDirection alloc] initWithSourceLanguage:ca andDestinationLanguage:fr];
-    LanguageDirection *ptca = [[LanguageDirection alloc] initWithSourceLanguage:es andDestinationLanguage:ca];
+    LanguageDirection *ptca = [[LanguageDirection alloc] initWithSourceLanguage:pt andDestinationLanguage:ca];
     LanguageDirection *capt = [[LanguageDirection alloc] initWithSourceLanguage:ca andDestinationLanguage:pt];
 
     [allCombinations addObject:esca];
-    [allCombinations addObject:esca_valencia];
+    //[allCombinations addObject:esca_valencia];
     [allCombinations addObject:caes];
     [allCombinations addObject:enca];
     [allCombinations addObject:caen];

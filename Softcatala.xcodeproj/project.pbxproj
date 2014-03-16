@@ -239,10 +239,10 @@
 			children = (
 				8D8773F018BB511A001AE36C /* Translation.h */,
 				8D8773F118BB511A001AE36C /* Translation.m */,
-				BF8C7AFD5F6BDB12AB0BF848 /* LanguageDirection.m */,
 				BF8C7AF750D8BE3388EA7A47 /* LanguageDirection.h */,
-				BF8C730033C8A6AEEF192415 /* Language.m */,
+				BF8C7AFD5F6BDB12AB0BF848 /* LanguageDirection.m */,
 				BF8C7DEF1E0BDB69F89C4DDC /* Language.h */,
+				BF8C730033C8A6AEEF192415 /* Language.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -285,15 +285,15 @@
 			isa = PBXGroup;
 			children = (
 				8D8773EF18BB510B001AE36C /* Model */,
+				BF8C7D37FDBA3F33EFD80CB0 /* Service */,
+				BF8C7861BF4B893236C589A1 /* Controls */,
+				BF8C760E3F3F7D9214848E97 /* ViewControllers */,
 				8D8773AA18BB4C3F001AE36C /* assets */,
 				8DF4CCF518BB4B9800C10CF6 /* AppDelegate.h */,
 				8DF4CCF618BB4B9800C10CF6 /* AppDelegate.m */,
 				8DF4CCF818BB4B9800C10CF6 /* Images.xcassets */,
 				8DF4CCED18BB4B9800C10CF6 /* Supporting Files */,
-				BF8C7D37FDBA3F33EFD80CB0 /* Service */,
 				8D73042818C7D3AB001D76F7 /* Main.storyboard */,
-				BF8C760E3F3F7D9214848E97 /* ViewControllers */,
-				BF8C7861BF4B893236C589A1 /* Controls */,
 			);
 			path = Softcatala;
 			sourceTree = "<group>";
@@ -445,8 +445,6 @@
 			mainGroup = 8DF4CCDA18BB4B9800C10CF6;
 			productRefGroup = 8DF4CCE418BB4B9800C10CF6 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				8DF4CCE218BB4B9800C10CF6 /* Softcatala */,

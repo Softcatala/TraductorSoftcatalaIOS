@@ -9,6 +9,9 @@
 #import "TranslationViewController.h"
 #import "GarbageTextView.h"
 #import "TranslationRequest.h"
+#import "TranslationDirectionLoader.h"
+#import "LanguageDirection.h"
+#import "Language.h"
 #import <SVProgressHUD/SVProgressHUD.h>
 
 @interface TranslationViewController ()
@@ -18,6 +21,7 @@
 @implementation TranslationViewController
 {
     UIView *keyboardAccessoryView;
+    NSArray *translationDirections;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -34,6 +38,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [self setNeedsStatusBarAppearanceUpdate];
+    TranslationDirectionLoader *translationDirectionLoacer = [[TranslationDirectionLoader alloc] init];
+    translationDirections = [translationDirectionLoacer loadAllCombinations];
+    [_translationsPicker setDelegate:self];
+    [_translationsPicker setDataSource:self];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -80,6 +88,41 @@
         });
     }];
 }
+
+- (IBAction)changeTranslationDirection:(id)sender {
+    // Move picker to bottom
+    CGFloat bottom = self.view.frame.size.height - self.tabBarController.tabBar.frame.size.height;
+    [_translationPickerView setCenter:CGPointMake(_translationPickerView.center.x, bottom + _translationPickerView.frame.size.height / 2)];
+    [_translationPickerView setHidden:NO];
+    CGFloat destinationHeight = _translationPickerView.center.y - _translationPickerView.frame.size.height;
+    [UIView animateWithDuration:1.0 animations:^{
+        [_translationPickerView setCenter:CGPointMake(_translationPickerView.center.x, destinationHeight)];
+    }];
+}
+
+#pragma mark PickerView methods
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return [translationDirections count];
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    LanguageDirection *languageDirection = translationDirections[row];
+    return [NSString stringWithFormat:@"%@ > %@", languageDirection.sourceLanguage.name, languageDirection.destinationLanguage.name];
+}
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    NSLog(@"Selected: %d", row);
+}
+
+
 
 #pragma mark Configure Keyboard Accessory View
 - (void)configureAccessoryView
