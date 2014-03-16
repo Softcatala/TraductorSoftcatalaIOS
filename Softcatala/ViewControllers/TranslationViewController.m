@@ -22,6 +22,7 @@
 {
     UIView *keyboardAccessoryView;
     NSArray *translationDirections;
+    NSInteger currentLanguageDirection;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -42,6 +43,7 @@
     translationDirections = [translationDirectionLoacer loadAllCombinations];
     [_translationsPicker setDelegate:self];
     [_translationsPicker setDataSource:self];
+    currentLanguageDirection = 0;
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -77,7 +79,9 @@
 {
     [SVProgressHUD show];
     TranslationRequest *translationRequest = [[TranslationRequest alloc] init];
-    [translationRequest postRequestWithText:_sourceText.text andTextDirection:@"es|ca" success:^(NSString *translation) {
+    LanguageDirection *laguageDirection = translationDirections[currentLanguageDirection];
+    NSString *textDirection = [NSString stringWithFormat:@"%@|%@", laguageDirection.sourceLanguage.code, laguageDirection.destinationLanguage.code];
+    [translationRequest postRequestWithText:_sourceText.text andTextDirection:textDirection success:^(NSString *translation) {
         dispatch_async(dispatch_get_main_queue(), ^{
             _destinationText.text = translation;
             [SVProgressHUD dismiss];
@@ -94,10 +98,29 @@
     CGFloat bottom = self.view.frame.size.height - self.tabBarController.tabBar.frame.size.height;
     [_translationPickerView setCenter:CGPointMake(_translationPickerView.center.x, bottom + _translationPickerView.frame.size.height / 2)];
     [_translationPickerView setHidden:NO];
+    [_sourceText setUserInteractionEnabled:NO];
+    
     CGFloat destinationHeight = _translationPickerView.center.y - _translationPickerView.frame.size.height;
-    [UIView animateWithDuration:1.0 animations:^{
+    [UIView animateWithDuration:.5 animations:^{
         [_translationPickerView setCenter:CGPointMake(_translationPickerView.center.x, destinationHeight)];
     }];
+}
+
+- (IBAction)translationDirectionChanged:(id)sender {
+    CGFloat bottom = self.view.frame.size.height - self.tabBarController.tabBar.frame.size.height;
+    [_sourceText setUserInteractionEnabled:YES];
+    [UIView animateWithDuration:0.5 animations:^{
+        [_translationPickerView setCenter:CGPointMake(_translationPickerView.center.x, bottom + _translationPickerView.frame.size.height / 2)];
+        [_translationPickerView setHidden:YES];
+    }];
+
+    if ([_translationsPicker selectedRowInComponent:0] != currentLanguageDirection) {
+        currentLanguageDirection = [_translationsPicker selectedRowInComponent:0];
+        LanguageDirection *languageDirection = translationDirections[currentLanguageDirection];
+        NSString *languageDirectionTxt = [NSString stringWithFormat:@"%@ > %@", languageDirection.sourceLanguage.name, languageDirection.destinationLanguage.name];
+        [_btnLanguageDirection setTitle:languageDirectionTxt forState:UIControlStateNormal];
+    }
+        
 }
 
 #pragma mark PickerView methods
@@ -119,7 +142,7 @@
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    NSLog(@"Selected: %d", row);
+    //currentLanguageDirection = row;
 }
 
 

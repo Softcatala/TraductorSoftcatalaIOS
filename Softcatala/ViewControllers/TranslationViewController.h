@@ -16,7 +16,9 @@
 @property (strong, nonatomic) IBOutlet UITextView *destinationText;
 @property (strong, nonatomic) IBOutlet UIPickerView *translationsPicker;
 @property (strong, nonatomic) IBOutlet UIView *translationPickerView;
+@property (strong, nonatomic) IBOutlet UIButton *btnLanguageDirection;
 
 - (IBAction)changeTranslationDirection:(id)sender;
+- (IBAction)translationDirectionChanged:(id)sender;
 
 @end
