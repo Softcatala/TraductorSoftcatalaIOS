@@ -15,3 +15,4 @@
 "ResponseGeneralError" = "Se ha producido un error";
 "EnterTextToTranslate" = "Introduce el texto a traducir...";
 "ButtonTranslate" = "Traducir";
+"ButtonClose" = "Cerrar";

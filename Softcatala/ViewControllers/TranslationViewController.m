@@ -75,6 +75,11 @@
     [self performSelector:@selector(translateDelayed) withObject:nil afterDelay:1.0];
 }
 
+- (void)closeBar:(id)sender
+{
+    [self.view endEditing:YES];
+}
+
 - (void)translateDelayed
 {
     [SVProgressHUD show];
@@ -165,6 +170,17 @@
     [translateButton setTitleColor:[UIColor colorWithRed:181.0/255.0 green:0.0 blue:39.0/255.0 alpha:1.0] forState:UIControlStateNormal];
     [translateButton addTarget:self action:@selector(translate:) forControlEvents:UIControlEventTouchUpInside];
     [keyboardAccessoryView addSubview:translateButton];
+    
+    NSString *closeButtonTitle = NSLocalizedString(@"ButtonClose", nil);
+    CGFloat buttonCloseWidth = [closeButtonTitle sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:17.0f]}].width + 15;
+    UIButton *closeButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [closeButton setFrame:CGRectMake(0, 0, buttonCloseWidth, keyboardAccessoryView.frame.size.height)];
+    [closeButton setCenter:CGPointMake(closeButton.center.x, keyboardAccessoryView.center.y)];
+    [closeButton setTitle:closeButtonTitle forState:UIControlStateNormal];
+    [closeButton setTitleColor:[UIColor colorWithRed:181.0/255.0 green:0.0 blue:39.0/255.0 alpha:1.0] forState:UIControlStateNormal];
+    [closeButton addTarget:self action:@selector(closeBar:) forControlEvents:UIControlEventTouchUpInside];
+    [keyboardAccessoryView addSubview:closeButton];
+    
     [_sourceText setInputAccessoryView:keyboardAccessoryView];
 }
 
