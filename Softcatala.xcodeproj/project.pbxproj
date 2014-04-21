@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8D034E7318CD169800E856D8 /* GarbageTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D034E7218CD169800E856D8 /* GarbageTextView.m */; };
+		8D052C5F1905BB400059BD79 /* ProgressHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D052C5E1905BB400059BD79 /* ProgressHud.m */; };
 		8D73042918C7D3AB001D76F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D73042818C7D3AB001D76F7 /* Main.storyboard */; };
 		8D8773CD18BB4C50001AE36C /* boto_canvi_idioma.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D8773AC18BB4C50001AE36C /* boto_canvi_idioma.png */; };
 		8D8773CE18BB4C50001AE36C /* boto_selec_idioma.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D8773AD18BB4C50001AE36C /* boto_selec_idioma.png */; };
@@ -83,6 +84,8 @@
 		53F802B7577F4688A5E38578 /* Pods-Softcatala.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Softcatala.xcconfig"; path = "Pods/Pods-Softcatala.xcconfig"; sourceTree = "<group>"; };
 		8D034E7118CD169800E856D8 /* GarbageTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GarbageTextView.h; sourceTree = "<group>"; };
 		8D034E7218CD169800E856D8 /* GarbageTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GarbageTextView.m; sourceTree = "<group>"; };
+		8D052C5D1905BB400059BD79 /* ProgressHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHud.h; sourceTree = "<group>"; };
+		8D052C5E1905BB400059BD79 /* ProgressHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHud.m; sourceTree = "<group>"; };
 		8D73042818C7D3AB001D76F7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8D8773AC18BB4C50001AE36C /* boto_canvi_idioma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boto_canvi_idioma.png; sourceTree = "<group>"; };
 		8D8773AD18BB4C50001AE36C /* boto_selec_idioma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boto_selec_idioma.png; sourceTree = "<group>"; };
@@ -351,6 +354,8 @@
 			children = (
 				8D034E7118CD169800E856D8 /* GarbageTextView.h */,
 				8D034E7218CD169800E856D8 /* GarbageTextView.m */,
+				8D052C5D1905BB400059BD79 /* ProgressHud.h */,
+				8D052C5E1905BB400059BD79 /* ProgressHud.m */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -577,6 +582,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D8773F218BB511A001AE36C /* Translation.m in Sources */,
+				8D052C5F1905BB400059BD79 /* ProgressHud.m in Sources */,
 				8DF4CCF718BB4B9800C10CF6 /* AppDelegate.m in Sources */,
 				8DF4CCF318BB4B9800C10CF6 /* main.m in Sources */,
 				8D034E7318CD169800E856D8 /* GarbageTextView.m in Sources */,

@@ -17,7 +17,7 @@
                BlueprintIdentifier = "8DF4CCE218BB4B9800C10CF6"
                BuildableName = "Softcatala.app"
                BlueprintName = "Softcatala"
-               ReferencedContainer = "container:softcatala.xcodeproj">
+               ReferencedContainer = "container:Softcatala.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "8DF4CCFD18BB4B9800C10CF6"
                BuildableName = "SoftcatalaTests.xctest"
                BlueprintName = "SoftcatalaTests"
-               ReferencedContainer = "container:softcatala.xcodeproj">
+               ReferencedContainer = "container:Softcatala.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "8DF4CCE218BB4B9800C10CF6"
             BuildableName = "Softcatala.app"
             BlueprintName = "Softcatala"
-            ReferencedContainer = "container:softcatala.xcodeproj">
+            ReferencedContainer = "container:Softcatala.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -64,7 +64,7 @@
             BlueprintIdentifier = "8DF4CCE218BB4B9800C10CF6"
             BuildableName = "Softcatala.app"
             BlueprintName = "Softcatala"
-            ReferencedContainer = "container:softcatala.xcodeproj">
+            ReferencedContainer = "container:Softcatala.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -82,7 +82,7 @@
             BlueprintIdentifier = "8DF4CCE218BB4B9800C10CF6"
             BuildableName = "Softcatala.app"
             BlueprintName = "Softcatala"
-            ReferencedContainer = "container:softcatala.xcodeproj">
+            ReferencedContainer = "container:Softcatala.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

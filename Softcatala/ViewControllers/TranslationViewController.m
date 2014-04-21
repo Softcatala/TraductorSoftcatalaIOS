@@ -12,7 +12,7 @@
 #import "TranslationDirectionLoader.h"
 #import "LanguageDirection.h"
 #import "Language.h"
-#import <SVProgressHUD/SVProgressHUD.h>
+#import "ProgressHud.h"
 
 @interface TranslationViewController ()
 
@@ -86,18 +86,20 @@
 
 - (void)translateDelayed
 {
-    [SVProgressHUD show];
+    [ProgressHud show];
     TranslationRequest *translationRequest = [[TranslationRequest alloc] init];
     LanguageDirection *laguageDirection = translationDirections[currentLanguageDirection];
     NSString *textDirection = [NSString stringWithFormat:@"%@|%@", laguageDirection.sourceLanguage.code, laguageDirection.destinationLanguage.code];
     [translationRequest postRequestWithText:_sourceText.text andTextDirection:textDirection success:^(NSString *translation) {
         dispatch_async(dispatch_get_main_queue(), ^{
             _destinationText.text = translation;
-            [SVProgressHUD dismiss];
+            [ProgressHud dismiss];
         });
     } failure:^(NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            [SVProgressHUD showErrorWithStatus:error.localizedDescription];
+            [ProgressHud dismiss];
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"" message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [alertView show];
         });
     }];
 }
