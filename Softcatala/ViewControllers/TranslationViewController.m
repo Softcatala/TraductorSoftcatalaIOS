@@ -48,6 +48,10 @@
     [_btnPickerSelect setTitle:NSLocalizedString(@"ButtonPickerSelect", nil) forState:UIControlStateNormal];
     [_btnPickerClose setTitle:NSLocalizedString(@"ButtonPickerClose", nil) forState:UIControlStateNormal];
 
+    [self.tabBarItem setTitle:NSLocalizedString(@"ButtonBarTranslate", nil)];
+    [self.tabBarItem setImage:[UIImage imageNamed:@"tab_bar_traduir_off"]];
+    [self.tabBarItem setSelectedImage:[UIImage imageNamed:@"tab_bar_traduir_on"]];
+    [self.tabBarController.tabBar setTintColor:[UIColor colorWithRed:181.0/255.0 green:0.0 blue:39.0/255.0 alpha:1.0]];
 }
 
 - (void)viewDidAppear:(BOOL)animated

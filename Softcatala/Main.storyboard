@@ -165,7 +165,7 @@
                             <constraint firstItem="cha-qv-Jmd" firstAttribute="top" secondItem="Ixr-c3-ouK" secondAttribute="bottom" id="zCT-33-p69"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="sqX-5T-TQO"/>
+                    <tabBarItem key="tabBarItem" title="Item 1" image="tab_bar_traduir_on.png" id="sqX-5T-TQO"/>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -190,7 +190,10 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="ZLy-UZ-GfE">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.70980392160000005" green="0.0" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.70980392160000005" green="0.0" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="urP-lf-Mej" kind="relationship" relationship="viewControllers" id="cV8-iW-W36"/>
@@ -227,6 +230,7 @@
         <image name="boto_valencia_off.png" width="30" height="30"/>
         <image name="boto_valencia_on.png" width="30" height="30"/>
         <image name="softcatala_logo.png" width="118" height="27"/>
+        <image name="tab_bar_traduir_on.png" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
