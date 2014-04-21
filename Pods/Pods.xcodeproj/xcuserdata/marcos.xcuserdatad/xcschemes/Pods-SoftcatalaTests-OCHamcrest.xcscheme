@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0500"
+   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E23C5C50E90C47FFA0A62754"
+               BlueprintIdentifier = "3DADC2946C7C459D81E77E8A"
                BuildableName = "libPods-SoftcatalaTests-OCHamcrest.a"
                BlueprintName = "Pods-SoftcatalaTests-OCHamcrest"
                ReferencedContainer = "container:Pods.xcodeproj">

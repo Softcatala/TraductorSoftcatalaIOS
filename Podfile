@@ -6,6 +6,6 @@ target :SoftcatalaTests, :exclusive => true do
 end
 
 target :Softcatala, :exclusive => true do
-  pod 'SVProgressHUD'
+  pod 'SVProgressHUD', :head
 
 end
