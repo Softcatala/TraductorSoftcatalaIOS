@@ -44,6 +44,10 @@
     [_translationsPicker setDelegate:self];
     [_translationsPicker setDataSource:self];
     currentLanguageDirection = 0;
+    
+    [_btnPickerSelect setTitle:NSLocalizedString(@"ButtonPickerSelect", nil) forState:UIControlStateNormal];
+    [_btnPickerClose setTitle:NSLocalizedString(@"ButtonPickerClose", nil) forState:UIControlStateNormal];
+
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -126,6 +130,11 @@
         [_btnLanguageDirection setTitle:languageDirectionTxt forState:UIControlStateNormal];
     }
         
+}
+
+- (IBAction)closePicker:(id)sender {
+    [_translationPickerView setHidden:YES];
+    [_sourceText setUserInteractionEnabled:YES];
 }
 
 #pragma mark PickerView methods

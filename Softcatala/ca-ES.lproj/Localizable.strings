@@ -16,3 +16,5 @@
 "EnterTextToTranslate" = "Introdueix text a traduir...";
 "ButtonTranslate" = "Traduir";
 "ButtonClose" = "Tancar";
+"ButtonPickerSelect" = "Seleccionar";
+"ButtonPickerClose" = "Tancar";
