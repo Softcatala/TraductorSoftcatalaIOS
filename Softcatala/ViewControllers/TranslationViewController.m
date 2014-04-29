@@ -94,7 +94,8 @@
     TranslationRequest *translationRequest = [[TranslationRequest alloc] init];
     LanguageDirection *laguageDirection = translationDirections[currentLanguageDirection];
     NSString *textDirection = [NSString stringWithFormat:@"%@|%@", laguageDirection.sourceLanguage.code, laguageDirection.destinationLanguage.code];
-    [translationRequest postRequestWithText:_sourceText.text andTextDirection:textDirection success:^(NSString *translation) {
+    NSString *cleanedSourceText = [_sourceText.text stringByReplacingOccurrencesOfString:@"*" withString:@""];
+    [translationRequest postRequestWithText:cleanedSourceText andTextDirection:textDirection success:^(NSString *translation) {
         dispatch_async(dispatch_get_main_queue(), ^{
             _destinationText.text = translation;
             [ProgressHud dismiss];
@@ -141,6 +142,29 @@
 - (IBAction)closePicker:(id)sender {
     [_translationPickerView setHidden:YES];
     [_sourceText setUserInteractionEnabled:YES];
+}
+
+- (IBAction)reverseTranslation:(id)sender {
+    LanguageDirection *selectedDirecion = [translationDirections objectAtIndex:currentLanguageDirection];
+
+    _sourceText.text = [_destinationText.text stringByReplacingOccurrencesOfString:@"*" withString:@""];
+    
+    NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
+        LanguageDirection *languageDirection = (LanguageDirection *)evaluatedObject;
+        if (languageDirection.sourceLanguage == selectedDirecion.destinationLanguage &&
+            languageDirection.destinationLanguage == selectedDirecion.sourceLanguage) {
+            return YES;
+        }
+        return NO;
+    }];
+    LanguageDirection *reverseDirection = [[translationDirections filteredArrayUsingPredicate:predicate] firstObject];
+    NSInteger reverseDirectionIndex = [translationDirections indexOfObject:reverseDirection];
+    currentLanguageDirection = reverseDirectionIndex;
+    NSString *languageDirectionTxt = [NSString stringWithFormat:@"%@ > %@", reverseDirection.sourceLanguage.name, reverseDirection.destinationLanguage.name];
+    [_btnLanguageDirection setTitle:languageDirectionTxt forState:UIControlStateNormal];
+    
+    
+    [self translateDelayed];
 }
 
 #pragma mark PickerView methods

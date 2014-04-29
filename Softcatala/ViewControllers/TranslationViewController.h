@@ -23,5 +23,6 @@
 - (IBAction)changeTranslationDirection:(id)sender;
 - (IBAction)translationDirectionChanged:(id)sender;
 - (IBAction)closePicker:(id)sender;
+- (IBAction)reverseTranslation:(id)sender;
 
 @end
