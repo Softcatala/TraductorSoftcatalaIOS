@@ -8,11 +8,13 @@
 
 #import "TranslationViewController.h"
 #import "GarbageTextView.h"
+#import "Translation.h"
 #import "TranslationRequest.h"
 #import "TranslationDirectionLoader.h"
 #import "LanguageDirection.h"
 #import "Language.h"
 #import "ProgressHud.h"
+#import "TRanslationArchiver.h"
 
 @interface TranslationViewController ()
 
@@ -23,15 +25,6 @@
     UIView *keyboardAccessoryView;
     NSArray *translationDirections;
     NSInteger currentLanguageDirection;
-}
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
 }
 
 - (void)viewDidLoad
@@ -98,10 +91,13 @@
     }
     NSString *textDirection = [NSString stringWithFormat:@"%@|%@", laguageDirection.sourceLanguage.code, laguageDirection.destinationLanguage.code];
     NSString *cleanedSourceText = [_sourceText.text stringByReplacingOccurrencesOfString:@"*" withString:@""];
-    [translationRequest postRequestWithText:cleanedSourceText andTextDirection:textDirection success:^(NSString *translation) {
+    [translationRequest postRequestWithText:cleanedSourceText andTextDirection:textDirection success:^(NSString *translationText) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            _destinationText.text = translation;
+            _destinationText.text = translationText;
             [ProgressHud dismiss];
+            
+            Translation *translation = [[Translation alloc] initWithSourceText:cleanedSourceText translationText:translationText languageDirection:laguageDirection isFavorite:NO];
+            [[[TranslationArchiver alloc] init] addTranslation:translation];
         });
     } failure:^(NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
