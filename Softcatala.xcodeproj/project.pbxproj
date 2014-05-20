@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8D034E7318CD169800E856D8 /* GarbageTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D034E7218CD169800E856D8 /* GarbageTextView.m */; };
 		8D052C5F1905BB400059BD79 /* ProgressHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D052C5E1905BB400059BD79 /* ProgressHud.m */; };
+		8D343103192BFE8600064DDE /* HistoricTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D343102192BFE8600064DDE /* HistoricTableViewController.m */; };
 		8D73042918C7D3AB001D76F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D73042818C7D3AB001D76F7 /* Main.storyboard */; };
 		8D8773CD18BB4C50001AE36C /* boto_canvi_idioma.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D8773AC18BB4C50001AE36C /* boto_canvi_idioma.png */; };
 		8D8773CE18BB4C50001AE36C /* boto_selec_idioma.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D8773AD18BB4C50001AE36C /* boto_selec_idioma.png */; };
@@ -86,6 +87,8 @@
 		8D034E7218CD169800E856D8 /* GarbageTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GarbageTextView.m; sourceTree = "<group>"; };
 		8D052C5D1905BB400059BD79 /* ProgressHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHud.h; sourceTree = "<group>"; };
 		8D052C5E1905BB400059BD79 /* ProgressHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHud.m; sourceTree = "<group>"; };
+		8D343101192BFE8600064DDE /* HistoricTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoricTableViewController.h; sourceTree = "<group>"; };
+		8D343102192BFE8600064DDE /* HistoricTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoricTableViewController.m; sourceTree = "<group>"; };
 		8D73042818C7D3AB001D76F7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8D8773AC18BB4C50001AE36C /* boto_canvi_idioma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boto_canvi_idioma.png; sourceTree = "<group>"; };
 		8D8773AD18BB4C50001AE36C /* boto_selec_idioma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boto_selec_idioma.png; sourceTree = "<group>"; };
@@ -345,6 +348,8 @@
 			children = (
 				BF8C7A1839F9EFAD0382A5D0 /* TranslationViewController.h */,
 				BF8C7ED818D94B00CCD356A0 /* TranslationViewController.m */,
+				8D343101192BFE8600064DDE /* HistoricTableViewController.h */,
+				8D343102192BFE8600064DDE /* HistoricTableViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -589,6 +594,7 @@
 				BF8C7C858028906AF5BC1DC6 /* LanguageDirection.m in Sources */,
 				BF8C72425A0F583B7456F33B /* Language.m in Sources */,
 				BF8C7C952F5AC3899B2FBD76 /* TranslationArchiver.m in Sources */,
+				8D343103192BFE8600064DDE /* HistoricTableViewController.m in Sources */,
 				BF8C7678E0845B9E80459A75 /* TranslationDirectionLoader.m in Sources */,
 				BF8C78A9B947307DCC1FB67D /* TranslationRequest.m in Sources */,
 				BF8C7C1642E979AD366D7EF7 /* TranslationViewController.m in Sources */,
