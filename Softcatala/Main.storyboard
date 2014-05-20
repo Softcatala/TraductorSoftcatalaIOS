@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="softcatala_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="JMb-We-se8">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="softcatala_logo" translatesAutoresizingMaskIntoConstraints="NO" id="JMb-We-se8">
                                         <rect key="frame" x="101" y="27" width="118" height="27"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
@@ -53,10 +53,10 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgg-ge-kzB">
                                         <rect key="frame" x="212" y="2" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="boto_valencia_off.png">
+                                        <state key="normal" image="boto_valencia_off">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <state key="selected" image="boto_valencia_on.png"/>
+                                        <state key="selected" image="boto_valencia_on"/>
                                         <connections>
                                             <action selector="checkFormesValencianes:" destination="urP-lf-Mej" eventType="touchUpInside" id="efJ-9y-Wkt"/>
                                         </connections>
@@ -71,7 +71,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70U-4f-N0z">
                                         <rect key="frame" x="10" y="17" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="boto_selec_idioma.png">
+                                        <state key="normal" image="boto_selec_idioma">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -100,7 +100,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjM-jQ-Gig">
                                         <rect key="frame" x="9" y="17" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="boto_canvi_idioma.png">
+                                        <state key="normal" image="boto_canvi_idioma">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -170,7 +170,7 @@
                             <constraint firstItem="cha-qv-Jmd" firstAttribute="top" secondItem="Ixr-c3-ouK" secondAttribute="bottom" id="zCT-33-p69"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" image="tab_bar_traduir_on.png" id="sqX-5T-TQO"/>
+                    <tabBarItem key="tabBarItem" title="Item 1" image="tab_bar_traduir_on" id="sqX-5T-TQO"/>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -227,7 +227,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="softcatala_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qqv-mx-E9w">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="softcatala_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Qqv-mx-E9w">
                                         <rect key="frame" x="101" y="27" width="118" height="27"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
@@ -243,22 +243,41 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="translationCell" textLabel="ARb-Dp-HMG" style="IBUITableViewCellStyleDefault" id="9eg-jQ-uTR">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="translationCell" id="9eg-jQ-uTR" customClass="TranslationCell">
                                         <rect key="frame" x="0.0" y="22" width="320" height="57"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9eg-jQ-uTR" id="L5Q-Lv-Uax">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ARb-Dp-HMG">
-                                                    <rect key="frame" x="15" y="0.0" width="290" height="56"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzX-kI-rji">
+                                                    <rect key="frame" x="12" y="13" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="preferits_clar_off">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" image="preferits_clar_on"/>
+                                                </button>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Translation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWZ-MI-3k6">
+                                                    <rect key="frame" x="56" y="26" width="244" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Source text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9i6-iF-r7I">
+                                                    <rect key="frame" x="56" y="6" width="244" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="btnFavourite" destination="rzX-kI-rji" id="UBM-jc-rG3"/>
+                                            <outlet property="sourceLabel" destination="pWZ-MI-3k6" id="Wu0-nU-SK2"/>
+                                            <outlet property="translationLabel" destination="9i6-iF-r7I" id="Jto-zW-McM"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -274,20 +293,25 @@
                             <constraint firstAttribute="trailing" secondItem="Ez0-7F-F84" secondAttribute="trailing" id="qGI-qR-vBh"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Històric" image="tab_bar_historic_on.png" id="8Ck-aA-ZXO"/>
+                    <tabBarItem key="tabBarItem" title="Històric" image="tab_bar_historic_on" id="8Ck-aA-ZXO"/>
+                    <connections>
+                        <outlet property="tableView" destination="yF8-M8-lHy" id="LyM-c3-Au1"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="155" y="545"/>
         </scene>
     </scenes>
     <resources>
-        <image name="boto_canvi_idioma.png" width="30" height="30"/>
-        <image name="boto_selec_idioma.png" width="30" height="30"/>
-        <image name="boto_valencia_off.png" width="30" height="30"/>
-        <image name="boto_valencia_on.png" width="30" height="30"/>
-        <image name="softcatala_logo.png" width="118" height="27"/>
-        <image name="tab_bar_historic_on.png" width="30" height="30"/>
-        <image name="tab_bar_traduir_on.png" width="30" height="30"/>
+        <image name="boto_canvi_idioma" width="30" height="30"/>
+        <image name="boto_selec_idioma" width="30" height="30"/>
+        <image name="boto_valencia_off" width="30" height="30"/>
+        <image name="boto_valencia_on" width="30" height="30"/>
+        <image name="preferits_clar_off" width="30" height="30"/>
+        <image name="preferits_clar_on" width="30" height="30"/>
+        <image name="softcatala_logo" width="118" height="27"/>
+        <image name="tab_bar_historic_on" width="30" height="30"/>
+        <image name="tab_bar_traduir_on" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

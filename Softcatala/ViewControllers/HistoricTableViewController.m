@@ -9,11 +9,13 @@
 #import "HistoricTableViewController.h"
 #import "TranslationArchiver.h"
 #import "Translation.h"
+#import "TranslationCell.h"
 
 static NSString *translationCellIdentifier = @"translationCell";
 
 @interface HistoricTableViewController () <UITableViewDataSource, UITableViewDelegate>
 
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) TranslationArchiver *archiver;
 
 @end
@@ -24,7 +26,12 @@ static NSString *translationCellIdentifier = @"translationCell";
 {
     [super viewDidLoad];
     [self setNeedsStatusBarAppearanceUpdate];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
     _archiver = [[TranslationArchiver alloc] init];
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -47,15 +54,12 @@ static NSString *translationCellIdentifier = @"translationCell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:translationCellIdentifier forIndexPath:indexPath];
+    TranslationCell *cell = [tableView dequeueReusableCellWithIdentifier:translationCellIdentifier forIndexPath:indexPath];
     Translation *translation = _archiver.translations[indexPath.row];
     
-    [cell.textLabel setText:translation.source];
-    if (translation.favourite == YES) {
-        [cell.imageView setImage:[UIImage imageNamed:@"preferits_clar_on"]];
-    } else {
-        [cell.imageView setImage:[UIImage imageNamed:@"preferits_clar_off"]];
-    }
+    cell.sourceLabel.text = translation.source;
+    cell.translationLabel.text = translation.translation;
+    [cell.btnFavourite setSelected:translation.favourite];
     
     return cell;
 }
