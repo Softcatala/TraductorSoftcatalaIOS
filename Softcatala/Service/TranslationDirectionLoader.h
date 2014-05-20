@@ -5,7 +5,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class LanguageDirection;
 
 @interface TranslationDirectionLoader : NSObject
 - (NSArray *)loadAllCombinations;
++ (LanguageDirection *)loadValencianLanguageDirection;
+
 @end

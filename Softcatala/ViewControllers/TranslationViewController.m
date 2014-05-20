@@ -93,6 +93,9 @@
     [ProgressHud show];
     TranslationRequest *translationRequest = [[TranslationRequest alloc] init];
     LanguageDirection *laguageDirection = translationDirections[currentLanguageDirection];
+    if ([_btnFormesVal isSelected]) {
+        laguageDirection = [TranslationDirectionLoader loadValencianLanguageDirection];
+    }
     NSString *textDirection = [NSString stringWithFormat:@"%@|%@", laguageDirection.sourceLanguage.code, laguageDirection.destinationLanguage.code];
     NSString *cleanedSourceText = [_sourceText.text stringByReplacingOccurrencesOfString:@"*" withString:@""];
     [translationRequest postRequestWithText:cleanedSourceText andTextDirection:textDirection success:^(NSString *translation) {
@@ -135,8 +138,8 @@
         LanguageDirection *languageDirection = translationDirections[currentLanguageDirection];
         NSString *languageDirectionTxt = [NSString stringWithFormat:@"%@ > %@", languageDirection.sourceLanguage.name, languageDirection.destinationLanguage.name];
         [_btnLanguageDirection setTitle:languageDirectionTxt forState:UIControlStateNormal];
+        [self refreshFormesValencianesState:languageDirection];
     }
-        
 }
 
 - (IBAction)closePicker:(id)sender {
@@ -162,11 +165,24 @@
     currentLanguageDirection = reverseDirectionIndex;
     NSString *languageDirectionTxt = [NSString stringWithFormat:@"%@ > %@", reverseDirection.sourceLanguage.name, reverseDirection.destinationLanguage.name];
     [_btnLanguageDirection setTitle:languageDirectionTxt forState:UIControlStateNormal];
-    
-    
+    [self refreshFormesValencianesState:reverseDirection];
     [self translateDelayed];
 }
 
+- (IBAction)checkFormesValencianes:(id)sender {
+    _btnFormesVal.selected = !_btnFormesVal.selected;
+}
+
+- (void)refreshFormesValencianesState:(LanguageDirection *)languageDirection {
+    if ([languageDirection.destinationLanguage.code isEqualToString:@"ca"] && [languageDirection.sourceLanguage.code isEqualToString:@"es"]) {
+        [_btnFormesVal setSelected:NO];
+        [_btnFormesVal setEnabled:YES];
+    } else {
+        [_btnFormesVal setSelected:NO];
+        [_btnFormesVal setEnabled:NO];
+    }
+
+}
 #pragma mark PickerView methods
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {

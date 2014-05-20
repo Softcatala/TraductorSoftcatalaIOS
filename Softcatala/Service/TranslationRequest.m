@@ -55,6 +55,7 @@
                     failure([self httpError:jsonResponse]);
                 } else {
                     NSString *translatedText = responseData[@"translatedText"];
+                    translatedText = [translatedText stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
                     success(translatedText);
                 }
             } else {

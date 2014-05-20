@@ -44,4 +44,13 @@
 
     return allCombinations;
 }
+
++ (LanguageDirection *)loadValencianLanguageDirection
+{
+    Language *es = [[Language alloc] initWithCode:@"es" andName:NSLocalizedString(@"es", nil)];
+    Language *ca_valencia = [[Language alloc] initWithCode:@"ca_valencia" andName:NSLocalizedString(@"ca_valencia", nil)];
+
+    LanguageDirection *esca_valencia = [[LanguageDirection alloc] initWithSourceLanguage:es andDestinationLanguage:ca_valencia];
+    return esca_valencia;
+}
 @end

@@ -19,10 +19,12 @@
 @property (strong, nonatomic) IBOutlet UIButton *btnLanguageDirection;
 @property (strong, nonatomic) IBOutlet UIButton *btnPickerSelect;
 @property (strong, nonatomic) IBOutlet UIButton *btnPickerClose;
+@property (strong, nonatomic) IBOutlet UIButton *btnFormesVal;
 
 - (IBAction)changeTranslationDirection:(id)sender;
 - (IBAction)translationDirectionChanged:(id)sender;
 - (IBAction)closePicker:(id)sender;
 - (IBAction)reverseTranslation:(id)sender;
+- (IBAction)checkFormesValencianes:(id)sender;
 
 @end
