@@ -13,10 +13,15 @@
 
 static NSString *translationCellIdentifier = @"translationCell";
 
-@interface HistoricTableViewController () <UITableViewDataSource, UITableViewDelegate, TranslationCellDelegate>
+@interface HistoricTableViewController () <UITableViewDataSource, UITableViewDelegate, TranslationCellDelegate, UIActionSheetDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) TranslationArchiver *archiver;
+@property (strong, nonatomic) IBOutlet UIButton *btnEditOk;
+@property (strong, nonatomic) IBOutlet UIButton *btnRemoveAll;
+
+- (IBAction)editTable:(id)sender;
+- (IBAction)removeAll:(id)sender;
 
 @end
 
@@ -25,6 +30,11 @@ static NSString *translationCellIdentifier = @"translationCell";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [_btnRemoveAll setHidden:YES];
+    [_btnRemoveAll setTitle:NSLocalizedString(@"ButtonRemoveAllTable", nil) forState:UIControlStateNormal];
+    [_btnRemoveAll setTitle:NSLocalizedString(@"ButtonRemoveAllTable", nil) forState:UIControlStateHighlighted];
+    [_btnEditOk setTitle:NSLocalizedString(@"ButtonEditTable", nil) forState:UIControlStateNormal];
+    [_btnEditOk setTitle:NSLocalizedString(@"ButtonEditTable", nil) forState:UIControlStateHighlighted];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -119,4 +129,32 @@ static NSString *translationCellIdentifier = @"translationCell";
 }
 */
 
+- (IBAction)editTable:(id)sender {
+    [_tableView setEditing:!_tableView.isEditing animated:YES];
+    if ([_tableView isEditing]) {
+        [_btnEditOk setTitle:NSLocalizedString(@"ButtonEditOkTable", nil) forState:UIControlStateNormal];
+        [_btnEditOk setTitle:NSLocalizedString(@"ButtonEditOkTable", nil) forState:UIControlStateHighlighted];
+        [_btnRemoveAll setHidden:NO];
+    } else {
+        [_btnEditOk setTitle:NSLocalizedString(@"ButtonEditTable", nil) forState:UIControlStateNormal];
+        [_btnEditOk setTitle:NSLocalizedString(@"ButtonEditTable", nil) forState:UIControlStateHighlighted];
+        [_btnRemoveAll setHidden:YES];
+        
+    }
+}
+
+- (IBAction)removeAll:(id)sender {
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:NSLocalizedString(@"ActionSheetCancel", nil) destructiveButtonTitle:NSLocalizedString(@"ActionSheetRemoveAll", nil) otherButtonTitles:nil];
+    [actionSheet showFromTabBar:self.tabBarController.tabBar];
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 0) {
+        for (Translation *translation in _archiver.translations) {
+            [_archiver removeTranslation:translation];
+        }
+        [_tableView reloadData];
+    }
+ }
 @end

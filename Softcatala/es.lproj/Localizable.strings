@@ -19,3 +19,9 @@
 "ButtonPickerSelect" = "Seleccionar";
 "ButtonPickerClose" = "Cerrar";
 "ButtonBarTranslate" = "Traducir";
+
+"ButtonEditTable" = "Editar";
+"ButtonEditOkTable" = "Ok";
+"ButtonRemoveAllTable" = "Esborrar";
+"ActionSheetRemoveAll" = "Borrar todos";
+"ActionSheetCancel" = "Cancelar";
