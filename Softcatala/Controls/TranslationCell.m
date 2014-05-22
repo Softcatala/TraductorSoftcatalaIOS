@@ -22,6 +22,7 @@
 - (void)awakeFromNib
 {
     // Initialization code
+    [_btnFavourite addTarget:self action:@selector(favouriteButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
@@ -31,4 +32,9 @@
     // Configure the view for the selected state
 }
 
+- (void)favouriteButtonPressed:(id)sender
+{
+    [_btnFavourite setSelected:!_btnFavourite.selected];
+    [self.delegate translationCell:self favouriteButtonPressed:sender];
+}
 @end

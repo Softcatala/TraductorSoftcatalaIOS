@@ -13,7 +13,7 @@
 
 static NSString *translationCellIdentifier = @"translationCell";
 
-@interface HistoricTableViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface HistoricTableViewController () <UITableViewDataSource, UITableViewDelegate, TranslationCellDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) TranslationArchiver *archiver;
@@ -36,9 +36,15 @@ static NSString *translationCellIdentifier = @"translationCell";
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+- (void)translationCell:(TranslationCell *)translationCell favouriteButtonPressed:(UIButton *)button
+{
+    Translation *translation = _archiver.translations[translationCell.indexPath.row];
+    [translation setFavourite:button.selected];
+    [_archiver updateTranslation:translation];
+    
+}
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -59,31 +65,32 @@ static NSString *translationCellIdentifier = @"translationCell";
     cell.sourceLabel.text = translation.source;
     cell.translationLabel.text = translation.translation;
     [cell.btnFavourite setSelected:translation.favourite];
-    
+    cell.indexPath = indexPath;
+    cell.delegate = self;
     return cell;
 }
 
-/*
+
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
-*/
 
-/*
+
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
+        Translation *translation = _archiver.translations[indexPath.row];
+        [_archiver removeTranslation:translation];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-*/
 
 /*
 // Override to support rearranging the table view.
