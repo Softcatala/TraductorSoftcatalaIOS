@@ -25,7 +25,6 @@ static NSString *translationCellIdentifier = @"translationCell";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self setNeedsStatusBarAppearanceUpdate];
 }
 
 - (void)viewWillAppear:(BOOL)animated
