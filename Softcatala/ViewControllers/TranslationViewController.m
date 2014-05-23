@@ -16,10 +16,6 @@
 #import "ProgressHud.h"
 #import "TRanslationArchiver.h"
 
-@interface TranslationViewController ()
-
-@end
-
 @implementation TranslationViewController
 {
     UIView *keyboardAccessoryView;
@@ -59,7 +55,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle{
