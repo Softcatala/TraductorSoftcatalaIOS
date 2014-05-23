@@ -72,6 +72,7 @@
 - (void)translate:(id)sender
 {
     [_sourceText resignFirstResponder];
+    _sourceText.editable = NO;
     [self performSelector:@selector(translateDelayed) withObject:nil afterDelay:1.0];
 }
 
@@ -92,8 +93,10 @@
     NSString *cleanedSourceText = [_sourceText.text stringByReplacingOccurrencesOfString:@"*" withString:@""];
     [translationRequest postRequestWithText:cleanedSourceText andTextDirection:textDirection success:^(NSString *translationText) {
         dispatch_async(dispatch_get_main_queue(), ^{
+            [[NSRunLoop mainRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:5.1]];
             _destinationText.text = translationText;
             [ProgressHud dismiss];
+            _sourceText.editable = YES;
             
             Translation *translation = [[Translation alloc] initWithSourceText:cleanedSourceText translationText:translationText languageDirection:laguageDirection isFavorite:NO];
             [[[TranslationArchiver alloc] init] addTranslation:translation];
@@ -101,6 +104,7 @@
     } failure:^(NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [ProgressHud dismiss];
+            _sourceText.editable = YES;
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"" message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [alertView show];
         });
