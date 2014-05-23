@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8D034E7318CD169800E856D8 /* GarbageTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D034E7218CD169800E856D8 /* GarbageTextView.m */; };
 		8D052C5F1905BB400059BD79 /* ProgressHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D052C5E1905BB400059BD79 /* ProgressHud.m */; };
+		8D2EBC8F192F4A70009312A0 /* FavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2EBC8E192F4A70009312A0 /* FavouritesViewController.m */; };
 		8D343103192BFE8600064DDE /* HistoricTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D343102192BFE8600064DDE /* HistoricTableViewController.m */; };
 		8D343106192C0AB900064DDE /* TranslationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D343105192C0AB900064DDE /* TranslationCell.m */; };
 		8D73042918C7D3AB001D76F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D73042818C7D3AB001D76F7 /* Main.storyboard */; };
@@ -56,6 +57,8 @@
 		8D034E7218CD169800E856D8 /* GarbageTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GarbageTextView.m; sourceTree = "<group>"; };
 		8D052C5D1905BB400059BD79 /* ProgressHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHud.h; sourceTree = "<group>"; };
 		8D052C5E1905BB400059BD79 /* ProgressHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHud.m; sourceTree = "<group>"; };
+		8D2EBC8D192F4A70009312A0 /* FavouritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavouritesViewController.h; path = ../FavouritesViewController.h; sourceTree = "<group>"; };
+		8D2EBC8E192F4A70009312A0 /* FavouritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FavouritesViewController.m; path = ../FavouritesViewController.m; sourceTree = "<group>"; };
 		8D343101192BFE8600064DDE /* HistoricTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoricTableViewController.h; sourceTree = "<group>"; };
 		8D343102192BFE8600064DDE /* HistoricTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoricTableViewController.m; sourceTree = "<group>"; };
 		8D343104192C0AB900064DDE /* TranslationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslationCell.h; sourceTree = "<group>"; };
@@ -233,6 +236,8 @@
 				BF8C7ED818D94B00CCD356A0 /* TranslationViewController.m */,
 				8D343101192BFE8600064DDE /* HistoricTableViewController.h */,
 				8D343102192BFE8600064DDE /* HistoricTableViewController.m */,
+				8D2EBC8D192F4A70009312A0 /* FavouritesViewController.h */,
+				8D2EBC8E192F4A70009312A0 /* FavouritesViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -451,6 +456,7 @@
 				8D343103192BFE8600064DDE /* HistoricTableViewController.m in Sources */,
 				BF8C7678E0845B9E80459A75 /* TranslationDirectionLoader.m in Sources */,
 				BF8C78A9B947307DCC1FB67D /* TranslationRequest.m in Sources */,
+				8D2EBC8F192F4A70009312A0 /* FavouritesViewController.m in Sources */,
 				BF8C7C1642E979AD366D7EF7 /* TranslationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
