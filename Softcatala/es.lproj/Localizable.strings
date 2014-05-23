@@ -25,6 +25,6 @@
 
 "ButtonEditTable" = "Editar";
 "ButtonEditOkTable" = "Ok";
-"ButtonRemoveAllTable" = "Esborrar";
+"ButtonRemoveAllTable" = "Borrar";
 "ActionSheetRemoveAll" = "Borrar todos";
 "ActionSheetCancel" = "Cancelar";
