@@ -93,7 +93,6 @@
     NSString *cleanedSourceText = [_sourceText.text stringByReplacingOccurrencesOfString:@"*" withString:@""];
     [translationRequest postRequestWithText:cleanedSourceText andTextDirection:textDirection success:^(NSString *translationText) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            [[NSRunLoop mainRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:5.1]];
             _destinationText.text = translationText;
             [ProgressHud dismiss];
             _sourceText.editable = YES;
