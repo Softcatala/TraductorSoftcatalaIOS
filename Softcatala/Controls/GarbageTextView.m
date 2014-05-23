@@ -59,4 +59,8 @@
     }
 }
 
+- (void)hidePlaceholder
+{
+    showPlaceHolder = NO;
+}
 @end

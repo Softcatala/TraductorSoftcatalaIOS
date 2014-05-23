@@ -39,10 +39,12 @@
     
     [_btnPickerSelect setTitle:NSLocalizedString(@"ButtonPickerSelect", nil) forState:UIControlStateNormal];
     [_btnPickerClose setTitle:NSLocalizedString(@"ButtonPickerClose", nil) forState:UIControlStateNormal];
-
+    
     [self.tabBarItem setTitle:NSLocalizedString(@"ButtonBarTranslate", nil)];
-    [self.tabBarItem setImage:[UIImage imageNamed:@"tab_bar_traduir_off"]];
-    [self.tabBarItem setSelectedImage:[UIImage imageNamed:@"tab_bar_traduir_on"]];
+    UITabBarItem *historicItem = self.tabBarController.tabBar.items[1];
+    [historicItem setTitle:NSLocalizedString(@"ButtonHistoric", nil)];
+    UITabBarItem *favouriteItem = self.tabBarController.tabBar.items[2];
+    [favouriteItem setTitle:NSLocalizedString(@"ButtonFavourites", nil)];
     [self.tabBarController.tabBar setTintColor:[UIColor colorWithRed:181.0/255.0 green:0.0 blue:39.0/255.0 alpha:1.0]];
 }
 
@@ -181,6 +183,22 @@
     }
 
 }
+
+- (void)loadTranslation:(Translation *)translation
+{
+    LanguageDirection *languageDirection = translation.languageDirection;
+    NSString *languageDirectionTxt = [NSString stringWithFormat:@"%@ > %@", languageDirection.sourceLanguage.name, languageDirection.destinationLanguage.name];
+    [_btnLanguageDirection setTitle:languageDirectionTxt forState:UIControlStateNormal];
+    [self refreshFormesValencianesState:languageDirection];
+    if ([languageDirection.destinationLanguage.code isEqualToString:@"ca_valencia"]) {
+        [_btnFormesVal setEnabled:YES];
+        [_btnFormesVal setSelected:YES];
+    }
+    _sourceText.text = translation.source;
+    [_sourceText hidePlaceholder];
+    _destinationText.text = translation.translation;
+}
+
 #pragma mark PickerView methods
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
@@ -197,13 +215,6 @@
     LanguageDirection *languageDirection = translationDirections[row];
     return [NSString stringWithFormat:@"%@ > %@", languageDirection.sourceLanguage.name, languageDirection.destinationLanguage.name];
 }
-
-- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
-{
-    //currentLanguageDirection = row;
-}
-
-
 
 #pragma mark Configure Keyboard Accessory View
 - (void)configureAccessoryView

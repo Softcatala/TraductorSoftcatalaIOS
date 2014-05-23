@@ -10,6 +10,7 @@
 
 @interface GarbageTextView : UITextView
 
--(void)textChanged:(NSNotification*)notification;
+- (void)textChanged:(NSNotification*)notification;
+- (void)hidePlaceholder;
 
 @end

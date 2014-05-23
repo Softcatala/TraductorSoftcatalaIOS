@@ -9,6 +9,7 @@
 
 
 @class GarbageTextView;
+@class Translation;
 
 @interface TranslationViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
@@ -26,5 +27,7 @@
 - (IBAction)closePicker:(id)sender;
 - (IBAction)reverseTranslation:(id)sender;
 - (IBAction)checkFormesValencianes:(id)sender;
+
+- (void)loadTranslation:(Translation *)translation;
 
 @end

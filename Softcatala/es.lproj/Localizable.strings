@@ -10,11 +10,14 @@
 "pt" = "Portugués";
 "fr" = "Francés";
 "en" = "Inglés";
+"ca_valencia" = "Catalán";
 "va" = "Formas valencianas";
 
 "ResponseGeneralError" = "Se ha producido un error";
 "EnterTextToTranslate" = "Introduce el texto a traducir...";
 "ButtonTranslate" = "Traducir";
+"ButtonHistoric" = "Histórico";
+"ButtonFavourites" = "Favoritos";
 "ButtonClose" = "Cerrar";
 "ButtonPickerSelect" = "Seleccionar";
 "ButtonPickerClose" = "Cerrar";
