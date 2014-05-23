@@ -49,6 +49,12 @@
     [self save];
 }
 
+- (void)removeAllTranslations
+{
+    [_translations removeAllObjects];
+    [self save];
+}
+
 - (NSArray *)translations {
     return _translations;
 }

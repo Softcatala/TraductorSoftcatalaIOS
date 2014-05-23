@@ -151,9 +151,7 @@ static NSString *translationCellIdentifier = @"translationCell";
 - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
     if (buttonIndex == 0) {
-        for (Translation *translation in _archiver.translations) {
-            [_archiver removeTranslation:translation];
-        }
+        [_archiver removeAllTranslations];
         [_tableView reloadData];
     }
  }

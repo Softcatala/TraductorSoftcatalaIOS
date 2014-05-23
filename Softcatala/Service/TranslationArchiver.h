@@ -17,5 +17,6 @@
 - (void)addTranslation:(Translation *)translation;
 - (void)removeTranslation:(Translation *)translation;
 - (void)updateTranslation:(Translation *)translation;
+- (void)removeAllTranslations;
 
 @end
