@@ -69,6 +69,9 @@
 - (void)translate:(id)sender
 {
     [_sourceText resignFirstResponder];
+    if ([[_sourceText.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] length] == 0) {
+        return;
+    }
     _sourceText.editable = NO;
     [self performSelector:@selector(translateDelayed) withObject:nil afterDelay:1.0];
 }
