@@ -11,7 +11,7 @@
 #import "TranslationCell.h"
 #import "Translation.h"
 
-static NSString *translationCellIdentifier = @"translationCell";
+static NSString *favouriteCellIdentifier = @"favouriteCell";
 
 @interface FavouritesViewController () <UITableViewDataSource, UITableViewDelegate, TranslationCellDelegate, UIActionSheetDelegate>
 
@@ -46,12 +46,14 @@ static NSString *translationCellIdentifier = @"translationCell";
 
 - (void)loadFavourites
 {
+    NSLog(@"Favourites count: %d", [_favourites count] );
     _archiver = [[TranslationArchiver alloc] init];
     NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
         Translation *translation = (Translation *)evaluatedObject;
         return [translation favourite];
     }];
     _favourites = [_archiver.translations filteredArrayUsingPredicate:predicate];
+    NSLog(@"Favourites count: %d", [_favourites count] );
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,11 +63,14 @@ static NSString *translationCellIdentifier = @"translationCell";
 
 - (void)translationCell:(TranslationCell *)translationCell favouriteButtonPressed:(UIButton *)button
 {
-    Translation *translation = _favourites[translationCell.indexPath.row];
+    NSIndexPath *cellIndexPath = [_tableView indexPathForCell:translationCell]; //translationCell.indexPath;
+    NSLog(@"To erase cell: %d", cellIndexPath.row);
+    Translation *translation = _favourites[cellIndexPath.row];
     [translation setFavourite:button.selected];
+
     [_archiver updateTranslation:translation];
     [self loadFavourites];
-    [_tableView deleteRowsAtIndexPaths:@[translationCell.indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    [_tableView deleteRowsAtIndexPaths:@[cellIndexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 #pragma mark - Table view data source
@@ -77,12 +82,13 @@ static NSString *translationCellIdentifier = @"translationCell";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    NSLog(@"Number of rows: %d", [_favourites count]);
     return [_favourites count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    TranslationCell *cell = [tableView dequeueReusableCellWithIdentifier:translationCellIdentifier forIndexPath:indexPath];
+    TranslationCell *cell = [tableView dequeueReusableCellWithIdentifier:favouriteCellIdentifier forIndexPath:indexPath];
     Translation *translation = _favourites[indexPath.row];
     
     cell.sourceLabel.text = translation.source;
