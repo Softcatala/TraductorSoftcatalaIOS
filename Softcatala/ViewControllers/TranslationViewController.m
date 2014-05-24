@@ -112,8 +112,8 @@
     CGFloat bottom = self.view.frame.size.height - self.tabBarController.tabBar.frame.size.height;
     [_translationPickerView setCenter:CGPointMake(_translationPickerView.center.x, bottom + _translationPickerView.frame.size.height / 2)];
     [_translationPickerView setHidden:NO];
+    [_translationsPicker selectRow:currentLanguageDirection inComponent:0 animated:NO];
     [_sourceText setUserInteractionEnabled:NO];
-    
     CGFloat destinationHeight = _translationPickerView.center.y - _translationPickerView.frame.size.height;
     [UIView animateWithDuration:.5 animations:^{
         [_translationPickerView setCenter:CGPointMake(_translationPickerView.center.x, destinationHeight)];
@@ -188,6 +188,15 @@
     if ([languageDirection.destinationLanguage.code isEqualToString:@"ca_valencia"]) {
         [_btnFormesVal setEnabled:YES];
         [_btnFormesVal setSelected:YES];
+        currentLanguageDirection = 0;
+    } else {
+        for (LanguageDirection *currentDirection in translationDirections) {
+            if ([currentDirection.sourceLanguage.code isEqualToString:languageDirection.sourceLanguage.code] &&
+                [currentDirection.destinationLanguage.code isEqualToString:languageDirection.destinationLanguage.code]) {
+                currentLanguageDirection = [translationDirections indexOfObject:currentDirection];
+                break;
+            }
+        }
     }
     _sourceText.text = translation.source;
     [_sourceText hidePlaceholder];
