@@ -51,7 +51,8 @@ static NSString *translationCellIdentifier = @"translationCell";
 
 - (void)translationCell:(TranslationCell *)translationCell favouriteButtonPressed:(UIButton *)button
 {
-    Translation *translation = _archiver.translations[translationCell.indexPath.row];
+    NSIndexPath *cellIndexPath = [_tableView indexPathForCell:translationCell];
+    Translation *translation = _archiver.translations[cellIndexPath.row];
     [translation setFavourite:button.selected];
     [_archiver updateTranslation:translation];
     
