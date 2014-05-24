@@ -126,6 +126,7 @@
     CGFloat destinationHeight = _translationPickerView.center.y - _translationPickerView.frame.size.height;
     [UIView animateWithDuration:.5 animations:^{
         [_translationPickerView setCenter:CGPointMake(_translationPickerView.center.x, destinationHeight)];
+        [_btnSharing setAlpha:0.0];
     }];
 }
 
@@ -149,6 +150,7 @@
 - (IBAction)closePicker:(id)sender {
     [_translationPickerView setHidden:YES];
     [_sourceText setUserInteractionEnabled:YES];
+    [_btnSharing setAlpha:1.0];
 }
 
 - (IBAction)reverseTranslation:(id)sender {
