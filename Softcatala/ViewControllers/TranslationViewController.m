@@ -178,6 +178,10 @@
 }
 
 - (IBAction)sharing:(id)sender {
+    if ([[_destinationText.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] length] == 0) {
+        return;
+    }
+    
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:NSLocalizedString(@"ActionSheetSharingCancel", nil) destructiveButtonTitle:nil otherButtonTitles:NSLocalizedString(@"ActionSheetSharingTwitter", nil), NSLocalizedString(@"ActionSheetSharingFacebook", nil), NSLocalizedString(@"ActionSheetSharingEmail", nil), nil];
     [actionSheet showFromTabBar:self.tabBarController.tabBar];
 }
