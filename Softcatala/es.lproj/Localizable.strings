@@ -28,3 +28,13 @@
 "ButtonRemoveAllTable" = "Borrar";
 "ActionSheetRemoveAll" = "Borrar todos";
 "ActionSheetCancel" = "Cancelar";
+
+"ActionSheetSharingTwitter" = "Twitter";
+"ActionSheetSharingFacebook" = "Facebook";
+"ActionSheetSharingEmail" = "Email";
+"ActionSheetSharingCancel" = "Cancelar";
+
+"SENDTO_TWITTER_ALERT_TITLE_NOT_AVAILABLE" = "Atención";
+"SENDTO_TWITTER_SERVICE_NOT_AVAILABLE" = "Twitter no disponible";
+"SENDTO_FACEBOOK_ALERT_TITLE_NOT_AVAILABLE" = "Atención";
+"SENDTO_FACEBOOK_SERVICE_NOT_AVAILABLE" = "Facebook no disponible";
