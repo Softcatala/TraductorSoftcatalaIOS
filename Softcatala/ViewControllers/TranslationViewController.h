@@ -21,12 +21,15 @@
 @property (strong, nonatomic) IBOutlet UIButton *btnPickerSelect;
 @property (strong, nonatomic) IBOutlet UIButton *btnPickerClose;
 @property (strong, nonatomic) IBOutlet UIButton *btnFormesVal;
+@property (strong, nonatomic) IBOutlet UIButton *btnSharing;
 
 - (IBAction)changeTranslationDirection:(id)sender;
 - (IBAction)translationDirectionChanged:(id)sender;
 - (IBAction)closePicker:(id)sender;
 - (IBAction)reverseTranslation:(id)sender;
 - (IBAction)checkFormesValencianes:(id)sender;
+- (IBAction)sharing:(id)sender;
+
 
 - (void)loadTranslation:(Translation *)translation;
 

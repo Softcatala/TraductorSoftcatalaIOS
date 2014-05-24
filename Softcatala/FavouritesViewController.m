@@ -46,14 +46,12 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
 
 - (void)loadFavourites
 {
-    NSLog(@"Favourites count: %d", [_favourites count] );
     _archiver = [[TranslationArchiver alloc] init];
     NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
         Translation *translation = (Translation *)evaluatedObject;
         return [translation favourite];
     }];
     _favourites = [_archiver.translations filteredArrayUsingPredicate:predicate];
-    NSLog(@"Favourites count: %d", [_favourites count] );
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,7 +62,6 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
 - (void)translationCell:(TranslationCell *)translationCell favouriteButtonPressed:(UIButton *)button
 {
     NSIndexPath *cellIndexPath = [_tableView indexPathForCell:translationCell]; //translationCell.indexPath;
-    NSLog(@"To erase cell: %d", cellIndexPath.row);
     Translation *translation = _favourites[cellIndexPath.row];
     [translation setFavourite:button.selected];
 
@@ -82,7 +79,6 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSLog(@"Number of rows: %d", [_favourites count]);
     return [_favourites count];
 }
 

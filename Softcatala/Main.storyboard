@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="cha-qv-Jmd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WKe-sx-8I8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mdE-6b-aQX">
@@ -110,7 +110,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.89803921568627454" green="0.8901960784313725" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixr-c3-ouK">
+                            <textView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixr-c3-ouK">
                                 <rect key="frame" x="0.0" y="283" width="320" height="241"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94901960784313721" green="0.94509803921568625" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
@@ -159,17 +159,34 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBb-n6-ayw">
+                                <rect key="frame" x="276" y="480" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="0cy-zY-ar6"/>
+                                    <constraint firstAttribute="height" constant="30" id="1lQ-La-WZY"/>
+                                </constraints>
+                                <state key="normal" image="compartir">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sharing:" destination="urP-lf-Mej" eventType="touchUpInside" id="5an-2O-9o5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.69803921568627447" green="0.69803921568627447" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="mdE-6b-aQX" secondAttribute="centerX" id="EN2-RG-1gU"/>
+                            <constraint firstItem="cha-qv-Jmd" firstAttribute="top" secondItem="sBb-n6-ayw" secondAttribute="bottom" constant="14" id="JLZ-S7-YAl"/>
                             <constraint firstItem="Ixr-c3-ouK" firstAttribute="top" secondItem="mdE-6b-aQX" secondAttribute="bottom" constant="219" id="XB1-dm-cro"/>
                             <constraint firstItem="mdE-6b-aQX" firstAttribute="top" secondItem="WKe-sx-8I8" secondAttribute="top" id="b7j-v6-deu"/>
                             <constraint firstAttribute="centerX" secondItem="Ixr-c3-ouK" secondAttribute="centerX" id="mii-r9-BX5"/>
+                            <constraint firstAttribute="trailing" secondItem="sBb-n6-ayw" secondAttribute="trailing" constant="14" id="olp-xE-uyH"/>
                             <constraint firstItem="mdE-6b-aQX" firstAttribute="leading" secondItem="WKe-sx-8I8" secondAttribute="leading" id="rQW-9w-H1p"/>
                             <constraint firstItem="cha-qv-Jmd" firstAttribute="top" secondItem="Ixr-c3-ouK" secondAttribute="bottom" id="zCT-33-p69"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <tabBarItem key="tabBarItem" title="Item 1" image="tab_bar_traduir_on" id="sqX-5T-TQO"/>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -178,6 +195,7 @@
                         <outlet property="btnLanguageDirection" destination="c5g-mj-WNV" id="EpT-fS-tay"/>
                         <outlet property="btnPickerClose" destination="KLE-bu-gOi" id="rzo-cH-GMw"/>
                         <outlet property="btnPickerSelect" destination="x6o-qo-6ss" id="tRW-xN-57e"/>
+                        <outlet property="btnSharing" destination="sBb-n6-ayw" id="Npl-A8-mAp"/>
                         <outlet property="destinationText" destination="Ixr-c3-ouK" id="hpb-ut-N4T"/>
                         <outlet property="sourceText" destination="4yI-u8-WaR" id="9M9-GP-bMu"/>
                         <outlet property="translationPickerView" destination="JnV-MR-rtb" id="4fQ-dK-klR"/>
@@ -457,6 +475,7 @@
         <image name="boto_selec_idioma" width="30" height="30"/>
         <image name="boto_valencia_off" width="30" height="30"/>
         <image name="boto_valencia_on" width="30" height="30"/>
+        <image name="compartir" width="30" height="30"/>
         <image name="preferits_clar_off" width="30" height="30"/>
         <image name="preferits_clar_on" width="30" height="30"/>
         <image name="softcatala_logo" width="118" height="27"/>

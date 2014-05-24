@@ -171,6 +171,9 @@
     _btnFormesVal.selected = !_btnFormesVal.selected;
 }
 
+- (IBAction)sharing:(id)sender {
+}
+
 - (void)refreshFormesValencianesState:(LanguageDirection *)languageDirection {
     if ([languageDirection.destinationLanguage.code isEqualToString:@"ca"] && [languageDirection.sourceLanguage.code isEqualToString:@"es"]) {
         [_btnFormesVal setSelected:NO];
