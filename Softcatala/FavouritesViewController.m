@@ -10,6 +10,7 @@
 #import "TranslationArchiver.h"
 #import "TranslationCell.h"
 #import "Translation.h"
+#import "TranslationViewController.h"
 
 static NSString *favouriteCellIdentifier = @"favouriteCell";
 
@@ -93,6 +94,14 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
     cell.indexPath = indexPath;
     cell.delegate = self;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    TranslationViewController *translationVC = self.tabBarController.viewControllers[0];
+    Translation *translation = _archiver.translations[indexPath.row];
+    [translationVC loadTranslation:translation];
+    [self.tabBarController setSelectedIndex:0];
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
