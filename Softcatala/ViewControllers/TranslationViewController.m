@@ -118,7 +118,7 @@
 
 - (IBAction)changeTranslationDirection:(id)sender {
     // Move picker to bottom
-    CGFloat bottom = self.view.frame.size.height - self.tabBarController.tabBar.frame.size.height;
+    CGFloat bottom = self.view.frame.size.height;
     [_translationPickerView setCenter:CGPointMake(_translationPickerView.center.x, bottom + _translationPickerView.frame.size.height / 2)];
     [_translationPickerView setHidden:NO];
     [_translationsPicker selectRow:currentLanguageDirection inComponent:0 animated:NO];
@@ -131,7 +131,7 @@
 }
 
 - (IBAction)translationDirectionChanged:(id)sender {
-    CGFloat bottom = self.view.frame.size.height - self.tabBarController.tabBar.frame.size.height;
+    CGFloat bottom = self.view.frame.size.height;
     [_sourceText setUserInteractionEnabled:YES];
     [UIView animateWithDuration:0.5 animations:^{
         [_translationPickerView setCenter:CGPointMake(_translationPickerView.center.x, bottom + _translationPickerView.frame.size.height / 2)];
