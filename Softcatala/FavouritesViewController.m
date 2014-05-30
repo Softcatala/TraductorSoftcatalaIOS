@@ -99,7 +99,7 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     TranslationViewController *translationVC = self.tabBarController.viewControllers[0];
-    Translation *translation = _archiver.translations[indexPath.row];
+    Translation *translation = _favourites[indexPath.row];
     [translationVC loadTranslation:translation];
     [self.tabBarController setSelectedIndex:0];
 }
