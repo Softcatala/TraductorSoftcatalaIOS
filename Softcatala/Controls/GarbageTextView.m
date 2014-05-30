@@ -12,13 +12,14 @@
 @implementation GarbageTextView
 {
     BOOL showPlaceHolder;
+    UILabel *placeholderLabel;
+    UIButton *garbageButton;
 }
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
         [self customizeControl];
     }
     return self;
@@ -26,16 +27,24 @@
 
 - (void)customizeControl
 {
+    self.text = @"";
+    placeholderLabel = [[UILabel alloc] initWithFrame:CGRectMake(13, 0, self.superview.frame.size.width, 33)];
+    placeholderLabel.font = [UIFont systemFontOfSize:14.0];
+    placeholderLabel.textColor = [UIColor colorWithRed:229.0/255.0 green:227.0/255.2 blue:216.0/255.0 alpha:1.0];
+    placeholderLabel.text = NSLocalizedString(@"EnterTextToTranslate", nil);
+    
+    [self.superview addSubview:placeholderLabel];
     self.layer.cornerRadius = 5.0;
-    showPlaceHolder = YES;
-    self.text = NSLocalizedString(@"EnterTextToTranslate", nil);
     
     if (self.frame.size.width > 30 && self.frame.size.height > 30) {
         self.textContainerInset = UIEdgeInsetsMake(0, 0, 0, 25);
-        UIButton *garbageButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        
+        garbageButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [garbageButton setFrame:CGRectMake(self.frame.size.width - 22, self.frame.size.height - 27, 30, 30)];
         [garbageButton setImage:[UIImage imageNamed:@"paperera"] forState:UIControlStateNormal];
         [garbageButton addTarget:self action:@selector(buttonGarbagePressed) forControlEvents:UIControlEventTouchUpInside];
+        [garbageButton setHidden:YES];
+        
         [self.superview addSubview:garbageButton];
         [self bringSubviewToFront:garbageButton];        
     }
@@ -43,24 +52,32 @@
 
 - (void)awakeFromNib{
     [self customizeControl];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChanged:) name:UITextViewTextDidBeginEditingNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChanged:) name:UITextViewTextDidChangeNotification object:nil];
 }
 
 - (void)buttonGarbagePressed
 {
     self.text = @"";
+    [placeholderLabel setHidden:NO];
+    [garbageButton setHidden:YES];
 }
 
 - (void)textChanged:(NSNotification *)notification
 {
-    if (showPlaceHolder == YES) {
-        self.text = @"";
-        showPlaceHolder = NO;
+    if ([self.text length] > 0) {
+        [placeholderLabel setHidden:YES];
+        [garbageButton setHidden:NO];
+    } else if ([self.text length] == 0) {
+        [placeholderLabel setHidden:NO];
     }
 }
 
-- (void)hidePlaceholder
+- (void)setText:(NSString *)text
 {
-    showPlaceHolder = NO;
+    super.text = text;
+    if ([text length] > 0) {
+        [placeholderLabel setHidden:YES];
+        [garbageButton setHidden:NO];
+    }
 }
 @end

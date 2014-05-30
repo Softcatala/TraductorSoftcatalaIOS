@@ -219,7 +219,6 @@
         }
     }
     _sourceText.text = translation.source;
-    [_sourceText hidePlaceholder];
     _destinationText.text = translation.translation;
 }
 
