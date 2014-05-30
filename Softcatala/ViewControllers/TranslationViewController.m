@@ -15,10 +15,8 @@
 #import "Language.h"
 #import "ProgressHud.h"
 #import "TranslationArchiver.h"
-#import <Social/Social.h>
-#import <MessageUI/MessageUI.h>
 
-@interface TranslationViewController () <UIActionSheetDelegate, MFMailComposeViewControllerDelegate, GarbageTextViewDelegate>
+@interface TranslationViewController () <GarbageTextViewDelegate>
 
 @end
 
@@ -186,8 +184,9 @@
         return;
     }
     
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:NSLocalizedString(@"ActionSheetSharingCancel", nil) destructiveButtonTitle:nil otherButtonTitles:NSLocalizedString(@"ActionSheetSharingTwitter", nil), NSLocalizedString(@"ActionSheetSharingFacebook", nil), NSLocalizedString(@"ActionSheetSharingEmail", nil), nil];
-    [actionSheet showFromTabBar:self.tabBarController.tabBar];
+    UIActivityViewController *controller = [[UIActivityViewController alloc] initWithActivityItems:@[_destinationText.text] applicationActivities:nil];
+    [self presentViewController:controller animated:YES completion:nil];
+    
 }
 
 - (void)refreshFormesValencianesState:(LanguageDirection *)languageDirection {
@@ -271,100 +270,6 @@
     [keyboardAccessoryView addSubview:closeButton];
     
     [_sourceText setInputAccessoryView:keyboardAccessoryView];
-}
-
-#pragma mark UIActionSheet delegate
-
-- (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex
-{
-    switch (buttonIndex) {
-        case 0:
-            [self sendToTwitter];
-            break;
-            
-        case 1:
-            [self sendToFacebook];
-            break;
-
-        case 2:
-            [self sendByEmail];
-            break;
-
-        default:
-            break;
-    }
-}
-
-#pragma mark Send to actions
-
-- (void)sendByEmail
-{
-    MFMailComposeViewController *emailComposer = [[MFMailComposeViewController alloc] init];
-    emailComposer.mailComposeDelegate = self;
-    
-    [emailComposer setMessageBody:_destinationText.text isHTML:NO];
-    
-    [super presentViewController:emailComposer animated:YES completion:NULL];
-}
-
-- (void)mailComposeController:(MFMailComposeViewController*)controller
-          didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
-{
-    [self dismissViewControllerAnimated:YES completion:NULL];
-    [self.navigationController.navigationBar setHidden:NO];
-}
-
-- (void)sendToTwitter
-{
-    SLComposeViewController *twitter = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
-    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter] == NO) {
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"SENDTO_TWITTER_ALERT_TITLE_NOT_AVAILABLE", nil) message:NSLocalizedString(@"SENDTO_TWITTER_SERVICE_NOT_AVAILABLE", nil) delegate:self cancelButtonTitle:NSLocalizedString(@"OK", nil) otherButtonTitles:nil];
-        [alertView show];
-        return;
-    }
-    [twitter setInitialText:_destinationText.text];
-    SLComposeViewControllerCompletionHandler completionHandler = ^(SLComposeViewControllerResult result)
-    {
-        switch (result) {
-            case SLComposeViewControllerResultCancelled:
-                break;
-            case SLComposeViewControllerResultDone:
-                break;
-            default:
-                break;
-        }
-        
-        [self dismissViewControllerAnimated:YES completion:nil];
-    };
-    [twitter setCompletionHandler:completionHandler];
-    [self presentViewController:twitter animated:YES completion:nil];
-}
-
-- (void)sendToFacebook
-{
-    SLComposeViewController *facebook = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
-    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook] == NO) {
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"SENDTO_FACEBOOK_ALERT_TITLE_NOT_AVAILABLE", nil) message:NSLocalizedString(@"SENDTO_FACEBOOK_SERVICE_NOT_AVAILABLE", nil) delegate:self cancelButtonTitle:NSLocalizedString(@"OK", nil) otherButtonTitles:nil];
-        [alertView show];
-        return;
-    }
-    [facebook setInitialText:_destinationText.text];
-    SLComposeViewControllerCompletionHandler completionHandler = ^(SLComposeViewControllerResult result)
-    {
-        switch (result) {
-            case SLComposeViewControllerResultCancelled:
-                break;
-            case SLComposeViewControllerResultDone:
-                break;
-            default:
-                break;
-        }
-        
-        [self dismissViewControllerAnimated:YES completion:nil];
-    };
-    [facebook setCompletionHandler:completionHandler];
-    [self presentViewController:facebook animated:YES completion:nil];
-    
 }
 
 #pragma mark GarbageTextView delegate
