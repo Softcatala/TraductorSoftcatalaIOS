@@ -29,7 +29,7 @@
 {
     self.text = @"";
     placeholderLabel = [[UILabel alloc] initWithFrame:CGRectMake(13, 0, self.superview.frame.size.width, 33)];
-    placeholderLabel.font = [UIFont systemFontOfSize:14.0];
+    placeholderLabel.font = [UIFont systemFontOfSize:15.0];
     placeholderLabel.textColor = [UIColor colorWithRed:229.0/255.0 green:227.0/255.2 blue:216.0/255.0 alpha:1.0];
     placeholderLabel.text = NSLocalizedString(@"EnterTextToTranslate", nil);
     
