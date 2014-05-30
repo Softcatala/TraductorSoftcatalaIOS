@@ -60,6 +60,9 @@
     self.text = @"";
     [placeholderLabel setHidden:NO];
     [garbageButton setHidden:YES];
+    if (self.garbageDelegate != nil) {
+        [self.garbageDelegate garbageTextView:self garbageButtonPressed:garbageButton];
+    }
 }
 
 - (void)textChanged:(NSNotification *)notification

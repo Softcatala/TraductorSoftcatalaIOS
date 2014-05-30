@@ -18,7 +18,7 @@
 #import <Social/Social.h>
 #import <MessageUI/MessageUI.h>
 
-@interface TranslationViewController () <UIActionSheetDelegate, MFMailComposeViewControllerDelegate>
+@interface TranslationViewController () <UIActionSheetDelegate, MFMailComposeViewControllerDelegate, GarbageTextViewDelegate>
 
 @end
 
@@ -48,6 +48,8 @@
     UITabBarItem *favouriteItem = self.tabBarController.tabBar.items[2];
     [favouriteItem setTitle:NSLocalizedString(@"ButtonFavourites", nil)];
     [self.tabBarController.tabBar setTintColor:[UIColor colorWithRed:181.0/255.0 green:0.0 blue:39.0/255.0 alpha:1.0]];
+    
+    [_sourceText setGarbageDelegate:self];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -365,4 +367,10 @@
     
 }
 
+#pragma mark GarbageTextView delegate
+
+- (void)garbageTextView:(GarbageTextView *)garbageTextView garbageButtonPressed:(UIButton *)button
+{
+    _destinationText.text = @"";
+}
 @end
