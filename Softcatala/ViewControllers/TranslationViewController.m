@@ -15,8 +15,9 @@
 #import "Language.h"
 #import "ProgressHud.h"
 #import "TranslationArchiver.h"
+#import "TextViewNotify.h"
 
-@interface TranslationViewController () <GarbageTextViewDelegate>
+@interface TranslationViewController () <GarbageTextViewDelegate, TextViewNotifyDelegate>
 
 @end
 
@@ -48,6 +49,8 @@
     [self.tabBarController.tabBar setTintColor:[UIColor colorWithRed:181.0/255.0 green:0.0 blue:39.0/255.0 alpha:1.0]];
     
     [_sourceText setGarbageDelegate:self];
+    [_btnSharing setHidden:YES];
+    [_destinationText setChangeTextDelegate:self];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -277,5 +280,16 @@
 - (void)garbageTextView:(GarbageTextView *)garbageTextView garbageButtonPressed:(UIButton *)button
 {
     _destinationText.text = @"";
+}
+
+#pragma mark TextViewNotify delegate
+
+- (void)textViewNotify:(TextViewNotify *)textViewNotify textChanged:(NSString *)text
+{
+    if ([text length] > 0) {
+        [_btnSharing setHidden:NO];
+    } else {
+        [_btnSharing setHidden:YES];
+    }
 }
 @end

@@ -10,11 +10,12 @@
 
 @class GarbageTextView;
 @class Translation;
+@class TextViewNotify;
 
 @interface TranslationViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
 @property (strong, nonatomic) IBOutlet GarbageTextView *sourceText;
-@property (strong, nonatomic) IBOutlet UITextView *destinationText;
+@property (strong, nonatomic) IBOutlet TextViewNotify *destinationText;
 @property (strong, nonatomic) IBOutlet UIPickerView *translationsPicker;
 @property (strong, nonatomic) IBOutlet UIView *translationPickerView;
 @property (strong, nonatomic) IBOutlet UIButton *btnLanguageDirection;

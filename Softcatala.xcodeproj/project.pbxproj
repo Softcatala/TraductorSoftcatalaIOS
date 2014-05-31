@@ -14,6 +14,7 @@
 		8D343106192C0AB900064DDE /* TranslationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D343105192C0AB900064DDE /* TranslationCell.m */; };
 		8D73042918C7D3AB001D76F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D73042818C7D3AB001D76F7 /* Main.storyboard */; };
 		8D8773F218BB511A001AE36C /* Translation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8773F118BB511A001AE36C /* Translation.m */; };
+		8D87A051193A1316007D643D /* TextViewNotify.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D87A050193A1316007D643D /* TextViewNotify.m */; };
 		8DDD54A118C6823B00E748F3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DDD54A318C6823B00E748F3 /* Localizable.strings */; };
 		8DF4CCE718BB4B9800C10CF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF4CCE618BB4B9800C10CF6 /* Foundation.framework */; };
 		8DF4CCE918BB4B9800C10CF6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF4CCE818BB4B9800C10CF6 /* CoreGraphics.framework */; };
@@ -66,6 +67,8 @@
 		8D73042818C7D3AB001D76F7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8D8773F018BB511A001AE36C /* Translation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Translation.h; sourceTree = "<group>"; };
 		8D8773F118BB511A001AE36C /* Translation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Translation.m; sourceTree = "<group>"; };
+		8D87A04F193A1316007D643D /* TextViewNotify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewNotify.h; sourceTree = "<group>"; };
+		8D87A050193A1316007D643D /* TextViewNotify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewNotify.m; sourceTree = "<group>"; };
 		8DDD54A418C6826000E748F3 /* ca-ES */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ca-ES"; path = "ca-ES.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		8DDD54A518C682AB00E748F3 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8DF4CCE318BB4B9800C10CF6 /* Softcatala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Softcatala.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -245,6 +248,8 @@
 		BF8C7861BF4B893236C589A1 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				8D87A04F193A1316007D643D /* TextViewNotify.h */,
+				8D87A050193A1316007D643D /* TextViewNotify.m */,
 				8D034E7118CD169800E856D8 /* GarbageTextView.h */,
 				8D034E7218CD169800E856D8 /* GarbageTextView.m */,
 				8D052C5D1905BB400059BD79 /* ProgressHud.h */,
@@ -456,6 +461,7 @@
 				8D343103192BFE8600064DDE /* HistoricTableViewController.m in Sources */,
 				BF8C7678E0845B9E80459A75 /* TranslationDirectionLoader.m in Sources */,
 				BF8C78A9B947307DCC1FB67D /* TranslationRequest.m in Sources */,
+				8D87A051193A1316007D643D /* TextViewNotify.m in Sources */,
 				8D2EBC8F192F4A70009312A0 /* FavouritesViewController.m in Sources */,
 				BF8C7C1642E979AD366D7EF7 /* TranslationViewController.m in Sources */,
 			);
