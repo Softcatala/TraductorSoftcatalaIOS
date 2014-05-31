@@ -57,4 +57,8 @@
     return self;
 }
 
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"%@ > %@", _sourceLanguage.name, _destinationLanguage.name];
+}
 @end

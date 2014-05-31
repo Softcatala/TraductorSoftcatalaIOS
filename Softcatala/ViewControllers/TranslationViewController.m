@@ -37,9 +37,14 @@
     [_translationsPicker setDelegate:self];
     [_translationsPicker setDataSource:self];
     currentLanguageDirection = 0;
+    LanguageDirection *languageDirection = translationDirections[currentLanguageDirection];
+    [_btnLanguageDirection setTitle:languageDirection.description forState:UIControlStateNormal];
+    
     
     [_btnPickerSelect setTitle:NSLocalizedString(@"ButtonPickerSelect", nil) forState:UIControlStateNormal];
     [_btnPickerClose setTitle:NSLocalizedString(@"ButtonPickerClose", nil) forState:UIControlStateNormal];
+    
+    [_lblFormesValencianes setText:NSLocalizedString(@"ButtonFormesValencianes", nil)];
     
     [self.tabBarItem setTitle:NSLocalizedString(@"ButtonBarTranslate", nil)];
     UITabBarItem *historicItem = self.tabBarController.tabBar.items[1];
@@ -144,8 +149,7 @@
     if ([_translationsPicker selectedRowInComponent:0] != currentLanguageDirection) {
         currentLanguageDirection = [_translationsPicker selectedRowInComponent:0];
         LanguageDirection *languageDirection = translationDirections[currentLanguageDirection];
-        NSString *languageDirectionTxt = [NSString stringWithFormat:@"%@ > %@", languageDirection.sourceLanguage.name, languageDirection.destinationLanguage.name];
-        [_btnLanguageDirection setTitle:languageDirectionTxt forState:UIControlStateNormal];
+        [_btnLanguageDirection setTitle:languageDirection.description forState:UIControlStateNormal];
         [self refreshFormesValencianesState:languageDirection];
     }
 }
@@ -172,8 +176,7 @@
     LanguageDirection *reverseDirection = [[translationDirections filteredArrayUsingPredicate:predicate] firstObject];
     NSInteger reverseDirectionIndex = [translationDirections indexOfObject:reverseDirection];
     currentLanguageDirection = reverseDirectionIndex;
-    NSString *languageDirectionTxt = [NSString stringWithFormat:@"%@ > %@", reverseDirection.sourceLanguage.name, reverseDirection.destinationLanguage.name];
-    [_btnLanguageDirection setTitle:languageDirectionTxt forState:UIControlStateNormal];
+    [_btnLanguageDirection setTitle:reverseDirection.description forState:UIControlStateNormal];
     [self refreshFormesValencianesState:reverseDirection];
     [self translateDelayed];
 }
@@ -196,9 +199,13 @@
     if ([languageDirection.destinationLanguage.code isEqualToString:@"ca"] && [languageDirection.sourceLanguage.code isEqualToString:@"es"]) {
         [_btnFormesVal setSelected:NO];
         [_btnFormesVal setEnabled:YES];
+        [_lblFormesValencianes setHidden:NO];
+        [_btnFormesVal setHidden:NO];
     } else {
         [_btnFormesVal setSelected:NO];
         [_btnFormesVal setEnabled:NO];
+        [_lblFormesValencianes setHidden:YES];
+        [_btnFormesVal setHidden:YES];
     }
 
 }
@@ -206,8 +213,7 @@
 - (void)loadTranslation:(Translation *)translation
 {
     LanguageDirection *languageDirection = translation.languageDirection;
-    NSString *languageDirectionTxt = [NSString stringWithFormat:@"%@ > %@", languageDirection.sourceLanguage.name, languageDirection.destinationLanguage.name];
-    [_btnLanguageDirection setTitle:languageDirectionTxt forState:UIControlStateNormal];
+    [_btnLanguageDirection setTitle:languageDirection.description forState:UIControlStateNormal];
     [self refreshFormesValencianesState:languageDirection];
     if ([languageDirection.destinationLanguage.code isEqualToString:@"ca_valencia"]) {
         [_btnFormesVal setEnabled:YES];
@@ -240,7 +246,7 @@
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
     LanguageDirection *languageDirection = translationDirections[row];
-    return [NSString stringWithFormat:@"%@ > %@", languageDirection.sourceLanguage.name, languageDirection.destinationLanguage.name];
+    return languageDirection.description;
 }
 
 #pragma mark Configure Keyboard Accessory View

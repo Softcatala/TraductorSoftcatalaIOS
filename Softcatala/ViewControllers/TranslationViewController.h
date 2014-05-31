@@ -23,6 +23,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *btnPickerClose;
 @property (strong, nonatomic) IBOutlet UIButton *btnFormesVal;
 @property (strong, nonatomic) IBOutlet UIButton *btnSharing;
+@property (strong, nonatomic) IBOutlet UILabel *lblFormesValencianes;
 
 - (IBAction)changeTranslationDirection:(id)sender;
 - (IBAction)translationDirectionChanged:(id)sender;
