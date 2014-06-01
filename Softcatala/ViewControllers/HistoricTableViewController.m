@@ -121,6 +121,8 @@ static NSString *translationCellIdentifier = @"translationCell";
 {
     if (buttonIndex == 0) {
         [_archiver removeAllTranslations];
+        [self.tableView setEditing:NO animated:YES];
+        [self changeTableToEditing:NO];
         [_tableView reloadData];
     }
 }

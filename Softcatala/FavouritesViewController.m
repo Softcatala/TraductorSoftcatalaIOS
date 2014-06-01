@@ -124,6 +124,8 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
         for (Translation *translation in _archiver.translations) {
             [_archiver removeTranslation:translation];
         }
+        [self.tableView setEditing:NO animated:YES];
+        [self changeTableToEditing:NO];
         [_tableView reloadData];
     }
 }
