@@ -7,7 +7,7 @@
 //
 
 #import "FavouritesViewController.h"
-#import "TranslationArchiver.h"
+#import "FavouriteArchiver.h"
 #import "TranslationCell.h"
 #import "Translation.h"
 #import "TranslationViewController.h"
@@ -17,10 +17,9 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
 @interface FavouritesViewController () <UITableViewDataSource, UITableViewDelegate, TranslationCellDelegate, UIActionSheetDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
-@property (nonatomic, strong) TranslationArchiver *archiver;
+@property (nonatomic, strong) FavouriteArchiver *archiver;
 @property (strong, nonatomic) IBOutlet UIButton *btnEditOk;
 @property (strong, nonatomic) IBOutlet UIButton *btnRemoveAll;
-@property (strong, nonatomic) NSArray *favourites;
 
 - (IBAction)editTable:(id)sender;
 - (IBAction)removeAll:(id)sender;
@@ -41,18 +40,10 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    [self loadFavourites];
+    [self.tableView setEditing:NO animated:YES];
+    [self changeTableToEditing:NO];
+    _archiver = [[FavouriteArchiver alloc] init];
     [self.tableView reloadData];
-}
-
-- (void)loadFavourites
-{
-    _archiver = [[TranslationArchiver alloc] init];
-    NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
-        Translation *translation = (Translation *)evaluatedObject;
-        return [translation favourite];
-    }];
-    _favourites = [_archiver.translations filteredArrayUsingPredicate:predicate];
 }
 
 - (void)didReceiveMemoryWarning
@@ -62,12 +53,10 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
 
 - (void)translationCell:(TranslationCell *)translationCell favouriteButtonPressed:(UIButton *)button
 {
-    NSIndexPath *cellIndexPath = [_tableView indexPathForCell:translationCell]; //translationCell.indexPath;
-    Translation *translation = _favourites[cellIndexPath.row];
+    NSIndexPath *cellIndexPath = [_tableView indexPathForCell:translationCell];
+    Translation *translation = _archiver.translations[cellIndexPath.row];
     [translation setFavourite:button.selected];
-
     [_archiver updateTranslation:translation];
-    [self loadFavourites];
     [_tableView deleteRowsAtIndexPaths:@[cellIndexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
@@ -80,13 +69,13 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [_favourites count];
+    return [_archiver.translations count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     TranslationCell *cell = [tableView dequeueReusableCellWithIdentifier:favouriteCellIdentifier forIndexPath:indexPath];
-    Translation *translation = _favourites[indexPath.row];
+    Translation *translation = _archiver.translations[indexPath.row];
     
     cell.sourceLabel.text = translation.source;
     cell.translationLabel.text = translation.translation;
@@ -99,7 +88,7 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     TranslationViewController *translationVC = self.tabBarController.viewControllers[0];
-    Translation *translation = _favourites[indexPath.row];
+    Translation *translation = _archiver.translations[indexPath.row];
     [translationVC loadTranslation:translation];
     [self.tabBarController setSelectedIndex:0];
 }
@@ -113,16 +102,35 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
-        Translation *translation = _favourites[indexPath.row];
+        Translation *translation = _archiver.translations[indexPath.row];
         [_archiver removeTranslation:translation];
-        [self loadFavourites];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
 }
 
 - (IBAction)editTable:(id)sender {
     [_tableView setEditing:!_tableView.isEditing animated:YES];
-    if ([_tableView isEditing]) {
+    [self changeTableToEditing:[_tableView isEditing]];
+}
+
+- (IBAction)removeAll:(id)sender {
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:NSLocalizedString(@"ActionSheetCancel", nil) destructiveButtonTitle:NSLocalizedString(@"ActionSheetRemoveAll", nil) otherButtonTitles:nil];
+    [actionSheet showFromTabBar:self.tabBarController.tabBar];
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 0) {
+        for (Translation *translation in _archiver.translations) {
+            [_archiver removeTranslation:translation];
+        }
+        [_tableView reloadData];
+    }
+}
+
+- (void)changeTableToEditing:(BOOL)editing
+{
+    if (editing) {
         [_btnEditOk setTitle:NSLocalizedString(@"ButtonEditOkTable", nil) forState:UIControlStateNormal];
         [_btnEditOk setTitle:NSLocalizedString(@"ButtonEditOkTable", nil) forState:UIControlStateHighlighted];
         [_btnRemoveAll setHidden:NO];
@@ -134,19 +142,4 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
     }
 }
 
-- (IBAction)removeAll:(id)sender {
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:NSLocalizedString(@"ActionSheetCancel", nil) destructiveButtonTitle:NSLocalizedString(@"ActionSheetRemoveAll", nil) otherButtonTitles:nil];
-    [actionSheet showFromTabBar:self.tabBarController.tabBar];
-}
-
-- (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex
-{
-    if (buttonIndex == 0) {
-        for (Translation *translation in _favourites) {
-            [_archiver removeTranslation:translation];
-        }
-        [self loadFavourites];
-        [_tableView reloadData];
-    }
-}
 @end

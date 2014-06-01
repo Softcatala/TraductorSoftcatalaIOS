@@ -110,18 +110,6 @@ static NSString *translationCellIdentifier = @"translationCell";
 - (IBAction)editTable:(id)sender {
     [_tableView setEditing:!_tableView.isEditing animated:YES];
     [self changeTableToEditing:[_tableView isEditing]];
-/*
-    if ([_tableView isEditing]) {
-        [_btnEditOk setTitle:NSLocalizedString(@"ButtonEditOkTable", nil) forState:UIControlStateNormal];
-        [_btnEditOk setTitle:NSLocalizedString(@"ButtonEditOkTable", nil) forState:UIControlStateHighlighted];
-        [_btnRemoveAll setHidden:NO];
-    } else {
-        [_btnEditOk setTitle:NSLocalizedString(@"ButtonEditTable", nil) forState:UIControlStateNormal];
-        [_btnEditOk setTitle:NSLocalizedString(@"ButtonEditTable", nil) forState:UIControlStateHighlighted];
-        [_btnRemoveAll setHidden:YES];
-        
-    }
- */
 }
 
 - (IBAction)removeAll:(id)sender {
