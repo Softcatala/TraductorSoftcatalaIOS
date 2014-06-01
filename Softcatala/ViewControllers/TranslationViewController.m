@@ -14,7 +14,7 @@
 #import "LanguageDirection.h"
 #import "Language.h"
 #import "ProgressHud.h"
-#import "TranslationArchiver.h"
+#import "HistoricArchiver.h"
 #import "TextViewNotify.h"
 
 @interface TranslationViewController () <GarbageTextViewDelegate, TextViewNotifyDelegate>
@@ -112,7 +112,7 @@
             _sourceText.editable = YES;
             
             Translation *translation = [[Translation alloc] initWithSourceText:cleanedSourceText translationText:translationText languageDirection:laguageDirection isFavorite:NO];
-            [[[TranslationArchiver alloc] init] addTranslation:translation];
+            [[[HistoricArchiver alloc] init] addTranslation:translation];
         });
     } failure:^(NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{

@@ -117,4 +117,5 @@
 {
     [NSKeyedArchiver archiveRootObject:_translations toFile:_filePath];
 }
+
 @end

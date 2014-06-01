@@ -7,7 +7,7 @@
 //
 
 #import "HistoricTableViewController.h"
-#import "TranslationArchiver.h"
+#import "HistoricArchiver.h"
 #import "Translation.h"
 #import "TranslationCell.h"
 #import "TranslationViewController.h"
@@ -17,7 +17,7 @@ static NSString *translationCellIdentifier = @"translationCell";
 @interface HistoricTableViewController () <UITableViewDataSource, UITableViewDelegate, TranslationCellDelegate, UIActionSheetDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
-@property (nonatomic, strong) TranslationArchiver *archiver;
+@property (nonatomic, strong) HistoricArchiver *archiver;
 @property (strong, nonatomic) IBOutlet UIButton *btnEditOk;
 @property (strong, nonatomic) IBOutlet UIButton *btnRemoveAll;
 
@@ -40,7 +40,9 @@ static NSString *translationCellIdentifier = @"translationCell";
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    _archiver = [[TranslationArchiver alloc] init];
+    [self.tableView setEditing:NO animated:YES];
+    [self changeTableToEditing:NO];
+    _archiver = [[HistoricArchiver alloc] init];
     [self.tableView reloadData];
 }
 
@@ -107,6 +109,8 @@ static NSString *translationCellIdentifier = @"translationCell";
 
 - (IBAction)editTable:(id)sender {
     [_tableView setEditing:!_tableView.isEditing animated:YES];
+    [self changeTableToEditing:[_tableView isEditing]];
+/*
     if ([_tableView isEditing]) {
         [_btnEditOk setTitle:NSLocalizedString(@"ButtonEditOkTable", nil) forState:UIControlStateNormal];
         [_btnEditOk setTitle:NSLocalizedString(@"ButtonEditOkTable", nil) forState:UIControlStateHighlighted];
@@ -117,6 +121,7 @@ static NSString *translationCellIdentifier = @"translationCell";
         [_btnRemoveAll setHidden:YES];
         
     }
+ */
 }
 
 - (IBAction)removeAll:(id)sender {
@@ -129,6 +134,20 @@ static NSString *translationCellIdentifier = @"translationCell";
     if (buttonIndex == 0) {
         [_archiver removeAllTranslations];
         [_tableView reloadData];
+    }
+}
+
+- (void)changeTableToEditing:(BOOL)editing
+{
+    if (editing) {
+        [_btnEditOk setTitle:NSLocalizedString(@"ButtonEditOkTable", nil) forState:UIControlStateNormal];
+        [_btnEditOk setTitle:NSLocalizedString(@"ButtonEditOkTable", nil) forState:UIControlStateHighlighted];
+        [_btnRemoveAll setHidden:NO];
+    } else {
+        [_btnEditOk setTitle:NSLocalizedString(@"ButtonEditTable", nil) forState:UIControlStateNormal];
+        [_btnEditOk setTitle:NSLocalizedString(@"ButtonEditTable", nil) forState:UIControlStateHighlighted];
+        [_btnRemoveAll setHidden:YES];
+        
     }
 }
 @end

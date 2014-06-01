@@ -16,6 +16,8 @@
 @property(nonatomic, copy) NSString *translation;
 @property(nonatomic, strong) LanguageDirection *languageDirection;
 @property(nonatomic) BOOL favourite;
+@property (assign, nonatomic) NSTimeInterval createdAt;
+@property(nonatomic, assign) BOOL deleted;
 
 - (id)initWithSourceText:(NSString *)source translationText:(NSString *)translation languageDirection:(LanguageDirection *)languageDirection isFavorite:(BOOL)favourite;
 

@@ -11,7 +11,6 @@
 
 @implementation Translation
 
-
 - (id)init
 {
     return nil;
@@ -21,15 +20,13 @@
 {
     self = [super init];
     if (self) {
-        if (source && translation && languageDirection)
-        {
-        _source = source;
-        _translation = translation;
-        _languageDirection = languageDirection;
-        _favourite = favourite;
-        }
-        else
-        {
+        if (source && translation && languageDirection) {
+            _source = source;
+            _translation = translation;
+            _languageDirection = languageDirection;
+            _favourite = favourite;
+            _createdAt = [[NSDate date] timeIntervalSince1970];
+        } else {
             return nil;
         }
     }
@@ -49,6 +46,8 @@
     [encoder encodeObject:_translation forKey:@"translation"];
     [encoder encodeObject:_languageDirection forKey:@"languageDirection"];
     [encoder encodeBool:_favourite forKey:@"favourite"];
+    [encoder encodeDouble:_createdAt forKey:@"createdAt"];
+    [encoder encodeBool:_deleted forKey:@"deleted"];
 }
 
 - (id)initWithCoder:(NSCoder * )coder
@@ -59,6 +58,8 @@
         _translation = [coder decodeObjectForKey:@"translation"];
         _languageDirection = [coder decodeObjectForKey:@"languageDirection"];
         _favourite = [coder decodeBoolForKey:@"favourite"];
+        _createdAt = [coder decodeDoubleForKey:@"createdAt"];
+        _deleted = [coder decodeBoolForKey:@"deleted"];
     }
 
     return self;
