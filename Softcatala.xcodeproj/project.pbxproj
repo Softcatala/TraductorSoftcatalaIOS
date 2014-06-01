@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D013782193BB966007F32BF /* FavouriteArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D013781193BB966007F32BF /* FavouriteArchiver.m */; };
 		8D034E7318CD169800E856D8 /* GarbageTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D034E7218CD169800E856D8 /* GarbageTextView.m */; };
 		8D052C5F1905BB400059BD79 /* ProgressHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D052C5E1905BB400059BD79 /* ProgressHud.m */; };
 		8D2EBC8F192F4A70009312A0 /* FavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2EBC8E192F4A70009312A0 /* FavouritesViewController.m */; };
@@ -55,6 +56,8 @@
 		3BB1D42AA81B4FEDB85EADEB /* libPods-Softcatala.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Softcatala.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F2B3CA872B34807A1BFF878 /* libPods-SoftcatalaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SoftcatalaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53F802B7577F4688A5E38578 /* Pods-Softcatala.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Softcatala.xcconfig"; path = "Pods/Pods-Softcatala.xcconfig"; sourceTree = "<group>"; };
+		8D013780193BB966007F32BF /* FavouriteArchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouriteArchiver.h; sourceTree = "<group>"; };
+		8D013781193BB966007F32BF /* FavouriteArchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavouriteArchiver.m; sourceTree = "<group>"; };
 		8D034E7118CD169800E856D8 /* GarbageTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GarbageTextView.h; sourceTree = "<group>"; };
 		8D034E7218CD169800E856D8 /* GarbageTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GarbageTextView.m; sourceTree = "<group>"; };
 		8D052C5D1905BB400059BD79 /* ProgressHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHud.h; sourceTree = "<group>"; };
@@ -274,6 +277,8 @@
 				BF8C71FB4B0E2FBC6719DA9A /* TranslationRequest.m */,
 				8D87A052193A2E6C007D643D /* HistoricArchiver.h */,
 				8D87A053193A2E6C007D643D /* HistoricArchiver.m */,
+				8D013780193BB966007F32BF /* FavouriteArchiver.h */,
+				8D013781193BB966007F32BF /* FavouriteArchiver.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -456,6 +461,7 @@
 			files = (
 				8D8773F218BB511A001AE36C /* Translation.m in Sources */,
 				8D052C5F1905BB400059BD79 /* ProgressHud.m in Sources */,
+				8D013782193BB966007F32BF /* FavouriteArchiver.m in Sources */,
 				8DF4CCF718BB4B9800C10CF6 /* AppDelegate.m in Sources */,
 				8DF4CCF318BB4B9800C10CF6 /* main.m in Sources */,
 				8D034E7318CD169800E856D8 /* GarbageTextView.m in Sources */,

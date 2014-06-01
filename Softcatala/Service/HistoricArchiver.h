@@ -10,8 +10,6 @@
 
 #import "TranslationArchiver.h"
 
-@class Translation;
-
 @interface HistoricArchiver : TranslationArchiver
 
 
