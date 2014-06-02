@@ -144,6 +144,7 @@
     [UIView animateWithDuration:0.5 animations:^{
         [_translationPickerView setCenter:CGPointMake(_translationPickerView.center.x, bottom + _translationPickerView.frame.size.height / 2)];
         [_translationPickerView setHidden:YES];
+        [_btnSharing setAlpha:1.0];
     }];
 
     if ([_translationsPicker selectedRowInComponent:0] != currentLanguageDirection) {
