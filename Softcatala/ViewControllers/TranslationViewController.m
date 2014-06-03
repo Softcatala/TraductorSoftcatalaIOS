@@ -143,6 +143,7 @@
     [_sourceText setUserInteractionEnabled:YES];
     [UIView animateWithDuration:0.5 animations:^{
         [_translationPickerView setCenter:CGPointMake(_translationPickerView.center.x, bottom + _translationPickerView.frame.size.height / 2)];
+    } completion:^(BOOL finished) {
         [_translationPickerView setHidden:YES];
     }];
 
@@ -155,9 +156,15 @@
 }
 
 - (IBAction)closePicker:(id)sender {
-    [_translationPickerView setHidden:YES];
-    [_sourceText setUserInteractionEnabled:YES];
-    [_btnSharing setAlpha:1.0];
+    CGFloat bottom = self.view.frame.size.height;
+    CGFloat destinationHeight = bottom + _translationPickerView.center.y;
+    [UIView animateWithDuration:0.5 animations:^{
+        _translationPickerView.center = CGPointMake(_translationPickerView.center.x, destinationHeight);
+        [_sourceText setUserInteractionEnabled:YES];
+        [_btnSharing setAlpha:1.0];
+    } completion:^(BOOL finished) {
+        [_translationPickerView setHidden:YES];
+    }];
 }
 
 - (IBAction)reverseTranslation:(id)sender {
