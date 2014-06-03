@@ -226,6 +226,8 @@
     if ([languageDirection.destinationLanguage.code isEqualToString:@"ca_valencia"]) {
         [_btnFormesVal setEnabled:YES];
         [_btnFormesVal setSelected:YES];
+        [_lblFormesValencianes setHidden:NO];
+        [_btnFormesVal setHidden:NO];
         currentLanguageDirection = 0;
     } else {
         for (LanguageDirection *currentDirection in translationDirections) {
