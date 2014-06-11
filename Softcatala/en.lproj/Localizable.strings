@@ -1,10 +1,10 @@
-/* 
-  Localizable.strings
-  Softcatala
-
-  Created by marcos on 04/03/14.
-  Copyright (c) 2014 Marcos Grau. All rights reserved.
-*/
+/*
+ Localizable.strings
+ Softcatala
+ 
+ Created by marcos on 04/03/14.
+ Copyright (c) 2014 Marcos Grau. All rights reserved.
+ */
 "es" = "Castellà";
 "ca" = "Català";
 "pt" = "Portuguès";
@@ -14,14 +14,14 @@
 "va" = "Formes valencianes";
 
 "ResponseGeneralError" = "S'ha produït un error";
-"EnterTextToTranslate" = "Introdueix text a traduir...";
-"ButtonTranslate" = "Traduir";
+"EnterTextToTranslate" = "Text to translate...";
+"ButtonTranslate" = "Translate";
 "ButtonHistoric" = "Històric";
 "ButtonFavourites" = "Favorits";
-"ButtonClose" = "Tancar";
-"ButtonPickerSelect" = "Seleccionar";
-"ButtonPickerClose" = "Tancar";
-"ButtonBarTranslate" = "Traduir";
+"ButtonClose" = "Close";
+"ButtonPickerSelect" = "Select";
+"ButtonPickerClose" = "Close";
+"ButtonBarTranslate" = "Translate";
 "ButtonFormesValencianes" = "Formes valencianes";
 
 "ButtonEditTable" = "Editar";

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0500"
+   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8DF4CCE218BB4B9800C10CF6"
+               BlueprintIdentifier = "8DE5D66E1948F2E9005BCE7B"
                BuildableName = "Softcatala.app"
                BlueprintName = "Softcatala"
                ReferencedContainer = "container:Softcatala.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8DF4CCFD18BB4B9800C10CF6"
+               BlueprintIdentifier = "8DE5D6921948F2EB005BCE7B"
                BuildableName = "SoftcatalaTests.xctest"
                BlueprintName = "SoftcatalaTests"
                ReferencedContainer = "container:Softcatala.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8DF4CCE218BB4B9800C10CF6"
+            BlueprintIdentifier = "8DE5D66E1948F2E9005BCE7B"
             BuildableName = "Softcatala.app"
             BlueprintName = "Softcatala"
             ReferencedContainer = "container:Softcatala.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8DF4CCE218BB4B9800C10CF6"
+            BlueprintIdentifier = "8DE5D66E1948F2E9005BCE7B"
             BuildableName = "Softcatala.app"
             BlueprintName = "Softcatala"
             ReferencedContainer = "container:Softcatala.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8DF4CCE218BB4B9800C10CF6"
+            BlueprintIdentifier = "8DE5D66E1948F2E9005BCE7B"
             BuildableName = "Softcatala.app"
             BlueprintName = "Softcatala"
             ReferencedContainer = "container:Softcatala.xcodeproj">

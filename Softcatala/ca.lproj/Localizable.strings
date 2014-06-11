@@ -1,0 +1,41 @@
+/*
+ Localizable.strings
+ Softcatala
+ 
+ Created by marcos on 04/03/14.
+ Copyright (c) 2014 Marcos Grau. All rights reserved.
+ */
+"es" = "Castellà";
+"ca" = "Català";
+"pt" = "Portuguès";
+"fr" = "Francès";
+"en" = "Anglès";
+"ca_valencia" = "Català";
+"va" = "Formes valencianes";
+
+"ResponseGeneralError" = "S'ha produït un error";
+"EnterTextToTranslate" = "Introdueix text a traduir...";
+"ButtonTranslate" = "Traduir";
+"ButtonHistoric" = "Històric";
+"ButtonFavourites" = "Favorits";
+"ButtonClose" = "Tancar";
+"ButtonPickerSelect" = "Seleccionar";
+"ButtonPickerClose" = "Tancar";
+"ButtonBarTranslate" = "Traduir";
+"ButtonFormesValencianes" = "Formes valencianes";
+
+"ButtonEditTable" = "Editar";
+"ButtonEditOkTable" = "Ok";
+"ButtonRemoveAllTable" = "Esborrar";
+"ActionSheetRemoveAll" = "Esborrar tots";
+"ActionSheetCancel" = "Cancel·lar";
+
+"ActionSheetSharingTwitter" = "Twitter";
+"ActionSheetSharingFacebook" = "Facebook";
+"ActionSheetSharingEmail" = "Email";
+"ActionSheetSharingCancel" = "Cancel·lar";
+
+"SENDTO_TWITTER_ALERT_TITLE_NOT_AVAILABLE" = "Atenció";
+"SENDTO_TWITTER_SERVICE_NOT_AVAILABLE" = "Twitter no disponible";
+"SENDTO_FACEBOOK_ALERT_TITLE_NOT_AVAILABLE" = "Atenció";
+"SENDTO_FACEBOOK_SERVICE_NOT_AVAILABLE" = "Facebook no disponible";
