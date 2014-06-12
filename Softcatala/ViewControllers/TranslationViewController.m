@@ -126,12 +126,14 @@
 
 - (IBAction)changeTranslationDirection:(id)sender {
     // Move picker to bottom
+    
     CGFloat bottom = self.view.frame.size.height;
     [_translationPickerView setCenter:CGPointMake(_translationPickerView.center.x, bottom + _translationPickerView.frame.size.height / 2)];
     [_translationPickerView setHidden:NO];
     [_translationsPicker selectRow:currentLanguageDirection inComponent:0 animated:NO];
     [_sourceText setUserInteractionEnabled:NO];
     CGFloat destinationHeight = _translationPickerView.center.y - _translationPickerView.frame.size.height;
+
     [UIView animateWithDuration:.5 animations:^{
         [_translationPickerView setCenter:CGPointMake(_translationPickerView.center.x, destinationHeight)];
         [_btnSharing setAlpha:0.0];

@@ -61,8 +61,8 @@
 		8D852DCE1948F72C00F56F69 /* TextViewNotify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewNotify.m; sourceTree = "<group>"; };
 		8D852DCF1948F72C00F56F69 /* TranslationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslationCell.h; sourceTree = "<group>"; };
 		8D852DD01948F72C00F56F69 /* TranslationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslationCell.m; sourceTree = "<group>"; };
-		8D852DD11948F72C00F56F69 /* FavouritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouritesViewController.h; sourceTree = "<group>"; };
-		8D852DD21948F72C00F56F69 /* FavouritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavouritesViewController.m; sourceTree = "<group>"; };
+		8D852DD11948F72C00F56F69 /* FavouritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavouritesViewController.h; path = ../FavouritesViewController.h; sourceTree = "<group>"; };
+		8D852DD21948F72C00F56F69 /* FavouritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FavouritesViewController.m; path = ../FavouritesViewController.m; sourceTree = "<group>"; };
 		8D852DD41948F72C00F56F69 /* Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Language.h; sourceTree = "<group>"; };
 		8D852DD51948F72C00F56F69 /* Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Language.m; sourceTree = "<group>"; };
 		8D852DD61948F72C00F56F69 /* LanguageDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageDirection.h; sourceTree = "<group>"; };
@@ -166,6 +166,8 @@
 		8D852DE61948F72C00F56F69 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8D852DD11948F72C00F56F69 /* FavouritesViewController.h */,
+				8D852DD21948F72C00F56F69 /* FavouritesViewController.m */,
 				8D852DE71948F72C00F56F69 /* HistoricTableViewController.h */,
 				8D852DE81948F72C00F56F69 /* HistoricTableViewController.m */,
 				8D852DE91948F72C00F56F69 /* TranslationViewController.h */,
@@ -212,8 +214,6 @@
 			isa = PBXGroup;
 			children = (
 				8D852DC81948F72C00F56F69 /* Controls */,
-				8D852DD11948F72C00F56F69 /* FavouritesViewController.h */,
-				8D852DD21948F72C00F56F69 /* FavouritesViewController.m */,
 				8D852DD41948F72C00F56F69 /* Language.h */,
 				8D852DD51948F72C00F56F69 /* Language.m */,
 				8D852DD61948F72C00F56F69 /* LanguageDirection.h */,
@@ -311,6 +311,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Marcos Grau";
 				TargetAttributes = {
+					8DE5D66E1948F2E9005BCE7B = {
+						DevelopmentTeam = 78P2E95D3N;
+					};
 					8DE5D6921948F2EB005BCE7B = {
 						TestTargetID = 8DE5D66E1948F2E9005BCE7B;
 					};
@@ -572,10 +575,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Softcatala/Softcatala-Prefix.pch";
 				INFOPLIST_FILE = "Softcatala/Softcatala-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2C8E87BD-F583-4C49-99C5-549248AA95B8";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -586,10 +591,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Softcatala/Softcatala-Prefix.pch";
 				INFOPLIST_FILE = "Softcatala/Softcatala-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2C8E87BD-F583-4C49-99C5-549248AA95B8";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
