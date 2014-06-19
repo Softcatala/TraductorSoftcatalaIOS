@@ -14,26 +14,26 @@
 "va" = "Formes valencianes";
 
 "ResponseGeneralError" = "S'ha produït un error";
-"EnterTextToTranslate" = "Introdueix text a traduir...";
-"ButtonTranslate" = "Traduir";
-"ButtonHistoric" = "Històric";
-"ButtonFavourites" = "Favorits";
-"ButtonClose" = "Tancar";
-"ButtonPickerSelect" = "Seleccionar";
-"ButtonPickerClose" = "Tancar";
-"ButtonBarTranslate" = "Traduir";
+"EnterTextToTranslate" = "Introduïu text a traduir...";
+"ButtonTranslate" = "Tradueix";
+"ButtonHistoric" = "Historial";
+"ButtonFavourites" = "Preferits";
+"ButtonClose" = "Tanca";
+"ButtonPickerSelect" = "Trieu";
+"ButtonPickerClose" = "Tanca";
+"ButtonBarTranslate" = "Tradueix";
 "ButtonFormesValencianes" = "Formes valencianes";
 
-"ButtonEditTable" = "Editar";
-"ButtonEditOkTable" = "Ok";
-"ButtonRemoveAllTable" = "Esborrar";
-"ActionSheetRemoveAll" = "Esborrar tots";
-"ActionSheetCancel" = "Cancel·lar";
+"ButtonEditTable" = "Edita";
+"ButtonEditOkTable" = "D'acord";
+"ButtonRemoveAllTable" = "Esborra";
+"ActionSheetRemoveAll" = "Esborra-ho tot";
+"ActionSheetCancel" = "Cancel·la";
 
 "ActionSheetSharingTwitter" = "Twitter";
 "ActionSheetSharingFacebook" = "Facebook";
-"ActionSheetSharingEmail" = "Email";
-"ActionSheetSharingCancel" = "Cancel·lar";
+"ActionSheetSharingEmail" = "Adreça electrònica";
+"ActionSheetSharingCancel" = "Cancel·la";
 
 "SENDTO_TWITTER_ALERT_TITLE_NOT_AVAILABLE" = "Atenció";
 "SENDTO_TWITTER_SERVICE_NOT_AVAILABLE" = "Twitter no disponible";
