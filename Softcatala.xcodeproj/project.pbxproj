@@ -24,6 +24,7 @@
 		8D852DF91948F72C00F56F69 /* Translation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D852DE51948F72C00F56F69 /* Translation.m */; };
 		8D852DFA1948F72C00F56F69 /* HistoricTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D852DE81948F72C00F56F69 /* HistoricTableViewController.m */; };
 		8D852DFB1948F72C00F56F69 /* TranslationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D852DEA1948F72C00F56F69 /* TranslationViewController.m */; };
+		8D89918919537F7E00077E5F /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D89918819537F7E00077E5F /* Main_iPad.storyboard */; };
 		8D900BD41952E9F600D415B2 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8D900BD31952E9F600D415B2 /* Settings.bundle */; };
 		8D900BD71952EE1C00D415B2 /* LocalizeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D900BD61952EE1C00D415B2 /* LocalizeHelper.m */; };
 		8D900BDA1952F2E000D415B2 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D900BD91952F2E000D415B2 /* Constants.m */; };
@@ -86,6 +87,7 @@
 		8D852DE81948F72C00F56F69 /* HistoricTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoricTableViewController.m; sourceTree = "<group>"; };
 		8D852DE91948F72C00F56F69 /* TranslationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslationViewController.h; sourceTree = "<group>"; };
 		8D852DEA1948F72C00F56F69 /* TranslationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslationViewController.m; sourceTree = "<group>"; };
+		8D89918819537F7E00077E5F /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main_iPad.storyboard; path = ../Main_iPad.storyboard; sourceTree = "<group>"; };
 		8D900BD31952E9F600D415B2 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		8D900BD51952EE1C00D415B2 /* LocalizeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizeHelper.h; sourceTree = "<group>"; };
 		8D900BD61952EE1C00D415B2 /* LocalizeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizeHelper.m; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				8D852DE61948F72C00F56F69 /* ViewControllers */,
 				8DE5D6811948F2EA005BCE7B /* AppDelegate.h */,
 				8DE5D6821948F2EA005BCE7B /* AppDelegate.m */,
+				8D89918819537F7E00077E5F /* Main_iPad.storyboard */,
 				8D9EB3391948FDEC00253969 /* Main.storyboard */,
 				8DE5D68D1948F2EB005BCE7B /* Images.xcassets */,
 				8DE5D6791948F2EA005BCE7B /* Supporting Files */,
@@ -361,6 +364,7 @@
 				8DE5D68E1948F2EB005BCE7B /* Images.xcassets in Resources */,
 				8D27668B1948F8F900DFCBD4 /* Localizable.strings in Resources */,
 				8D900BD41952E9F600D415B2 /* Settings.bundle in Resources */,
+				8D89918919537F7E00077E5F /* Main_iPad.storyboard in Resources */,
 				8DE5D67D1948F2EA005BCE7B /* InfoPlist.strings in Resources */,
 				8D9EB33A1948FDEC00253969 /* Main.storyboard in Resources */,
 			);

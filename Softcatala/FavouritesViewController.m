@@ -24,6 +24,7 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
 
 - (IBAction)editTable:(id)sender;
 - (IBAction)removeAll:(id)sender;
+- (IBAction)selectedListChanged:(id)sender;
 
 @end
 
@@ -60,6 +61,11 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
     [translation setFavourite:button.selected];
     [_archiver updateTranslation:translation];
     [_tableView deleteRowsAtIndexPaths:@[cellIndexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+
+- (IBAction)selectedListChanged:(id)sender {
+    UISegmentedControl *segmentedControl = sender;
+    [self.tabBarController setSelectedIndex:segmentedControl.selectedSegmentIndex];
 }
 
 #pragma mark - Table view data source

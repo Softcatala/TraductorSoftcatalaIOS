@@ -24,6 +24,7 @@ static NSString *translationCellIdentifier = @"translationCell";
 
 - (IBAction)editTable:(id)sender;
 - (IBAction)removeAll:(id)sender;
+- (IBAction)selectedListChanged:(id)sender;
 
 @end
 
@@ -36,6 +37,11 @@ static NSString *translationCellIdentifier = @"translationCell";
 
     [_btnRemoveAll setHidden:YES];
     [self localizeToChoosenLanguage];
+    
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        [self.tabBarController.tabBar setHidden:YES];
+        self.tableView.tableFooterView = [UIView new];
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -116,6 +122,11 @@ static NSString *translationCellIdentifier = @"translationCell";
 - (IBAction)removeAll:(id)sender {
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:LocalizedString(@"ActionSheetCancel") destructiveButtonTitle:LocalizedString(@"ActionSheetRemoveAll") otherButtonTitles:nil];
     [actionSheet showFromTabBar:self.tabBarController.tabBar];
+}
+
+- (IBAction)selectedListChanged:(id)sender {
+    UISegmentedControl *segmentedControl = sender;
+    [self.tabBarController setSelectedIndex:segmentedControl.selectedSegmentIndex];
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex
