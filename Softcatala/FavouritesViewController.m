@@ -12,7 +12,7 @@
 #import "Translation.h"
 #import "TranslationViewController.h"
 #import "LocalizeHelper.h"
-
+#import "LocalizeHelper.h"
 static NSString *favouriteCellIdentifier = @"favouriteCell";
 
 @interface FavouritesViewController () <UITableViewDataSource, UITableViewDelegate, TranslationCellDelegate, UIActionSheetDelegate>
@@ -32,15 +32,16 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(localizeToChoosenLanguage) name:kLanguageNotification object:nil];
+    [self localizeToChoosenLanguage];
     [_btnRemoveAll setHidden:YES];
-    [_btnRemoveAll setTitle:NSLocalizedString(@"ButtonRemoveAllTable", nil) forState:UIControlStateNormal];
-    [_btnRemoveAll setTitle:NSLocalizedString(@"ButtonRemoveAllTable", nil) forState:UIControlStateHighlighted];
-    [_btnEditOk setTitle:NSLocalizedString(@"ButtonEditTable", nil) forState:UIControlStateNormal];
-    [_btnEditOk setTitle:NSLocalizedString(@"ButtonEditTable", nil) forState:UIControlStateHighlighted];
+
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    [self localizeToChoosenLanguage];
     [self.tableView setEditing:NO animated:YES];
     [self changeTableToEditing:NO];
     _archiver = [[FavouriteArchiver alloc] init];
@@ -115,7 +116,7 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
 }
 
 - (IBAction)removeAll:(id)sender {
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:NSLocalizedString(@"ActionSheetCancel", nil) destructiveButtonTitle:NSLocalizedString(@"ActionSheetRemoveAll", nil) otherButtonTitles:nil];
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:LocalizedString(@"ActionSheetCancel") destructiveButtonTitle:LocalizedString(@"ActionSheetRemoveAll") otherButtonTitles:nil];
     [actionSheet showFromTabBar:self.tabBarController.tabBar];
 }
 
@@ -134,15 +135,22 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
 - (void)changeTableToEditing:(BOOL)editing
 {
     if (editing) {
-        [_btnEditOk setTitle:NSLocalizedString(@"ButtonEditOkTable", nil) forState:UIControlStateNormal];
-        [_btnEditOk setTitle:NSLocalizedString(@"ButtonEditOkTable", nil) forState:UIControlStateHighlighted];
+        [_btnEditOk setTitle:LocalizedString(@"ButtonEditOkTable") forState:UIControlStateNormal];
+        [_btnEditOk setTitle:LocalizedString(@"ButtonEditOkTable") forState:UIControlStateHighlighted];
         [_btnRemoveAll setHidden:NO];
     } else {
-        [_btnEditOk setTitle:NSLocalizedString(@"ButtonEditTable", nil) forState:UIControlStateNormal];
-        [_btnEditOk setTitle:NSLocalizedString(@"ButtonEditTable", nil) forState:UIControlStateHighlighted];
+        [_btnEditOk setTitle:LocalizedString(@"ButtonEditTable") forState:UIControlStateNormal];
+        [_btnEditOk setTitle:LocalizedString(@"ButtonEditTable") forState:UIControlStateHighlighted];
         [_btnRemoveAll setHidden:YES];
         
     }
 }
-
+#pragma mark Localization choosen Language
+- (void)localizeToChoosenLanguage
+{
+    [_btnRemoveAll setTitle:LocalizedString(@"ButtonRemoveAllTable") forState:UIControlStateNormal];
+    [_btnRemoveAll setTitle:LocalizedString(@"ButtonRemoveAllTable") forState:UIControlStateHighlighted];
+    [_btnEditOk setTitle:LocalizedString(@"ButtonEditTable") forState:UIControlStateNormal];
+    [_btnEditOk setTitle:LocalizedString(@"ButtonEditTable") forState:UIControlStateHighlighted];
+}
 @end
