@@ -8,6 +8,7 @@
 
 #import "GarbageTextView.h"
 #import <QuartzCore/QuartzCore.h>
+#import "LocalizeHelper.h"
 
 @implementation GarbageTextView
 {
@@ -31,7 +32,7 @@
     placeholderLabel = [[UILabel alloc] initWithFrame:CGRectMake(13, 0, self.superview.frame.size.width, 33)];
     placeholderLabel.font = [UIFont systemFontOfSize:15.0];
     placeholderLabel.textColor = [UIColor colorWithRed:229.0/255.0 green:227.0/255.2 blue:216.0/255.0 alpha:1.0];
-    placeholderLabel.text = NSLocalizedString(@"EnterTextToTranslate", nil);
+    placeholderLabel.text = LocalizedString(@"EnterTextToTranslate");
     
     [self.superview addSubview:placeholderLabel];
     self.layer.cornerRadius = 5.0;
@@ -82,5 +83,10 @@
         [placeholderLabel setHidden:YES];
         [garbageButton setHidden:NO];
     }
+}
+
+- (void)updateLocalizedTexts
+{
+    placeholderLabel.text = LocalizedString(@"EnterTextToTranslate");
 }
 @end

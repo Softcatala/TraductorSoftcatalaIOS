@@ -24,6 +24,9 @@
 		8D852DF91948F72C00F56F69 /* Translation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D852DE51948F72C00F56F69 /* Translation.m */; };
 		8D852DFA1948F72C00F56F69 /* HistoricTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D852DE81948F72C00F56F69 /* HistoricTableViewController.m */; };
 		8D852DFB1948F72C00F56F69 /* TranslationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D852DEA1948F72C00F56F69 /* TranslationViewController.m */; };
+		8D900BD41952E9F600D415B2 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8D900BD31952E9F600D415B2 /* Settings.bundle */; };
+		8D900BD71952EE1C00D415B2 /* LocalizeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D900BD61952EE1C00D415B2 /* LocalizeHelper.m */; };
+		8D900BDA1952F2E000D415B2 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D900BD91952F2E000D415B2 /* Constants.m */; };
 		8D9EB33A1948FDEC00253969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D9EB3391948FDEC00253969 /* Main.storyboard */; };
 		8DE5D6731948F2E9005BCE7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE5D6721948F2E9005BCE7B /* Foundation.framework */; };
 		8DE5D6751948F2E9005BCE7B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE5D6741948F2E9005BCE7B /* CoreGraphics.framework */; };
@@ -83,6 +86,11 @@
 		8D852DE81948F72C00F56F69 /* HistoricTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoricTableViewController.m; sourceTree = "<group>"; };
 		8D852DE91948F72C00F56F69 /* TranslationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslationViewController.h; sourceTree = "<group>"; };
 		8D852DEA1948F72C00F56F69 /* TranslationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslationViewController.m; sourceTree = "<group>"; };
+		8D900BD31952E9F600D415B2 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		8D900BD51952EE1C00D415B2 /* LocalizeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizeHelper.h; sourceTree = "<group>"; };
+		8D900BD61952EE1C00D415B2 /* LocalizeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizeHelper.m; sourceTree = "<group>"; };
+		8D900BD81952F2E000D415B2 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		8D900BD91952F2E000D415B2 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		8D9EB3391948FDEC00253969 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8D9EB33B1948FE9D00253969 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8DE5D66F1948F2E9005BCE7B /* Softcatala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Softcatala.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -213,6 +221,8 @@
 		8DE5D6781948F2EA005BCE7B /* Softcatala */ = {
 			isa = PBXGroup;
 			children = (
+				8D900BD51952EE1C00D415B2 /* LocalizeHelper.h */,
+				8D900BD61952EE1C00D415B2 /* LocalizeHelper.m */,
 				8D852DC81948F72C00F56F69 /* Controls */,
 				8D852DD41948F72C00F56F69 /* Language.h */,
 				8D852DD51948F72C00F56F69 /* Language.m */,
@@ -234,11 +244,14 @@
 		8DE5D6791948F2EA005BCE7B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8D900BD81952F2E000D415B2 /* Constants.h */,
+				8D900BD91952F2E000D415B2 /* Constants.m */,
 				8DE5D67A1948F2EA005BCE7B /* Softcatala-Info.plist */,
 				8DE5D67B1948F2EA005BCE7B /* InfoPlist.strings */,
 				8DE5D67E1948F2EA005BCE7B /* main.m */,
 				8DE5D6801948F2EA005BCE7B /* Softcatala-Prefix.pch */,
 				8D27668D1948F8F900DFCBD4 /* Localizable.strings */,
+				8D900BD31952E9F600D415B2 /* Settings.bundle */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -347,6 +360,7 @@
 			files = (
 				8DE5D68E1948F2EB005BCE7B /* Images.xcassets in Resources */,
 				8D27668B1948F8F900DFCBD4 /* Localizable.strings in Resources */,
+				8D900BD41952E9F600D415B2 /* Settings.bundle in Resources */,
 				8DE5D67D1948F2EA005BCE7B /* InfoPlist.strings in Resources */,
 				8D9EB33A1948FDEC00253969 /* Main.storyboard in Resources */,
 			);
@@ -432,6 +446,7 @@
 			files = (
 				8D852DF21948F72C00F56F69 /* LanguageDirection.m in Sources */,
 				8DE5D6831948F2EA005BCE7B /* AppDelegate.m in Sources */,
+				8D900BD71952EE1C00D415B2 /* LocalizeHelper.m in Sources */,
 				8D852DF51948F72C00F56F69 /* HistoricArchiver.m in Sources */,
 				8D852DF61948F72C00F56F69 /* TranslationArchiver.m in Sources */,
 				8D852DFA1948F72C00F56F69 /* HistoricTableViewController.m in Sources */,
@@ -447,6 +462,7 @@
 				8D852DF91948F72C00F56F69 /* Translation.m in Sources */,
 				8D852DEF1948F72C00F56F69 /* FavouritesViewController.m in Sources */,
 				8D852DEE1948F72C00F56F69 /* TranslationCell.m in Sources */,
+				8D900BDA1952F2E000D415B2 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

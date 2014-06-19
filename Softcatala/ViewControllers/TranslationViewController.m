@@ -16,6 +16,7 @@
 #import "ProgressHud.h"
 #import "HistoricArchiver.h"
 #import "TextViewNotify.h"
+#import "LocalizeHelper.h"
 
 @interface TranslationViewController () <GarbageTextViewDelegate, TextViewNotifyDelegate>
 
@@ -31,31 +32,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(localizeToChoosenLanguage) name:kLanguageNotification object:nil];
+
 	// Do any additional setup after loading the view.
     TranslationDirectionLoader *translationDirectionLoacer = [[TranslationDirectionLoader alloc] init];
     translationDirections = [translationDirectionLoacer loadAllCombinations];
     [_translationsPicker setDelegate:self];
     [_translationsPicker setDataSource:self];
     currentLanguageDirection = 0;
-    LanguageDirection *languageDirection = translationDirections[currentLanguageDirection];
-    [_btnLanguageDirection setTitle:languageDirection.description forState:UIControlStateNormal];
-    
-    
-    [_btnPickerSelect setTitle:NSLocalizedString(@"ButtonPickerSelect", nil) forState:UIControlStateNormal];
-    [_btnPickerClose setTitle:NSLocalizedString(@"ButtonPickerClose", nil) forState:UIControlStateNormal];
-    
-    [_lblFormesValencianes setText:NSLocalizedString(@"ButtonFormesValencianes", nil)];
-    
-    [self.tabBarItem setTitle:NSLocalizedString(@"ButtonBarTranslate", nil)];
-    UITabBarItem *historicItem = self.tabBarController.tabBar.items[1];
-    [historicItem setTitle:NSLocalizedString(@"ButtonHistoric", nil)];
-    UITabBarItem *favouriteItem = self.tabBarController.tabBar.items[2];
-    [favouriteItem setTitle:NSLocalizedString(@"ButtonFavourites", nil)];
+
     [self.tabBarController.tabBar setTintColor:[UIColor colorWithRed:181.0/255.0 green:0.0 blue:39.0/255.0 alpha:1.0]];
-    
+
     [_sourceText setGarbageDelegate:self];
     [_btnSharing setHidden:YES];
     [_destinationText setChangeTextDelegate:self];
+    [self localizeToChoosenLanguage];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -64,6 +55,16 @@
     {
         [self configureAccessoryView];
     }
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self localizeToChoosenLanguage];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [self closePicker:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -312,4 +313,29 @@
         [_btnSharing setHidden:YES];
     }
 }
+
+#pragma mark Localization choosen Language
+- (void)localizeToChoosenLanguage
+{
+    translationDirections = nil;
+    TranslationDirectionLoader *translationDirectionLoacer = [[TranslationDirectionLoader alloc] init];
+    translationDirections = [translationDirectionLoacer loadAllCombinations];
+    [_translationsPicker reloadAllComponents];
+
+    LanguageDirection *languageDirection = translationDirections[currentLanguageDirection];
+    [_btnLanguageDirection setTitle:languageDirection.description forState:UIControlStateNormal];
+    [_btnPickerSelect setTitle:LocalizedString(@"ButtonPickerSelect") forState:UIControlStateNormal];
+    [_btnPickerClose setTitle:LocalizedString(@"ButtonPickerClose") forState:UIControlStateNormal];
+    
+    [_lblFormesValencianes setText:LocalizedString(@"ButtonFormesValencianes")];
+    
+    [self.tabBarItem setTitle:LocalizedString(@"ButtonBarTranslate")];
+    UITabBarItem *historicItem = self.tabBarController.tabBar.items[1];
+    [historicItem setTitle:LocalizedString(@"ButtonHistoric")];
+    UITabBarItem *favouriteItem = self.tabBarController.tabBar.items[2];
+    [favouriteItem setTitle:LocalizedString(@"ButtonFavourites")];
+    [_sourceText updateLocalizedTexts];
+    
+}
+
 @end

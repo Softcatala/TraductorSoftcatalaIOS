@@ -7,12 +7,14 @@
 //
 
 #import "AppDelegate.h"
+#import "LocalizeHelper.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    [self chooseLanguage];
     return YES;
 }
 
@@ -31,10 +33,12 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    [self chooseLanguage];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
+    [[NSNotificationCenter defaultCenter] postNotificationName:kLanguageNotification object:self];
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
@@ -43,4 +47,15 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void)chooseLanguage
+{
+    
+    BOOL showInCatalan = [[NSUserDefaults standardUserDefaults] boolForKey:kUserDefaultsCatalanEnabled];
+    NSString *language = [[NSLocale preferredLanguages] objectAtIndex:0];
+    if (showInCatalan) {
+        language = kCatalanLanguageIdentifier;
+    }
+    NSLog(@"Language: %@", language);
+    LocalizationSetLanguage(language);
+}
 @end

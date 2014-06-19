@@ -11,6 +11,7 @@
 #import "TranslationCell.h"
 #import "Translation.h"
 #import "TranslationViewController.h"
+#import "LocalizeHelper.h"
 
 static NSString *favouriteCellIdentifier = @"favouriteCell";
 

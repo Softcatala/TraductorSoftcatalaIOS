@@ -11,6 +11,7 @@
 #import "Translation.h"
 #import "TranslationCell.h"
 #import "TranslationViewController.h"
+#import "LocalizeHelper.h"
 
 static NSString *translationCellIdentifier = @"translationCell";
 

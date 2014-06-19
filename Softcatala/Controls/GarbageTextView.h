@@ -15,6 +15,7 @@
 @property (weak) id<GarbageTextViewDelegate> garbageDelegate;
 
 - (void)textChanged:(NSNotification*)notification;
+- (void)updateLocalizedTexts;
 
 @end
 
