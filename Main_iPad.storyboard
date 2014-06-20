@@ -346,22 +346,48 @@
                                 </connections>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zG3-Uf-xqj">
-                                <rect key="frame" x="98" y="20" width="123" height="29"/>
+                                <rect key="frame" x="84" y="17" width="150" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="Histórico"/>
+                                    <segment title="Favoritos"/>
                                 </segments>
+                                <color key="tintColor" red="0.70980392160000005" green="0.0" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="selectedListChanged:" destination="dYO-4H-iCS" eventType="valueChanged" id="Iwd-LU-vcQ"/>
                                 </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3C-Bp-NTO">
+                                <rect key="frame" x="254" y="16" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Editar">
+                                    <color key="titleColor" red="0.70980392160000005" green="0.0" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="editTable:" destination="dYO-4H-iCS" eventType="touchUpInside" id="KQn-d9-Psb"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFp-SY-Ql9">
+                                <rect key="frame" x="6" y="16" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Esborrar">
+                                    <color key="titleColor" red="0.70980392160000005" green="0.0" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="removeAlliPAd:" destination="dYO-4H-iCS" eventType="touchUpInside" id="TE6-mO-Bxz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="amM-1k-Sax"/>
                     <connections>
+                        <outlet property="btnEditOk" destination="F3C-Bp-NTO" id="uBe-lq-8Ia"/>
+                        <outlet property="btnRemoveAll" destination="dFp-SY-Ql9" id="dY1-3r-WOC"/>
+                        <outlet property="segmentedControl" destination="zG3-Uf-xqj" id="qdV-wt-pqT"/>
                         <outlet property="tableView" destination="fPG-uF-5mh" id="kuN-Fi-o9o"/>
                     </connections>
                 </viewController>
@@ -447,23 +473,49 @@
                                     <outlet property="delegate" destination="fJP-GJ-a7t" id="Fn7-sq-YvR"/>
                                 </connections>
                             </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="E3H-qX-mwq">
-                                <rect key="frame" x="98" y="20" width="123" height="29"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BCn-YV-jl0">
+                                <rect key="frame" x="84" y="17" width="150" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="Histórico"/>
+                                    <segment title="Favoritos"/>
                                 </segments>
+                                <color key="tintColor" red="0.70980392160000005" green="0.0" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <action selector="selectedListChanged:" destination="fJP-GJ-a7t" eventType="valueChanged" id="G92-Ec-O7L"/>
+                                    <action selector="selectedListChanged:" destination="fJP-GJ-a7t" eventType="valueChanged" id="PNf-jj-OGS"/>
                                 </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1P-s7-GgO">
+                                <rect key="frame" x="254" y="16" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Editar">
+                                    <color key="titleColor" red="0.70980392160000005" green="0.0" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="editTable:" destination="fJP-GJ-a7t" eventType="touchUpInside" id="Qqa-0D-j5R"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzX-6G-nl0">
+                                <rect key="frame" x="6" y="16" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Esborrar">
+                                    <color key="titleColor" red="0.70980392160000005" green="0.0" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="removeAlliPAd:" destination="fJP-GJ-a7t" eventType="touchUpInside" id="cuz-b2-Z3P"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="WSt-Gu-9fr"/>
                     <connections>
+                        <outlet property="btnEditOk" destination="f1P-s7-GgO" id="5QE-lG-1NJ"/>
+                        <outlet property="btnRemoveAll" destination="pzX-6G-nl0" id="0tl-9i-tFa"/>
+                        <outlet property="segmentedControl" destination="BCn-YV-jl0" id="Zb0-rP-zl8"/>
                         <outlet property="tableView" destination="cy8-MC-eAW" id="avn-2Z-nxK"/>
                     </connections>
                 </viewController>

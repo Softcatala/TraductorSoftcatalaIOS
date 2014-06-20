@@ -9,6 +9,7 @@
 #import "LanguagesViewController.h"
 #import "TRanslationDirectionLoader.h"
 #import "LanguageDirection.h"
+#import "LocalizeHelper.h"
 
 @interface LanguagesViewController () <UIPickerViewDataSource, UIPickerViewDelegate>
 
@@ -27,6 +28,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(localizeToChoosenLanguage) name:kLanguageNotification object:nil];
+
     TranslationDirectionLoader *translationDirectionLoacer = [[TranslationDirectionLoader alloc] init];
     _translationDirections = [translationDirectionLoacer loadAllCombinations];
     [_translationsPicker setDelegate:self];
@@ -50,6 +53,17 @@
 
 - (IBAction)closePicker:(id)sender {
     [self.delegate languagesViewControllerDidClose:self];
+}
+
+#pragma mark Localization choosen Language
+- (void)localizeToChoosenLanguage
+{
+    _translationDirections = nil;
+    TranslationDirectionLoader *translationDirectionLoacer = [[TranslationDirectionLoader alloc] init];
+    _translationDirections = [translationDirectionLoacer loadAllCombinations];
+    [_translationsPicker reloadAllComponents];
+    [_btnPickerSelect setTitle:LocalizedString(@"ButtonPickerSelect") forState:UIControlStateNormal];
+    [_btnPickerClose setTitle:LocalizedString(@"ButtonPickerClose") forState:UIControlStateNormal];    
 }
 
 #pragma mark PickerView methods

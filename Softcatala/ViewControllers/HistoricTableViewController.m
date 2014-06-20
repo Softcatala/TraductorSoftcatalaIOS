@@ -15,16 +15,18 @@
 
 static NSString *translationCellIdentifier = @"translationCell";
 
-@interface HistoricTableViewController () <UITableViewDataSource, UITableViewDelegate, TranslationCellDelegate, UIActionSheetDelegate>
+@interface HistoricTableViewController () <UITableViewDataSource, UITableViewDelegate, TranslationCellDelegate, UIActionSheetDelegate, UIAlertViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) HistoricArchiver *archiver;
 @property (strong, nonatomic) IBOutlet UIButton *btnEditOk;
 @property (strong, nonatomic) IBOutlet UIButton *btnRemoveAll;
+@property (strong, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 
 - (IBAction)editTable:(id)sender;
 - (IBAction)removeAll:(id)sender;
 - (IBAction)selectedListChanged:(id)sender;
+- (IBAction)removeAlliPAd:(id)sender;
 
 @end
 
@@ -38,14 +40,16 @@ static NSString *translationCellIdentifier = @"translationCell";
     [_btnRemoveAll setHidden:YES];
     [self localizeToChoosenLanguage];
     
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        [self.tabBarController.tabBar setHidden:YES];
-        self.tableView.tableFooterView = [UIView new];
-    }
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        [self.tabBarController.tabBar setHidden:YES];
+        self.tableView.tableFooterView = [UIView new];
+        [_segmentedControl setSelectedSegmentIndex:0];
+    }
+    
     [self localizeToChoosenLanguage];
     [self.tableView setEditing:NO animated:YES];
     [self changeTableToEditing:NO];
@@ -124,6 +128,11 @@ static NSString *translationCellIdentifier = @"translationCell";
     [actionSheet showFromTabBar:self.tabBarController.tabBar];
 }
 
+- (IBAction)removeAlliPAd:(id)sender {
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"" message:LocalizedString(@"ActionSheetRemoveAll") delegate:self cancelButtonTitle:LocalizedString(@"ButtonRemoveAllTable") otherButtonTitles:LocalizedString(@"ActionSheetCancel"), nil];
+    [alertView show];
+}
+
 - (IBAction)selectedListChanged:(id)sender {
     UISegmentedControl *segmentedControl = sender;
     [self.tabBarController setSelectedIndex:segmentedControl.selectedSegmentIndex];
@@ -160,7 +169,11 @@ static NSString *translationCellIdentifier = @"translationCell";
     [_btnRemoveAll setTitle:LocalizedString(@"ButtonRemoveAllTable") forState:UIControlStateHighlighted];
     [_btnEditOk setTitle:LocalizedString(@"ButtonEditTable") forState:UIControlStateNormal];
     [_btnEditOk setTitle:LocalizedString(@"ButtonEditTable") forState:UIControlStateHighlighted];
-
+    
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        [_segmentedControl setTitle:LocalizedString(@"ButtonHistoric") forSegmentAtIndex:0];
+        [_segmentedControl setTitle:LocalizedString(@"ButtonFavourites") forSegmentAtIndex:1];
+    }
 }
 
 #pragma mark RefreshData
@@ -169,4 +182,14 @@ static NSString *translationCellIdentifier = @"translationCell";
     [self viewWillAppear:NO];
 }
 
+#pragma mark UIAlertView delegate
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 0) {
+        [_archiver removeAllTranslations];
+        [self.tableView setEditing:NO animated:YES];
+        [self changeTableToEditing:NO];
+        [_tableView reloadData];
+    }
+}
 @end

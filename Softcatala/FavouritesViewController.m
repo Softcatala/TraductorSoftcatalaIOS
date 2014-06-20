@@ -12,15 +12,16 @@
 #import "Translation.h"
 #import "TranslationViewController.h"
 #import "LocalizeHelper.h"
-#import "LocalizeHelper.h"
+
 static NSString *favouriteCellIdentifier = @"favouriteCell";
 
-@interface FavouritesViewController () <UITableViewDataSource, UITableViewDelegate, TranslationCellDelegate, UIActionSheetDelegate>
+@interface FavouritesViewController () <UITableViewDataSource, UITableViewDelegate, TranslationCellDelegate, UIActionSheetDelegate, UIAlertViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) FavouriteArchiver *archiver;
 @property (strong, nonatomic) IBOutlet UIButton *btnEditOk;
 @property (strong, nonatomic) IBOutlet UIButton *btnRemoveAll;
+@property (strong, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 
 - (IBAction)editTable:(id)sender;
 - (IBAction)removeAll:(id)sender;
@@ -42,6 +43,12 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        [self.tabBarController.tabBar setHidden:YES];
+        self.tableView.tableFooterView = [UIView new];
+        [_segmentedControl setSelectedSegmentIndex:1];
+    }
+    
     [self localizeToChoosenLanguage];
     [self.tableView setEditing:NO animated:YES];
     [self changeTableToEditing:NO];
@@ -126,6 +133,11 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
     [actionSheet showFromTabBar:self.tabBarController.tabBar];
 }
 
+- (IBAction)removeAlliPAd:(id)sender {
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"" message:LocalizedString(@"ActionSheetRemoveAll") delegate:self cancelButtonTitle:LocalizedString(@"ButtonRemoveAllTable") otherButtonTitles:LocalizedString(@"ActionSheetCancel"), nil];
+    [alertView show];
+}
+
 - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
     if (buttonIndex == 0) {
@@ -158,6 +170,21 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
     [_btnRemoveAll setTitle:LocalizedString(@"ButtonRemoveAllTable") forState:UIControlStateHighlighted];
     [_btnEditOk setTitle:LocalizedString(@"ButtonEditTable") forState:UIControlStateNormal];
     [_btnEditOk setTitle:LocalizedString(@"ButtonEditTable") forState:UIControlStateHighlighted];
+
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        [_segmentedControl setTitle:LocalizedString(@"ButtonHistoric") forSegmentAtIndex:0];
+        [_segmentedControl setTitle:LocalizedString(@"ButtonFavourites") forSegmentAtIndex:1];
+    }
 }
 
+#pragma mark UIAlertView delegate
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 0) {
+        [_archiver removeAllTranslations];
+        [self.tableView setEditing:NO animated:YES];
+        [self changeTableToEditing:NO];
+        [_tableView reloadData];
+    }
+}
 @end
