@@ -10,4 +10,6 @@
 
 @interface HistoricTableViewController : UIViewController
 
+- (void)refreshData;
+
 @end

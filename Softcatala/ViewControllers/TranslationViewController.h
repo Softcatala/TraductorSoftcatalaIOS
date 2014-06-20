@@ -31,6 +31,7 @@
 - (IBAction)reverseTranslation:(id)sender;
 - (IBAction)checkFormesValencianes:(id)sender;
 - (IBAction)sharing:(id)sender;
+- (IBAction)popupChangeTranslationDirection:(id)sender;
 
 
 - (void)loadTranslation:(Translation *)translation;

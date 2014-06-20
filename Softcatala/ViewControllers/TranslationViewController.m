@@ -17,8 +17,12 @@
 #import "HistoricArchiver.h"
 #import "TextViewNotify.h"
 #import "LocalizeHelper.h"
+#import "LanguagesViewController.h"
+#import "HistoricTableViewController.h"
 
-@interface TranslationViewController () <GarbageTextViewDelegate, TextViewNotifyDelegate>
+@interface TranslationViewController () <GarbageTextViewDelegate, TextViewNotifyDelegate, LanguagesViewControllerDelegate, UIPopoverControllerDelegate>
+
+@property (strong, nonatomic) UIPopoverController *popOverLanguages;
 
 @end
 
@@ -114,6 +118,15 @@
             
             Translation *translation = [[Translation alloc] initWithSourceText:cleanedSourceText translationText:translationText languageDirection:laguageDirection isFavorite:NO];
             [[[HistoricArchiver alloc] init] addTranslation:translation];
+            
+            if ([self.childViewControllers count] > 0) {
+                UITabBarController *tabBarController = self.childViewControllers[0];
+                for (UIViewController *viewController in tabBarController.viewControllers) {
+                    if ([viewController isKindOfClass:[HistoricTableViewController class]]) {
+                        [(HistoricTableViewController *)viewController refreshData];
+                    }
+                }
+            }
         });
     } failure:^(NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -128,7 +141,7 @@
 - (IBAction)changeTranslationDirection:(id)sender {
     // Move picker to bottom
     
-    CGFloat bottom = self.view.frame.size.height;
+    CGFloat bottom = self.view.bounds.size.height;
     [_translationPickerView setCenter:CGPointMake(_translationPickerView.center.x, bottom + _translationPickerView.frame.size.height / 2)];
     [_translationPickerView setHidden:NO];
     [_translationsPicker selectRow:currentLanguageDirection inComponent:0 animated:NO];
@@ -139,6 +152,17 @@
         [_translationPickerView setCenter:CGPointMake(_translationPickerView.center.x, destinationHeight)];
         [_btnSharing setAlpha:0.0];
     }];
+}
+
+- (IBAction)popupChangeTranslationDirection:(id)sender
+{
+    LanguagesViewController *languagesVC = [self.storyboard instantiateViewControllerWithIdentifier:@"popoverLanguages"];
+    languagesVC.currentLanguageDirection = currentLanguageDirection;
+    languagesVC.delegate = self;
+    _popOverLanguages = [[UIPopoverController alloc] initWithContentViewController:languagesVC];
+    _popOverLanguages.delegate = self;
+    [_popOverLanguages presentPopoverFromRect:[sender bounds] inView:sender permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
+    
 }
 
 - (IBAction)translationDirectionChanged:(id)sender {
@@ -175,6 +199,10 @@
     LanguageDirection *selectedDirecion = [translationDirections objectAtIndex:currentLanguageDirection];
 
     _sourceText.text = [_destinationText.text stringByReplacingOccurrencesOfString:@"*" withString:@""];
+    
+    if ([_sourceText.text isEqualToString:@""]) {
+        return;
+    }
     
     NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
         LanguageDirection *languageDirection = (LanguageDirection *)evaluatedObject;
@@ -265,9 +293,9 @@
 #pragma mark Configure Keyboard Accessory View
 - (void)configureAccessoryView
 {
-    keyboardAccessoryView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 48)];
+    keyboardAccessoryView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 48)];
     [keyboardAccessoryView setBackgroundColor:[UIColor colorWithRed:178.0/255.0 green:178.0/255.0 blue:178.0/255.0 alpha:1.0]];
-    UIView *whiteBackground = [[UIView alloc] initWithFrame:CGRectMake(0, 1, self.view.frame.size.width, keyboardAccessoryView.frame.size.height)];
+    UIView *whiteBackground = [[UIView alloc] initWithFrame:CGRectMake(0, 1, self.view.bounds.size.width, keyboardAccessoryView.frame.size.height)];
     [whiteBackground setBackgroundColor:[UIColor whiteColor]];
     [keyboardAccessoryView addSubview:whiteBackground];
     
@@ -336,6 +364,31 @@
     [favouriteItem setTitle:LocalizedString(@"ButtonFavourites")];
     [_sourceText updateLocalizedTexts];
     
+}
+
+#pragma mark LanguagesViewController delegate
+- (void)languagesViewController:(LanguagesViewController *)languagesViewController selectedIndex:(NSInteger)selectedIndex
+{
+    [_popOverLanguages dismissPopoverAnimated:YES];
+
+    if (selectedIndex != currentLanguageDirection) {
+        currentLanguageDirection = selectedIndex;
+        LanguageDirection *languageDirection = translationDirections[currentLanguageDirection];
+        [_btnLanguageDirection setTitle:languageDirection.description forState:UIControlStateNormal];
+        [self refreshFormesValencianesState:languageDirection];
+    }
+    _popOverLanguages = nil;
+}
+
+- (void)languagesViewControllerDidClose:(LanguagesViewController *)languagesViewController
+{
+    [_popOverLanguages dismissPopoverAnimated:YES];
+    _popOverLanguages = nil;
+}
+
+- (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController
+{
+    _popOverLanguages = nil;
 }
 
 @end

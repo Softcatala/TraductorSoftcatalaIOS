@@ -159,4 +159,5 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
     [_btnEditOk setTitle:LocalizedString(@"ButtonEditTable") forState:UIControlStateNormal];
     [_btnEditOk setTitle:LocalizedString(@"ButtonEditTable") forState:UIControlStateHighlighted];
 }
+
 @end

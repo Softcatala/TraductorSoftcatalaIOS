@@ -162,4 +162,11 @@ static NSString *translationCellIdentifier = @"translationCell";
     [_btnEditOk setTitle:LocalizedString(@"ButtonEditTable") forState:UIControlStateHighlighted];
 
 }
+
+#pragma mark RefreshData
+- (void)refreshData
+{
+    [self viewWillAppear:NO];
+}
+
 @end
