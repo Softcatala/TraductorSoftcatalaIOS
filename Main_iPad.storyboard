@@ -184,6 +184,16 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMc-4P-0hE">
+                                <rect key="frame" x="652" y="716" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="compartir">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sharing:" destination="49Z-HB-n0O" eventType="touchUpInside" id="IJC-x3-5ui"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -200,6 +210,7 @@
                         <outlet property="btnLanguageDirection" destination="I71-yb-iut" id="3gf-UM-yBt"/>
                         <outlet property="btnPickerClose" destination="dJJ-RC-f1Q" id="xEd-q5-VlD"/>
                         <outlet property="btnPickerSelect" destination="aJe-XC-xjh" id="VL0-wt-gIe"/>
+                        <outlet property="btnSharing" destination="rMc-4P-0hE" id="U6o-gi-Q8f"/>
                         <outlet property="destinationText" destination="Gge-aZ-syP" id="SfS-nU-TAn"/>
                         <outlet property="lblFormesValencianes" destination="7EJ-kx-pYc" id="i9r-g4-Dya"/>
                         <outlet property="sourceText" destination="GUc-de-zXB" id="6pK-Dp-phX"/>
@@ -529,6 +540,7 @@
         <image name="boto_selec_idioma" width="30" height="30"/>
         <image name="boto_valencia_off" width="30" height="30"/>
         <image name="boto_valencia_on" width="30" height="30"/>
+        <image name="compartir" width="30" height="30"/>
         <image name="preferits_clar_off" width="30" height="30"/>
         <image name="preferits_clar_on" width="30" height="30"/>
         <image name="softcatala_logo" width="118" height="27"/>

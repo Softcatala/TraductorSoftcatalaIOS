@@ -271,6 +271,7 @@
     }
     _sourceText.text = translation.source;
     _destinationText.text = translation.translation;
+    [_sourceText resignFirstResponder];
 }
 
 #pragma mark PickerView methods
