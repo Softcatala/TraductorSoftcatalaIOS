@@ -102,10 +102,17 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    TranslationViewController *translationVC = self.tabBarController.viewControllers[0];
-    Translation *translation = _archiver.translations[indexPath.row];
-    [translationVC loadTranslation:translation];
-    [self.tabBarController setSelectedIndex:0];
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        TranslationViewController *translationVC = (TranslationViewController *)self.tabBarController.parentViewController;
+        Translation *translation = _archiver.translations[indexPath.row];
+        [translationVC loadTranslation:translation];
+        
+    } else {
+        TranslationViewController *translationVC = self.tabBarController.viewControllers[0];
+        Translation *translation = _archiver.translations[indexPath.row];
+        [translationVC loadTranslation:translation];
+        [self.tabBarController setSelectedIndex:0];
+    }
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
