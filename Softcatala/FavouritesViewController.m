@@ -188,10 +188,13 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
     if (buttonIndex == 0) {
-        [_archiver removeAllTranslations];
+        for (Translation *translation in _archiver.translations) {
+            [_archiver removeTranslation:translation];
+        }
         [self.tableView setEditing:NO animated:YES];
         [self changeTableToEditing:NO];
         [_tableView reloadData];
     }
+
 }
 @end
