@@ -30,8 +30,8 @@
     [super viewDidLoad];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(localizeToChoosenLanguage) name:kLanguageNotification object:nil];
 
-    TranslationDirectionLoader *translationDirectionLoacer = [[TranslationDirectionLoader alloc] init];
-    _translationDirections = [translationDirectionLoacer loadAllCombinations];
+//    TranslationDirectionLoader *translationDirectionLoacer = [[TranslationDirectionLoader alloc] init];
+//    _translationDirections = [translationDirectionLoacer loadAllCombinations];
     [_translationsPicker setDelegate:self];
     [_translationsPicker setDataSource:self];
 }
@@ -44,6 +44,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    [self localizeToChoosenLanguage];
     [_translationsPicker selectRow:_currentLanguageDirection inComponent:0 animated:NO];
 }
 
