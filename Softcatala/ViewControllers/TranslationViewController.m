@@ -19,8 +19,9 @@
 #import "LocalizeHelper.h"
 #import "LanguagesViewController.h"
 #import "HistoricTableViewController.h"
+#import "KeyboardAccessoryView.h"
 
-@interface TranslationViewController () <GarbageTextViewDelegate, TextViewNotifyDelegate, LanguagesViewControllerDelegate, UIPopoverControllerDelegate>
+@interface TranslationViewController () <GarbageTextViewDelegate, TextViewNotifyDelegate, LanguagesViewControllerDelegate, UIPopoverControllerDelegate, KeyboardAccessoryViewDelegate>
 
 @property (strong, nonatomic) UIPopoverController *popOverLanguages;
 
@@ -28,7 +29,7 @@
 
 @implementation TranslationViewController
 {
-    UIView *keyboardAccessoryView;
+    KeyboardAccessoryView *keyboardAccessoryView;
     NSArray *translationDirections;
     NSInteger currentLanguageDirection;
 }
@@ -85,7 +86,8 @@
     [self.view endEditing:YES];
 }
 
-- (void)translate:(id)sender
+//- (void)translate:(id)sender
+- (void)keyboardAccessoryView:(UIView *)view touchUpTranslateButton:(UIButton *)button
 {
     [_sourceText resignFirstResponder];
     if ([[_sourceText.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] length] == 0) {
@@ -95,7 +97,8 @@
     [self performSelector:@selector(translateDelayed) withObject:nil afterDelay:1.0];
 }
 
-- (void)closeBar:(id)sender
+//- (void)closeBar:(id)sender
+- (void)keyboardAccessoryView:(UIView *)view touchUpCloseButton:(UIButton *)button
 {
     [self.view endEditing:YES];
 }
@@ -272,6 +275,10 @@
     _sourceText.text = translation.source;
     _destinationText.text = translation.translation;
     [_sourceText resignFirstResponder];
+    
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        [self viewWillAppear:NO];
+    }
 }
 
 #pragma mark PickerView methods
@@ -294,35 +301,9 @@
 #pragma mark Configure Keyboard Accessory View
 - (void)configureAccessoryView
 {
-    keyboardAccessoryView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 48)];
-    [keyboardAccessoryView setBackgroundColor:[UIColor colorWithRed:178.0/255.0 green:178.0/255.0 blue:178.0/255.0 alpha:1.0]];
-    UIView *whiteBackground = [[UIView alloc] initWithFrame:CGRectMake(0, 1, self.view.bounds.size.width, keyboardAccessoryView.frame.size.height)];
-    [whiteBackground setBackgroundColor:[UIColor whiteColor]];
-    [keyboardAccessoryView addSubview:whiteBackground];
-    
-    NSString *buttonTitle = NSLocalizedString(@"ButtonTranslate", nil);
-    CGFloat buttonTitleWidth = [buttonTitle sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:17.0f]}].width + 15;
-    UIButton *translateButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [translateButton.titleLabel setFont:[UIFont systemFontOfSize:17.0f]];
-    [translateButton setFrame:CGRectMake(0, 0, buttonTitleWidth, keyboardAccessoryView.frame.size.height)];
-    [translateButton setCenter:CGPointMake(keyboardAccessoryView.frame.size.width - (buttonTitleWidth/2), keyboardAccessoryView.center.y)];
-    [translateButton setTitle:buttonTitle forState:UIControlStateNormal];
-    [translateButton setTitleColor:[UIColor colorWithRed:181.0/255.0 green:0.0 blue:39.0/255.0 alpha:1.0] forState:UIControlStateNormal];
-    [translateButton addTarget:self action:@selector(translate:) forControlEvents:UIControlEventTouchUpInside];
-    [keyboardAccessoryView addSubview:translateButton];
-    
-    NSString *closeButtonTitle = NSLocalizedString(@"ButtonClose", nil);
-    CGFloat buttonCloseWidth = [closeButtonTitle sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:17.0f]}].width + 15;
-    UIButton *closeButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [closeButton.titleLabel setFont:[UIFont systemFontOfSize:17.0f]];
-    [closeButton setFrame:CGRectMake(0, 0, buttonCloseWidth, keyboardAccessoryView.frame.size.height)];
-    [closeButton setCenter:CGPointMake(closeButton.center.x + 1, keyboardAccessoryView.center.y)];
-    [closeButton setTitle:closeButtonTitle forState:UIControlStateNormal];
-    [closeButton setTitleColor:[UIColor colorWithRed:181.0/255.0 green:0.0 blue:39.0/255.0 alpha:1.0] forState:UIControlStateNormal];
-    [closeButton addTarget:self action:@selector(closeBar:) forControlEvents:UIControlEventTouchUpInside];
-    [keyboardAccessoryView addSubview:closeButton];
-    
-    [_sourceText setInputAccessoryView:keyboardAccessoryView];
+    keyboardAccessoryView = [[KeyboardAccessoryView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 48)];
+    keyboardAccessoryView.delegate = self;
+    [_sourceText setInputAccessoryView:keyboardAccessoryView];    
 }
 
 #pragma mark GarbageTextView delegate
@@ -351,6 +332,8 @@
     translationDirections = [translationDirectionLoacer loadAllCombinations];
     [_translationsPicker reloadAllComponents];
 
+    [keyboardAccessoryView localizeToChoosenLanguage];
+    
     LanguageDirection *languageDirection = translationDirections[currentLanguageDirection];
     [_btnLanguageDirection setTitle:languageDirection.description forState:UIControlStateNormal];
     [_btnPickerSelect setTitle:LocalizedString(@"ButtonPickerSelect") forState:UIControlStateNormal];
