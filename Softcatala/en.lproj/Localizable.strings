@@ -11,7 +11,7 @@
 "fr" = "French";
 "en" = "English";
 "ca_valencia" = "Catalan";
-"va" = "Valencian forms";
+"va" = "Valencian variant";
 
 "ResponseGeneralError" = "Unkown error";
 "EnterTextToTranslate" = "Source text...";
@@ -22,7 +22,7 @@
 "ButtonPickerSelect" = "Select";
 "ButtonPickerClose" = "Close";
 "ButtonBarTranslate" = "Translate";
-"ButtonFormesValencianes" = "Valencian forms";
+"ButtonFormesValencianes" = "Valencian variant";
 
 "ButtonEditTable" = "Edit";
 "ButtonEditOkTable" = "Ok";
