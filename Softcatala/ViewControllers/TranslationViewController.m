@@ -151,10 +151,13 @@
     [_sourceText setUserInteractionEnabled:NO];
     CGFloat destinationHeight = _translationPickerView.center.y - _translationPickerView.frame.size.height;
 
-    [UIView animateWithDuration:.5 animations:^{
+    
+    [UIView animateWithDuration:.5 delay:0 usingSpringWithDamping:.5 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         [_translationPickerView setCenter:CGPointMake(_translationPickerView.center.x, destinationHeight)];
         [_btnSharing setAlpha:0.0];
-    }];
+
+    } completion:nil];
+    
 }
 
 - (IBAction)popupChangeTranslationDirection:(id)sender
