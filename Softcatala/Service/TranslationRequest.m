@@ -31,17 +31,14 @@
     [postString appendString:@"langpair="];
     [postString appendString:translationDirection];
     [postString appendString:@"&q="];
-    [postString appendString:textToTranslate];
+    [postString appendString:[textToTranslate stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
     [postString appendString:@"&markUnknown=yes"];
     [postString appendString:@"&key="];
     [postString appendString:apiKey];
     
     NSData *postData = [postString dataUsingEncoding:NSUTF8StringEncoding];
-    
-    
     [request setHTTPBody:postData];
     [request setHTTPMethod:@"POST"];
-
     NSURLSessionDataTask *postDataTask = [urlSession dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error)  {
         if (error != nil) {
             NSLog(@"Fallo en request: %@", error.description);
