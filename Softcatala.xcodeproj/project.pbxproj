@@ -61,8 +61,8 @@
 		8D2766901948F93900DFCBD4 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8D45BC63196B4EE300E15C1B /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D45BC64196B4EE400E15C1B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8D7199801961B3E000DE6F1F /* KeyboardAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardAccessoryView.h; sourceTree = "<group>"; };
-		8D7199811961B3E000DE6F1F /* KeyboardAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardAccessoryView.m; sourceTree = "<group>"; };
+		8D7199801961B3E000DE6F1F /* KeyboardAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyboardAccessoryView.h; path = ../ViewControllers/KeyboardAccessoryView.h; sourceTree = "<group>"; };
+		8D7199811961B3E000DE6F1F /* KeyboardAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeyboardAccessoryView.m; path = ../ViewControllers/KeyboardAccessoryView.m; sourceTree = "<group>"; };
 		8D852DC91948F72C00F56F69 /* GarbageTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GarbageTextView.h; sourceTree = "<group>"; };
 		8D852DCA1948F72C00F56F69 /* GarbageTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GarbageTextView.m; sourceTree = "<group>"; };
 		8D852DCB1948F72C00F56F69 /* ProgressHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHud.h; sourceTree = "<group>"; };
@@ -182,6 +182,8 @@
 				8D852DCE1948F72C00F56F69 /* TextViewNotify.m */,
 				8D852DCF1948F72C00F56F69 /* TranslationCell.h */,
 				8D852DD01948F72C00F56F69 /* TranslationCell.m */,
+				8D7199801961B3E000DE6F1F /* KeyboardAccessoryView.h */,
+				8D7199811961B3E000DE6F1F /* KeyboardAccessoryView.m */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -214,8 +216,6 @@
 				8D852DEA1948F72C00F56F69 /* TranslationViewController.m */,
 				8DE0CA0619541D9D00B6571B /* LanguagesViewController.h */,
 				8DE0CA0719541D9D00B6571B /* LanguagesViewController.m */,
-				8D7199801961B3E000DE6F1F /* KeyboardAccessoryView.h */,
-				8D7199811961B3E000DE6F1F /* KeyboardAccessoryView.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
