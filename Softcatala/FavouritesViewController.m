@@ -57,14 +57,13 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
     [self.tableView reloadData];
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
-        self.tableView.alpha = 0.0;
         if ([_archiver.translations count] > 0) {
             self.tableView.tableFooterView = [UIView new];
         } else {
+            self.tableView.alpha = 0.0;
             self.tableView.tableFooterView = nil;
             [self performTableViewFadeOut];
         }
-        [self performTableViewAnimation];
     }
     
 }
@@ -74,37 +73,6 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
     [UIView animateWithDuration:1.0 animations:^{
         self.tableView.alpha = 1.0;
     } completion:nil];
-}
-
-- (void)performTableViewAnimation
-{
-    // Store a delta timing variable so I can tweak the timing delay
-    // between each row’s animation and some additional
-    CGFloat diff = .05;
-    NSArray *cells = [self.tableView visibleCells];
-    
-    // Iterate across the rows and translate them down off the screen
-    for (NSUInteger a = 0; a < [cells count]; a++) {
-        UITableViewCell *cell = [cells objectAtIndex:a];
-        if ([cell isKindOfClass:[UITableViewCell class]]) {
-            
-            // Move each cell off the bottom of the screen by translating its Y position
-            cell.transform = CGAffineTransformMakeTranslation(cell.frame.size.width, 0);
-        }
-    }
-    
-    // Now that all rows are off the screen, make the tableview opaque again
-    self.tableView.alpha = 1.0f;
-    
-    // Animate each row back into place
-    for (NSUInteger b = 0; b < [cells count]; b++) {
-        UITableViewCell *cell = [cells objectAtIndex:b];
-        
-        [UIView animateWithDuration:1.0 delay:diff*b usingSpringWithDamping:0.77
-              initialSpringVelocity:0 options:0 animations:^{
-                  cell.transform = CGAffineTransformMakeTranslation(0, 0);
-              } completion:NULL];
-    }
 }
 
 - (void)didReceiveMemoryWarning

@@ -61,8 +61,8 @@
 		8D2766901948F93900DFCBD4 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8D45BC63196B4EE300E15C1B /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D45BC64196B4EE400E15C1B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8D7199801961B3E000DE6F1F /* KeyboardAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardAccessoryView.h; sourceTree = "<group>"; };
-		8D7199811961B3E000DE6F1F /* KeyboardAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardAccessoryView.m; sourceTree = "<group>"; };
+		8D7199801961B3E000DE6F1F /* KeyboardAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyboardAccessoryView.h; path = ../ViewControllers/KeyboardAccessoryView.h; sourceTree = "<group>"; };
+		8D7199811961B3E000DE6F1F /* KeyboardAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeyboardAccessoryView.m; path = ../ViewControllers/KeyboardAccessoryView.m; sourceTree = "<group>"; };
 		8D852DC91948F72C00F56F69 /* GarbageTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GarbageTextView.h; sourceTree = "<group>"; };
 		8D852DCA1948F72C00F56F69 /* GarbageTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GarbageTextView.m; sourceTree = "<group>"; };
 		8D852DCB1948F72C00F56F69 /* ProgressHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHud.h; sourceTree = "<group>"; };
@@ -73,10 +73,10 @@
 		8D852DD01948F72C00F56F69 /* TranslationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslationCell.m; sourceTree = "<group>"; };
 		8D852DD11948F72C00F56F69 /* FavouritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavouritesViewController.h; path = ../FavouritesViewController.h; sourceTree = "<group>"; };
 		8D852DD21948F72C00F56F69 /* FavouritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FavouritesViewController.m; path = ../FavouritesViewController.m; sourceTree = "<group>"; };
-		8D852DD41948F72C00F56F69 /* Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Language.h; sourceTree = "<group>"; };
-		8D852DD51948F72C00F56F69 /* Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Language.m; sourceTree = "<group>"; };
-		8D852DD61948F72C00F56F69 /* LanguageDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageDirection.h; sourceTree = "<group>"; };
-		8D852DD71948F72C00F56F69 /* LanguageDirection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageDirection.m; sourceTree = "<group>"; };
+		8D852DD41948F72C00F56F69 /* Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Language.h; path = ../Language.h; sourceTree = "<group>"; };
+		8D852DD51948F72C00F56F69 /* Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Language.m; path = ../Language.m; sourceTree = "<group>"; };
+		8D852DD61948F72C00F56F69 /* LanguageDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LanguageDirection.h; path = ../LanguageDirection.h; sourceTree = "<group>"; };
+		8D852DD71948F72C00F56F69 /* LanguageDirection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LanguageDirection.m; path = ../LanguageDirection.m; sourceTree = "<group>"; };
 		8D852DDA1948F72C00F56F69 /* FavouriteArchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouriteArchiver.h; sourceTree = "<group>"; };
 		8D852DDB1948F72C00F56F69 /* FavouriteArchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavouriteArchiver.m; sourceTree = "<group>"; };
 		8D852DDC1948F72C00F56F69 /* HistoricArchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoricArchiver.h; sourceTree = "<group>"; };
@@ -87,16 +87,16 @@
 		8D852DE11948F72C00F56F69 /* TranslationDirectionLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslationDirectionLoader.m; sourceTree = "<group>"; };
 		8D852DE21948F72C00F56F69 /* TranslationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslationRequest.h; sourceTree = "<group>"; };
 		8D852DE31948F72C00F56F69 /* TranslationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslationRequest.m; sourceTree = "<group>"; };
-		8D852DE41948F72C00F56F69 /* Translation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Translation.h; sourceTree = "<group>"; };
-		8D852DE51948F72C00F56F69 /* Translation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Translation.m; sourceTree = "<group>"; };
+		8D852DE41948F72C00F56F69 /* Translation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Translation.h; path = ../Translation.h; sourceTree = "<group>"; };
+		8D852DE51948F72C00F56F69 /* Translation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Translation.m; path = ../Translation.m; sourceTree = "<group>"; };
 		8D852DE71948F72C00F56F69 /* HistoricTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoricTableViewController.h; sourceTree = "<group>"; };
 		8D852DE81948F72C00F56F69 /* HistoricTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoricTableViewController.m; sourceTree = "<group>"; };
 		8D852DE91948F72C00F56F69 /* TranslationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslationViewController.h; sourceTree = "<group>"; };
 		8D852DEA1948F72C00F56F69 /* TranslationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslationViewController.m; sourceTree = "<group>"; };
 		8D89918819537F7E00077E5F /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main_iPad.storyboard; path = ../Main_iPad.storyboard; sourceTree = "<group>"; };
 		8D900BD31952E9F600D415B2 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		8D900BD51952EE1C00D415B2 /* LocalizeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizeHelper.h; sourceTree = "<group>"; };
-		8D900BD61952EE1C00D415B2 /* LocalizeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizeHelper.m; sourceTree = "<group>"; };
+		8D900BD51952EE1C00D415B2 /* LocalizeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocalizeHelper.h; path = ../LocalizeHelper.h; sourceTree = "<group>"; };
+		8D900BD61952EE1C00D415B2 /* LocalizeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocalizeHelper.m; path = ../LocalizeHelper.m; sourceTree = "<group>"; };
 		8D900BD81952F2E000D415B2 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		8D900BD91952F2E000D415B2 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		8D9EB3391948FDEC00253969 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -149,6 +149,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D12A0141AB1917100713001 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D852DD41948F72C00F56F69 /* Language.h */,
+				8D852DD51948F72C00F56F69 /* Language.m */,
+				8D852DD61948F72C00F56F69 /* LanguageDirection.h */,
+				8D852DD71948F72C00F56F69 /* LanguageDirection.m */,
+				8D852DE41948F72C00F56F69 /* Translation.h */,
+				8D852DE51948F72C00F56F69 /* Translation.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8D12A0151AB1917900713001 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8D900BD51952EE1C00D415B2 /* LocalizeHelper.h */,
+				8D900BD61952EE1C00D415B2 /* LocalizeHelper.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		8D852DC81948F72C00F56F69 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +182,8 @@
 				8D852DCE1948F72C00F56F69 /* TextViewNotify.m */,
 				8D852DCF1948F72C00F56F69 /* TranslationCell.h */,
 				8D852DD01948F72C00F56F69 /* TranslationCell.m */,
+				8D7199801961B3E000DE6F1F /* KeyboardAccessoryView.h */,
+				8D7199811961B3E000DE6F1F /* KeyboardAccessoryView.m */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -192,8 +216,6 @@
 				8D852DEA1948F72C00F56F69 /* TranslationViewController.m */,
 				8DE0CA0619541D9D00B6571B /* LanguagesViewController.h */,
 				8DE0CA0719541D9D00B6571B /* LanguagesViewController.m */,
-				8D7199801961B3E000DE6F1F /* KeyboardAccessoryView.h */,
-				8D7199811961B3E000DE6F1F /* KeyboardAccessoryView.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -236,14 +258,8 @@
 			isa = PBXGroup;
 			children = (
 				8D852DC81948F72C00F56F69 /* Controls */,
-				8D900BD51952EE1C00D415B2 /* LocalizeHelper.h */,
-				8D900BD61952EE1C00D415B2 /* LocalizeHelper.m */,
-				8D852DD41948F72C00F56F69 /* Language.h */,
-				8D852DD51948F72C00F56F69 /* Language.m */,
-				8D852DD61948F72C00F56F69 /* LanguageDirection.h */,
-				8D852DD71948F72C00F56F69 /* LanguageDirection.m */,
-				8D852DE41948F72C00F56F69 /* Translation.h */,
-				8D852DE51948F72C00F56F69 /* Translation.m */,
+				8D12A0151AB1917900713001 /* Helper */,
+				8D12A0141AB1917100713001 /* Model */,
 				8D852DD91948F72C00F56F69 /* Service */,
 				8D852DE61948F72C00F56F69 /* ViewControllers */,
 				8DE5D6811948F2EA005BCE7B /* AppDelegate.h */,

@@ -10,3 +10,7 @@
 extern NSString *const kUserDefaultsCatalanEnabled;
 extern NSString *const kCatalanLanguageIdentifier;
 extern NSString *const kLanguageNotification;
+
+extern NSString *const kUrlString;
+extern NSString *const kApiKey;
+extern NSString *const kUserDefaultsReturnEnabled;
