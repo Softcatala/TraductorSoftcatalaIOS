@@ -7,15 +7,16 @@
 //
 
 #import "AppDelegate.h"
+#import "LocalizeHelper.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(defaultsChanged:) name:NSUserDefaultsDidChangeNotification object:nil];
+
+    [self chooseLanguage];
     return YES;
 }
 
@@ -34,6 +35,7 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    [self chooseLanguage];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
@@ -46,4 +48,21 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void)chooseLanguage
+{
+    BOOL showInCatalan = [[NSUserDefaults standardUserDefaults] boolForKey:kUserDefaultsCatalanEnabled];
+    NSString *language = [[NSLocale preferredLanguages] objectAtIndex:0];
+    if (showInCatalan) {
+        language = kCatalanLanguageIdentifier;
+    }
+
+    LocalizationSetLanguage(language);
+}
+
+- (void)defaultsChanged:(NSNotification *)notification
+{
+    [self chooseLanguage];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kLanguageNotification object:self];
+
+}
 @end
