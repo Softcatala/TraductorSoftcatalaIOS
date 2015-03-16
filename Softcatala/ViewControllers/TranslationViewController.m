@@ -52,6 +52,8 @@
     [_btnSharing setHidden:YES];
     [_destinationText setChangeTextDelegate:self];
     [self localizeToChoosenLanguage];
+    
+    self.sourceText.delegate = self;
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -86,7 +88,6 @@
     [self.view endEditing:YES];
 }
 
-//- (void)translate:(id)sender
 - (void)keyboardAccessoryView:(UIView *)view touchUpTranslateButton:(UIButton *)button
 {
     [_sourceText resignFirstResponder];
@@ -97,7 +98,6 @@
     [self performSelector:@selector(translateDelayed) withObject:nil afterDelay:1.0];
 }
 
-//- (void)closeBar:(id)sender
 - (void)keyboardAccessoryView:(UIView *)view touchUpCloseButton:(UIButton *)button
 {
     [self.view endEditing:YES];
@@ -150,11 +150,13 @@
     [_translationsPicker selectRow:currentLanguageDirection inComponent:0 animated:NO];
     [_sourceText setUserInteractionEnabled:NO];
     CGFloat destinationHeight = _translationPickerView.center.y - _translationPickerView.frame.size.height;
-
-    [UIView animateWithDuration:.5 animations:^{
+    
+    [UIView animateWithDuration:.5 delay:0.2 usingSpringWithDamping:.5 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         [_translationPickerView setCenter:CGPointMake(_translationPickerView.center.x, destinationHeight)];
         [_btnSharing setAlpha:0.0];
-    }];
+
+    } completion:nil];
+    
 }
 
 - (IBAction)popupChangeTranslationDirection:(id)sender
@@ -304,6 +306,21 @@
     keyboardAccessoryView = [[KeyboardAccessoryView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 48)];
     keyboardAccessoryView.delegate = self;
     [_sourceText setInputAccessoryView:keyboardAccessoryView];    
+}
+
+#pragma mark UITextView delegate for sourceText
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
+{
+    BOOL returnEnabled = [[NSUserDefaults standardUserDefaults] boolForKey:kUserDefaultsReturnEnabled];
+    if (returnEnabled == NO) {
+        return YES;
+    }
+    if([text isEqualToString:@"\n"]) {
+        [_sourceText resignFirstResponder];
+        [self translateDelayed];
+        return NO;
+    }
+    return YES;
 }
 
 #pragma mark GarbageTextView delegate

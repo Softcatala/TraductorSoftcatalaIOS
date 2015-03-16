@@ -12,7 +12,7 @@
 @class Translation;
 @class TextViewNotify;
 
-@interface TranslationViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+@interface TranslationViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate, UITextViewDelegate >
 
 @property (strong, nonatomic) IBOutlet GarbageTextView *sourceText;
 @property (strong, nonatomic) IBOutlet TextViewNotify *destinationText;
