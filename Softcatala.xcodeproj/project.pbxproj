@@ -9,25 +9,25 @@
 /* Begin PBXBuildFile section */
 		6A8884B3CE3648A9AD9210D4 /* libPods-SoftcatalaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67568059EB25416588035127 /* libPods-SoftcatalaTests.a */; };
 		8D27668B1948F8F900DFCBD4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D27668D1948F8F900DFCBD4 /* Localizable.strings */; };
+		8D526EF11AB6C0970064C580 /* Language.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D526EEC1AB6C0970064C580 /* Language.m */; };
+		8D526EF21AB6C0970064C580 /* LanguageDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D526EEE1AB6C0970064C580 /* LanguageDirection.m */; };
+		8D526EF31AB6C0970064C580 /* Translation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D526EF01AB6C0970064C580 /* Translation.m */; };
+		8D526EF61AB6C0A60064C580 /* FavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D526EF51AB6C0A60064C580 /* FavouritesViewController.m */; };
+		8D526EF91AB6C0DA0064C580 /* LocalizeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D526EF81AB6C0DA0064C580 /* LocalizeHelper.m */; };
 		8D7199821961B3E000DE6F1F /* KeyboardAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7199811961B3E000DE6F1F /* KeyboardAccessoryView.m */; };
 		8D852DEB1948F72C00F56F69 /* GarbageTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D852DCA1948F72C00F56F69 /* GarbageTextView.m */; };
 		8D852DEC1948F72C00F56F69 /* ProgressHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D852DCC1948F72C00F56F69 /* ProgressHud.m */; };
 		8D852DED1948F72C00F56F69 /* TextViewNotify.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D852DCE1948F72C00F56F69 /* TextViewNotify.m */; };
 		8D852DEE1948F72C00F56F69 /* TranslationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D852DD01948F72C00F56F69 /* TranslationCell.m */; };
-		8D852DEF1948F72C00F56F69 /* FavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D852DD21948F72C00F56F69 /* FavouritesViewController.m */; };
-		8D852DF11948F72C00F56F69 /* Language.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D852DD51948F72C00F56F69 /* Language.m */; };
-		8D852DF21948F72C00F56F69 /* LanguageDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D852DD71948F72C00F56F69 /* LanguageDirection.m */; };
 		8D852DF41948F72C00F56F69 /* FavouriteArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D852DDB1948F72C00F56F69 /* FavouriteArchiver.m */; };
 		8D852DF51948F72C00F56F69 /* HistoricArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D852DDD1948F72C00F56F69 /* HistoricArchiver.m */; };
 		8D852DF61948F72C00F56F69 /* TranslationArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D852DDF1948F72C00F56F69 /* TranslationArchiver.m */; };
 		8D852DF71948F72C00F56F69 /* TranslationDirectionLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D852DE11948F72C00F56F69 /* TranslationDirectionLoader.m */; };
 		8D852DF81948F72C00F56F69 /* TranslationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D852DE31948F72C00F56F69 /* TranslationRequest.m */; };
-		8D852DF91948F72C00F56F69 /* Translation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D852DE51948F72C00F56F69 /* Translation.m */; };
 		8D852DFA1948F72C00F56F69 /* HistoricTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D852DE81948F72C00F56F69 /* HistoricTableViewController.m */; };
 		8D852DFB1948F72C00F56F69 /* TranslationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D852DEA1948F72C00F56F69 /* TranslationViewController.m */; };
 		8D89918919537F7E00077E5F /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D89918819537F7E00077E5F /* Main_iPad.storyboard */; };
 		8D900BD41952E9F600D415B2 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8D900BD31952E9F600D415B2 /* Settings.bundle */; };
-		8D900BD71952EE1C00D415B2 /* LocalizeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D900BD61952EE1C00D415B2 /* LocalizeHelper.m */; };
 		8D900BDA1952F2E000D415B2 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D900BD91952F2E000D415B2 /* Constants.m */; };
 		8D9EB33A1948FDEC00253969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D9EB3391948FDEC00253969 /* Main.storyboard */; };
 		8DE0CA0819541D9D00B6571B /* LanguagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE0CA0719541D9D00B6571B /* LanguagesViewController.m */; };
@@ -61,6 +61,16 @@
 		8D2766901948F93900DFCBD4 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8D45BC63196B4EE300E15C1B /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D45BC64196B4EE400E15C1B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8D526EEB1AB6C0970064C580 /* Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Language.h; sourceTree = "<group>"; };
+		8D526EEC1AB6C0970064C580 /* Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Language.m; sourceTree = "<group>"; };
+		8D526EED1AB6C0970064C580 /* LanguageDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageDirection.h; sourceTree = "<group>"; };
+		8D526EEE1AB6C0970064C580 /* LanguageDirection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageDirection.m; sourceTree = "<group>"; };
+		8D526EEF1AB6C0970064C580 /* Translation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Translation.h; sourceTree = "<group>"; };
+		8D526EF01AB6C0970064C580 /* Translation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Translation.m; sourceTree = "<group>"; };
+		8D526EF41AB6C0A60064C580 /* FavouritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouritesViewController.h; sourceTree = "<group>"; };
+		8D526EF51AB6C0A60064C580 /* FavouritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavouritesViewController.m; sourceTree = "<group>"; };
+		8D526EF71AB6C0DA0064C580 /* LocalizeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizeHelper.h; sourceTree = "<group>"; };
+		8D526EF81AB6C0DA0064C580 /* LocalizeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizeHelper.m; sourceTree = "<group>"; };
 		8D7199801961B3E000DE6F1F /* KeyboardAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyboardAccessoryView.h; path = ../ViewControllers/KeyboardAccessoryView.h; sourceTree = "<group>"; };
 		8D7199811961B3E000DE6F1F /* KeyboardAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeyboardAccessoryView.m; path = ../ViewControllers/KeyboardAccessoryView.m; sourceTree = "<group>"; };
 		8D852DC91948F72C00F56F69 /* GarbageTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GarbageTextView.h; sourceTree = "<group>"; };
@@ -71,12 +81,6 @@
 		8D852DCE1948F72C00F56F69 /* TextViewNotify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewNotify.m; sourceTree = "<group>"; };
 		8D852DCF1948F72C00F56F69 /* TranslationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslationCell.h; sourceTree = "<group>"; };
 		8D852DD01948F72C00F56F69 /* TranslationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslationCell.m; sourceTree = "<group>"; };
-		8D852DD11948F72C00F56F69 /* FavouritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavouritesViewController.h; path = ../FavouritesViewController.h; sourceTree = "<group>"; };
-		8D852DD21948F72C00F56F69 /* FavouritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FavouritesViewController.m; path = ../FavouritesViewController.m; sourceTree = "<group>"; };
-		8D852DD41948F72C00F56F69 /* Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Language.h; path = ../Language.h; sourceTree = "<group>"; };
-		8D852DD51948F72C00F56F69 /* Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Language.m; path = ../Language.m; sourceTree = "<group>"; };
-		8D852DD61948F72C00F56F69 /* LanguageDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LanguageDirection.h; path = ../LanguageDirection.h; sourceTree = "<group>"; };
-		8D852DD71948F72C00F56F69 /* LanguageDirection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LanguageDirection.m; path = ../LanguageDirection.m; sourceTree = "<group>"; };
 		8D852DDA1948F72C00F56F69 /* FavouriteArchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouriteArchiver.h; sourceTree = "<group>"; };
 		8D852DDB1948F72C00F56F69 /* FavouriteArchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavouriteArchiver.m; sourceTree = "<group>"; };
 		8D852DDC1948F72C00F56F69 /* HistoricArchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoricArchiver.h; sourceTree = "<group>"; };
@@ -87,16 +91,12 @@
 		8D852DE11948F72C00F56F69 /* TranslationDirectionLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslationDirectionLoader.m; sourceTree = "<group>"; };
 		8D852DE21948F72C00F56F69 /* TranslationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslationRequest.h; sourceTree = "<group>"; };
 		8D852DE31948F72C00F56F69 /* TranslationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslationRequest.m; sourceTree = "<group>"; };
-		8D852DE41948F72C00F56F69 /* Translation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Translation.h; path = ../Translation.h; sourceTree = "<group>"; };
-		8D852DE51948F72C00F56F69 /* Translation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Translation.m; path = ../Translation.m; sourceTree = "<group>"; };
 		8D852DE71948F72C00F56F69 /* HistoricTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoricTableViewController.h; sourceTree = "<group>"; };
 		8D852DE81948F72C00F56F69 /* HistoricTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoricTableViewController.m; sourceTree = "<group>"; };
 		8D852DE91948F72C00F56F69 /* TranslationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslationViewController.h; sourceTree = "<group>"; };
 		8D852DEA1948F72C00F56F69 /* TranslationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslationViewController.m; sourceTree = "<group>"; };
 		8D89918819537F7E00077E5F /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main_iPad.storyboard; path = ../Main_iPad.storyboard; sourceTree = "<group>"; };
 		8D900BD31952E9F600D415B2 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		8D900BD51952EE1C00D415B2 /* LocalizeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocalizeHelper.h; path = ../LocalizeHelper.h; sourceTree = "<group>"; };
-		8D900BD61952EE1C00D415B2 /* LocalizeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocalizeHelper.m; path = ../LocalizeHelper.m; sourceTree = "<group>"; };
 		8D900BD81952F2E000D415B2 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		8D900BD91952F2E000D415B2 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		8D9EB3391948FDEC00253969 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -152,12 +152,12 @@
 		8D12A0141AB1917100713001 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8D852DD41948F72C00F56F69 /* Language.h */,
-				8D852DD51948F72C00F56F69 /* Language.m */,
-				8D852DD61948F72C00F56F69 /* LanguageDirection.h */,
-				8D852DD71948F72C00F56F69 /* LanguageDirection.m */,
-				8D852DE41948F72C00F56F69 /* Translation.h */,
-				8D852DE51948F72C00F56F69 /* Translation.m */,
+				8D526EEB1AB6C0970064C580 /* Language.h */,
+				8D526EEC1AB6C0970064C580 /* Language.m */,
+				8D526EED1AB6C0970064C580 /* LanguageDirection.h */,
+				8D526EEE1AB6C0970064C580 /* LanguageDirection.m */,
+				8D526EEF1AB6C0970064C580 /* Translation.h */,
+				8D526EF01AB6C0970064C580 /* Translation.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,8 +165,8 @@
 		8D12A0151AB1917900713001 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				8D900BD51952EE1C00D415B2 /* LocalizeHelper.h */,
-				8D900BD61952EE1C00D415B2 /* LocalizeHelper.m */,
+				8D526EF71AB6C0DA0064C580 /* LocalizeHelper.h */,
+				8D526EF81AB6C0DA0064C580 /* LocalizeHelper.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -208,8 +208,8 @@
 		8D852DE61948F72C00F56F69 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				8D852DD11948F72C00F56F69 /* FavouritesViewController.h */,
-				8D852DD21948F72C00F56F69 /* FavouritesViewController.m */,
+				8D526EF41AB6C0A60064C580 /* FavouritesViewController.h */,
+				8D526EF51AB6C0A60064C580 /* FavouritesViewController.m */,
 				8D852DE71948F72C00F56F69 /* HistoricTableViewController.h */,
 				8D852DE81948F72C00F56F69 /* HistoricTableViewController.m */,
 				8D852DE91948F72C00F56F69 /* TranslationViewController.h */,
@@ -476,26 +476,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D852DF21948F72C00F56F69 /* LanguageDirection.m in Sources */,
 				8DE5D6831948F2EA005BCE7B /* AppDelegate.m in Sources */,
-				8D900BD71952EE1C00D415B2 /* LocalizeHelper.m in Sources */,
 				8D852DF51948F72C00F56F69 /* HistoricArchiver.m in Sources */,
 				8D852DF61948F72C00F56F69 /* TranslationArchiver.m in Sources */,
 				8D852DFA1948F72C00F56F69 /* HistoricTableViewController.m in Sources */,
 				8DE0CA0819541D9D00B6571B /* LanguagesViewController.m in Sources */,
-				8D852DF11948F72C00F56F69 /* Language.m in Sources */,
 				8D852DEB1948F72C00F56F69 /* GarbageTextView.m in Sources */,
 				8D852DFB1948F72C00F56F69 /* TranslationViewController.m in Sources */,
 				8D852DED1948F72C00F56F69 /* TextViewNotify.m in Sources */,
+				8D526EF11AB6C0970064C580 /* Language.m in Sources */,
 				8D852DF81948F72C00F56F69 /* TranslationRequest.m in Sources */,
+				8D526EF21AB6C0970064C580 /* LanguageDirection.m in Sources */,
+				8D526EF91AB6C0DA0064C580 /* LocalizeHelper.m in Sources */,
 				8D852DF71948F72C00F56F69 /* TranslationDirectionLoader.m in Sources */,
 				8D852DF41948F72C00F56F69 /* FavouriteArchiver.m in Sources */,
 				8D852DEC1948F72C00F56F69 /* ProgressHud.m in Sources */,
 				8DE5D67F1948F2EA005BCE7B /* main.m in Sources */,
-				8D852DF91948F72C00F56F69 /* Translation.m in Sources */,
-				8D852DEF1948F72C00F56F69 /* FavouritesViewController.m in Sources */,
 				8D852DEE1948F72C00F56F69 /* TranslationCell.m in Sources */,
+				8D526EF31AB6C0970064C580 /* Translation.m in Sources */,
 				8D900BDA1952F2E000D415B2 /* Constants.m in Sources */,
+				8D526EF61AB6C0A60064C580 /* FavouritesViewController.m in Sources */,
 				8D7199821961B3E000DE6F1F /* KeyboardAccessoryView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
