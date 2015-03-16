@@ -6,45 +6,26 @@
 #import "TranslationRequest.h"
 
 
-@implementation TranslationRequest {
-    NSString *urlString;
-    NSString *apiKey;
-}
-
-- (id)init {
-    self = [super init];
-
-    if (self) {
-        urlString  = @"http://www.softcatala.org/apertium/json/translate";
-        apiKey = @"NWI0MjQwMzQzMDYxMzA2NDYzNjQ";
-    }
-
-    return self;
-}
+@implementation TranslationRequest
 
 - (void)postRequestWithText:(NSString *)textToTranslate andTextDirection:(NSString *)translationDirection success:(void (^)(NSString *))success failure:(void (^)(NSError *))failure {
     NSURLSession *urlSession = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:nil];
-    NSURL *url = [NSURL URLWithString:urlString];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     
-    NSMutableString *postString = [[NSMutableString alloc] init];
-    [postString appendString:@"langpair="];
-    [postString appendString:translationDirection];
-    [postString appendString:@"&q="];
-    [postString appendString:textToTranslate];
-    [postString appendString:@"&markUnknown=yes"];
-    [postString appendString:@"&key="];
-    [postString appendString:apiKey];
+    NSMutableString *urlString = [[NSMutableString alloc] init];
+    [urlString appendString:kUrlString];
+    [urlString appendString:@"?langpair="];
+    [urlString appendString:[translationDirection stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
+    [urlString appendString:@"&q="];
+    [urlString appendString:[textToTranslate stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
+    [urlString appendString:@"&markUnknown=yes"];
+    [urlString appendString:@"&key="];
+    [urlString appendString:kApiKey];
     
-    NSData *postData = [postString dataUsingEncoding:NSUTF8StringEncoding];
-    
-    
-    [request setHTTPBody:postData];
-    [request setHTTPMethod:@"POST"];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlString]];
 
     NSURLSessionDataTask *postDataTask = [urlSession dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error)  {
         if (error != nil) {
-            NSLog(@"Fallo en request: %@", error.description);
+            NSLog(@"Request error: %@", error.description);
             failure(error);
         } else {
             NSDictionary *jsonResponse = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];

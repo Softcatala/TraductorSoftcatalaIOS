@@ -53,7 +53,26 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
     [self.tableView setEditing:NO animated:YES];
     [self changeTableToEditing:NO];
     _archiver = [[FavouriteArchiver alloc] init];
+
     [self.tableView reloadData];
+    
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+        if ([_archiver.translations count] > 0) {
+            self.tableView.tableFooterView = [UIView new];
+        } else {
+            self.tableView.alpha = 0.0;
+            self.tableView.tableFooterView = nil;
+            [self performTableViewFadeOut];
+        }
+    }
+    
+}
+
+- (void)performTableViewFadeOut
+{
+    [UIView animateWithDuration:1.0 animations:^{
+        self.tableView.alpha = 1.0;
+    } completion:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,6 +87,14 @@ static NSString *favouriteCellIdentifier = @"favouriteCell";
     [translation setFavourite:button.selected];
     [_archiver updateTranslation:translation];
     [_tableView deleteRowsAtIndexPaths:@[cellIndexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    if ([_archiver.translations count] == 0) {
+        [UIView animateWithDuration:.0 delay:.5 options:UIViewAnimationOptionCurveEaseIn animations:^{
+            self.tableView.alpha = 0.0;
+        } completion:^(BOOL finished) {
+            self.tableView.tableFooterView = nil;
+            [self performTableViewFadeOut];
+        }];
+    }
 }
 
 - (IBAction)selectedListChanged:(id)sender {

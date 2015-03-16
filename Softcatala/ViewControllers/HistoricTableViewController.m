@@ -39,7 +39,6 @@ static NSString *translationCellIdentifier = @"translationCell";
 
     [_btnRemoveAll setHidden:YES];
     [self localizeToChoosenLanguage];
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -54,7 +53,25 @@ static NSString *translationCellIdentifier = @"translationCell";
     [self.tableView setEditing:NO animated:YES];
     [self changeTableToEditing:NO];
     _archiver = [[HistoricArchiver alloc] init];
+
     [self.tableView reloadData];
+
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+        if ([_archiver.translations count] > 0) {
+            self.tableView.tableFooterView = [UIView new];
+        } else {
+            self.tableView.alpha = 0.0;
+            self.tableView.tableFooterView = nil;
+            [self performTableViewFadeOut];
+        }
+    }
+}
+
+- (void)performTableViewFadeOut
+{
+    [UIView animateWithDuration:.5 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        self.tableView.alpha = 1.0;
+    } completion:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -67,8 +84,7 @@ static NSString *translationCellIdentifier = @"translationCell";
     NSIndexPath *cellIndexPath = [_tableView indexPathForCell:translationCell];
     Translation *translation = _archiver.translations[cellIndexPath.row];
     [translation setFavourite:button.selected];
-    [_archiver updateTranslation:translation];
-    
+    [_archiver updateTranslation:translation];        
 }
 #pragma mark - Table view data source
 

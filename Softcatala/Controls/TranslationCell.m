@@ -36,5 +36,11 @@
 {
     [_btnFavourite setSelected:!_btnFavourite.selected];
     [self.delegate translationCell:self favouriteButtonPressed:sender];
+    
+    _btnFavourite.transform = CGAffineTransformMakeScale(0.5, 0.5);
+    [UIView animateWithDuration:1.0 delay:0 usingSpringWithDamping:0.3 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        _btnFavourite.transform = CGAffineTransformMakeScale(1.0, 1.0);
+    } completion:nil];
+
 }
 @end
