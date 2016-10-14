@@ -12,6 +12,8 @@
 "en" = "English";
 "ca_valencia" = "Catalan";
 "va" = "Valencian variant";
+"arg" = "Aragonès";
+"oc" = "Occità/Aranès";
 
 "ResponseGeneralError" = "Unkown error";
 "EnterTextToTranslate" = "Source text...";

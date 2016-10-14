@@ -19,6 +19,8 @@
     Language *en = [[Language alloc] initWithCode:@"en" andName:LocalizedString(@"en")];
     Language *fr = [[Language alloc] initWithCode:@"fr" andName:LocalizedString(@"fr")];
     Language *pt = [[Language alloc] initWithCode:@"pt" andName:LocalizedString(@"pt")];
+    Language *oc = [[Language alloc] initWithCode:@"oc" andName:LocalizedString(@"oc")];
+    Language *arg = [[Language alloc] initWithCode:@"arg" andName:LocalizedString(@"arg")];
     Language *ca_valencia = [[Language alloc] initWithCode:@"ca_valencia" andName:LocalizedString(@"ca_valencia")];
 
     LanguageDirection *esca = [[LanguageDirection alloc] initWithSourceLanguage:es andDestinationLanguage:ca];
@@ -31,9 +33,12 @@
     LanguageDirection *cafr = [[LanguageDirection alloc] initWithSourceLanguage:ca andDestinationLanguage:fr];
     LanguageDirection *ptca = [[LanguageDirection alloc] initWithSourceLanguage:pt andDestinationLanguage:ca];
     LanguageDirection *capt = [[LanguageDirection alloc] initWithSourceLanguage:ca andDestinationLanguage:pt];
-
+    LanguageDirection *caoc = [[LanguageDirection alloc] initWithSourceLanguage:ca andDestinationLanguage:oc];
+    LanguageDirection *occa = [[LanguageDirection alloc] initWithSourceLanguage:oc andDestinationLanguage:ca];
+    LanguageDirection *caarg = [[LanguageDirection alloc] initWithSourceLanguage:ca andDestinationLanguage:arg];
+    LanguageDirection *argca = [[LanguageDirection alloc] initWithSourceLanguage:arg andDestinationLanguage:ca];
+    
     [allCombinations addObject:esca];
-    //[allCombinations addObject:esca_valencia];
     [allCombinations addObject:caes];
     [allCombinations addObject:enca];
     [allCombinations addObject:caen];
@@ -41,6 +46,10 @@
     [allCombinations addObject:cafr];
     [allCombinations addObject:ptca];
     [allCombinations addObject:capt];
+    [allCombinations addObject:occa];
+    [allCombinations addObject:caoc];
+    [allCombinations addObject:argca];
+    [allCombinations addObject:caarg];
 
     return allCombinations;
 }

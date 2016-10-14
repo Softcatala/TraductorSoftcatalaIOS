@@ -12,6 +12,8 @@
 "en" = "Anglès";
 "ca_valencia" = "Català";
 "va" = "Formes valencianes";
+"arg" = "Aragonès";
+"oc" = "Occità/Aranès";
 
 "ResponseGeneralError" = "S'ha produït un error";
 "EnterTextToTranslate" = "Introduïu text a traduir...";
