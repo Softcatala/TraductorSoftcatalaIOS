@@ -178,18 +178,20 @@
     } completion:^(BOOL finished) {
         [_translationPickerView setHidden:YES];
         [_btnSharing setAlpha:1.0];
-    }];
 
-    if ([_translationsPicker selectedRowInComponent:0] != currentLanguageDirection) {
-        currentLanguageDirection = [_translationsPicker selectedRowInComponent:0];
-        LanguageDirection *languageDirection = translationDirections[currentLanguageDirection];
-        [_btnLanguageDirection setTitle:languageDirection.description forState:UIControlStateNormal];
-        [self refreshFormesValencianesState:languageDirection];
-    }
+        if ([_translationsPicker selectedRowInComponent:0] != currentLanguageDirection) {
+            currentLanguageDirection = [_translationsPicker selectedRowInComponent:0];
+            LanguageDirection *languageDirection = translationDirections[currentLanguageDirection];
+            [_btnLanguageDirection setTitle:languageDirection.description forState:UIControlStateNormal];
+            [self refreshFormesValencianesState:languageDirection];
+        }
+    }];
+    
 }
 
 - (IBAction)closePicker:(id)sender {
     CGFloat bottom = self.view.frame.size.height;
+    NSLog(@"Bottom: %f", bottom);
     CGFloat destinationHeight = bottom + _translationPickerView.center.y;
     [UIView animateWithDuration:0.5 animations:^{
         _translationPickerView.center = CGPointMake(_translationPickerView.center.x, destinationHeight);

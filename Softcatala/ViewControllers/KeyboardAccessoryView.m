@@ -42,9 +42,6 @@
 
 - (void)configureViewWithFrame:(CGRect )frame
 {
-    //  = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 48)];
-//    [self setFrame:CGRectMake(0, 0, self.bounds.size.width, 48)];
-    NSLog(@"Frame: %@", NSStringFromCGRect(frame));
     UIView *keyboardAccessoryView = self;
     [keyboardAccessoryView setBackgroundColor:[UIColor colorWithRed:178.0/255.0 green:178.0/255.0 blue:178.0/255.0 alpha:1.0]];
     UIView *whiteBackground = [[UIView alloc] initWithFrame:CGRectMake(0, 1, self.frame.size.width, keyboardAccessoryView.frame.size.height)];
